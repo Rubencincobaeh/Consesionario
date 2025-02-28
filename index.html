@@ -1,180 +1,2161 @@
+
 <!DOCTYPE html>
-<html lang="es">
+<html lang="es" class="no-js">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Concesionario de Vehículos Deportivos</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            background-color: #f0f0f0;
-            color: #333;
-            margin: 0;
-            padding: 0;
-        }
-        header {
-            background-color: #8B0000; /* Rojo Torino */
-            color: #fff;
-            padding: 20px 0;
-            text-align: center;
-        }
-        nav {
-            background-color: #8B0000; /* Rojo Torino */
-            padding: 10px;
-            text-align: center;
-        }
-        nav a {
-            color: #fff;
-            margin: 0 15px;
-            text-decoration: none;
-            font-weight: bold;
-        }
-        nav a:hover {
-            color: #ff6347;
-        }
-        .container {
-            width: 90%;
-            margin: 20px auto;
-            background-color: #fff;
-            padding: 20px;
-            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-        }
-        table {
-            width: 100%;
-            margin: 20px 0;
-            border-collapse: collapse;
-        }
-        th, td {
-            padding: 15px;
-            text-align: left;
-            border-bottom: 1px solid #ddd;
-        }
-        th {
-            background-color: #8B0000; /* Rojo Torino */
-            color: #fff;
-        }
-        img {
-            width: 100%;
-            max-width: 400px;
-            height: auto;
-            border-radius: 5px;
-        }
-        .vehicle-info {
-            margin-top: 20px;
-        }
-        .vehicle-info h3 {
-            color: #8B0000; /* Rojo Torino */
-        }
-        .vehicle-info p {
-            font-size: 1.1em;
-            line-height: 1.6;
-        }
-        footer {
-            background-color: #8B0000; /* Rojo Torino */
-            color: #fff;
-            text-align: center;
-            padding: 10px 0;
-            margin-top: 20px;
-        }
-    </style>
-</head>
-<body>
-    <header>
-        <h1>Concesionario de Vehículos Deportivos</h1>
-    </header>
-    <nav>
-        <a href="#home">Inicio</a>
-        <a href="#about">Sobre Nosotros</a>
-        <a href="#vehicles">Vehículos</a>
-        <a href="#contact">Contacto</a>
-    </nav>
-    <div class="container">
-        <section id="home">
-            <h2>Bienvenidos a nuestro Concesionario</h2>
-            <p>Encuentra los mejores vehículos deportivos a los mejores precios.</p>
-        </section>
-        <section id="about">
-            <h2>Sobre Nosotros</h2>
-            <p>Somos un concesionario especializado en vehículos deportivos. Nuestra misión es ofrecer a nuestros clientes una experiencia de compra inigualable.</p>
-        </section>
-        <section id="vehicles">
-            <h2>Nuestros Vehículos</h2>
-            <table>
-                <tr>
-                    <th>Modelo</th>
-                    <th>Marca</th>
-                    <th>Imagen</th>
-                    <th>Descripción</th>
-                </tr>
-                <tr>
-                    <td>911 Carrera</td>
-                    <td>Porsche</td>
-                    <td><img src="https://acnews.blob.core.windows.net/imgnews/medium/NAZ_3352d04638584dcc8c5699f12d13aad0.webp"></td>
-                    <td>El Porsche 911 Carrera es un ícono de los autos deportivos, conocido por su rendimiento excepcional y diseño atemporal.</td>
-                </tr>
-                <tr>
-                    <td>Huracán EVO</td>
-                    <td>Lamborghini</td>
-                    <td><img src="https://cdn.prod.website-files.com/5b4a3b3971d099f78f362505/66e4634bf62c9ea4230cd6fa_65cd2c597d11cc480702049b_2021-Lamborghini-Huracan-EVO-RWD-Coupe-Arancio-Xanto-ZHWUF5ZF3MLA16289_012.webp" alt="Lamborghini Huracán"></td>
-                    <td>El Lamborghini Huracán EVO combina un diseño agresivo con una potencia impresionante, ofreciendo una experiencia de conducción inigualable.</td>
-                </tr>
-                <tr>
-                    <td>488 Pista</td>
-                    <td>Ferrari</td>
-                    <td><img src="https://cdn.ferrari.com/cms/network/media/img/resize/5d371735c3f9ec0af647572d-ferrari_488pista_intro_socialshare?width=1080" alt="Ferrari 488"></td>
-                    <td>El Ferrari 488 Pista es un superdeportivo de alto rendimiento, diseñado para ofrecer una experiencia de conducción emocionante y precisa.</td>
-                </tr>
-                <tr>
-                    <td>NSX</td>
-                    <td>Acura</td>
-                    <td><img src="https://cdn.autobild.es/sites/navi.axelspringer.es/public/bdc/dc/fotos/Honda-NSX-2017-C01.jpg?tf=1200x" alt="Acura NSX"></td>
-                    <td>El Acura NSX es un híbrido deportivo que combina tecnología avanzada con un diseño elegante y un rendimiento excepcional.</td>
-                </tr>
-                <tr>
-                    <td>GT-R</td>
-                    <td>Nissan</td>
-                    <td><img src="https://acnews.blob.core.windows.net/imgnews/large/NAZ_7387335f56554b7c9b9891cf2688a25f.jpg" alt="Nissan GT-R"></td>
-                    <td>El Nissan GT-R es conocido como "Godzilla" por su impresionante potencia y capacidad de rendimiento en la pista.</td>
-                </tr>
-                <tr>
-                    <td>Vantage</td>
-                    <td>Aston Martin</td>
-                    <td><img src="https://www.ceerta.com/boutique/296-large_default/aston-martin-vantage-f1-edition.jpg" alt="Aston Martin Vantage"></td>
-                    <td>El Aston Martin Vantage es un deportivo británico que combina lujo y rendimiento en un paquete elegante y sofisticado.</td>
-                </tr>
-                <tr>
-                    <td>Supra</td>
-                    <td>Toyota</td>
-                    <td><img src="https://mma.prnewswire.com/media/2188962/2024_GRSupra_45thAnniversaryEd_MikanBlast_H.jpg?p=facebook" alt="Toyota Supra"></td>
-                    <td>El Toyota Supra es un deportivo legendario, conocido por su rendimiento y su herencia en el mundo de los autos modificados.</td>
-                </tr>
-                <tr>
-                    <td>Chiron</td>
-                    <td>Bugatti</td>
-                    <td><img src="https://cdn.motor1.com/images/mgl/VzMq0z/s1/bugatti-chiron-1500.webp" alt="Bugatti Chiron"></td>
-                    <td>El Bugatti Chiron es uno de los autos más rápidos y lujosos del mundo, con un diseño impresionante y una potencia increíble.</td>
-                </tr>
-            </table>
-        </section>
-        <section class="vehicle-info">
-            <h3>Porsche 911 Carrera</h3>
-            <p>El Porsche 911 Carrera es un ícono de los autos deportivos, conocido por su rendimiento excepcional y diseño atemporal. Equipado con un motor bóxer turboalimentado, el 911 Carrera ofrece una aceleración impresionante y una conducción dinámica.</p>
-            <h3>Lamborghini Huracán EVO</h3>
-            <p>El Lamborghini Huracán EVO combina un diseño agresivo con una potencia impresionante, ofreciendo una experiencia de conducción inigualable. Su motor V10 produce una potencia impresionante, y su tracción total garantiza un manejo excepcional en todas las condiciones.</p>
-            <h3>Ferrari 488 Pista</h3>
-            <p>El Ferrari 488 Pista es un superdeportivo de alto rendimiento, diseñado para ofrecer una experiencia de conducción emocionante y precisa. Con un motor V8 turboalimentado, el 488 Pista proporciona una aceleración increíble y un manejo ágil.</p>
-            <!-- Agrega más detalles e información sobre los vehículos -->
-        </section>
-        <section id="contact">
-            <h2>Contacto</h2>
-            <p>Puedes visitarnos en nuestra dirección o contactarnos a través de nuestro correo electrónico.</p>
-            <p><strong>Dirección:</strong> Calle de los Coches, San Agustín Tlaxiaca, Hidalgo, México</p>
-            <p><strong>Email:</strong> contacto@concesionariodeportivos.com</p>
-        </section>
+<meta charset="UTF-8">
+
+<meta name="viewport" content="width=device-width">
+
+
+<link rel="profile" href="https://gmpg.org/xfn/11">
+<link rel="pingback" href="https://mulsanne.com.mx/xmlrpc.php">
+
+<title>Mulsanne Venta de Autos &#8211; Autos de Lujo, Deportivos, Etc</title>
+<meta name='robots' content='max-image-preview:large' />
+	<style>img:is([sizes="auto" i], [sizes^="auto," i]) { contain-intrinsic-size: 3000px 1500px }</style>
+	<link rel='dns-prefetch' href='//fonts.googleapis.com' />
+<link rel="alternate" type="application/rss+xml" title="Mulsanne Venta de Autos &raquo; Feed" href="https://mulsanne.com.mx/feed/" />
+<link rel="alternate" type="application/rss+xml" title="Mulsanne Venta de Autos &raquo; RSS de los comentarios" href="https://mulsanne.com.mx/comments/feed/" />
+<link rel="alternate" type="application/rss+xml" title="Mulsanne Venta de Autos &raquo; Inicio RSS de los comentarios" href="https://mulsanne.com.mx/inicio/feed/" />
+<script type="text/javascript">
+/* <![CDATA[ */
+window._wpemojiSettings = {"baseUrl":"https:\/\/s.w.org\/images\/core\/emoji\/15.0.3\/72x72\/","ext":".png","svgUrl":"https:\/\/s.w.org\/images\/core\/emoji\/15.0.3\/svg\/","svgExt":".svg","source":{"concatemoji":"https:\/\/mulsanne.com.mx\/wp-includes\/js\/wp-emoji-release.min.js?ver=6.7.2"}};
+/*! This file is auto-generated */
+!function(i,n){var o,s,e;function c(e){try{var t={supportTests:e,timestamp:(new Date).valueOf()};sessionStorage.setItem(o,JSON.stringify(t))}catch(e){}}function p(e,t,n){e.clearRect(0,0,e.canvas.width,e.canvas.height),e.fillText(t,0,0);var t=new Uint32Array(e.getImageData(0,0,e.canvas.width,e.canvas.height).data),r=(e.clearRect(0,0,e.canvas.width,e.canvas.height),e.fillText(n,0,0),new Uint32Array(e.getImageData(0,0,e.canvas.width,e.canvas.height).data));return t.every(function(e,t){return e===r[t]})}function u(e,t,n){switch(t){case"flag":return n(e,"\ud83c\udff3\ufe0f\u200d\u26a7\ufe0f","\ud83c\udff3\ufe0f\u200b\u26a7\ufe0f")?!1:!n(e,"\ud83c\uddfa\ud83c\uddf3","\ud83c\uddfa\u200b\ud83c\uddf3")&&!n(e,"\ud83c\udff4\udb40\udc67\udb40\udc62\udb40\udc65\udb40\udc6e\udb40\udc67\udb40\udc7f","\ud83c\udff4\u200b\udb40\udc67\u200b\udb40\udc62\u200b\udb40\udc65\u200b\udb40\udc6e\u200b\udb40\udc67\u200b\udb40\udc7f");case"emoji":return!n(e,"\ud83d\udc26\u200d\u2b1b","\ud83d\udc26\u200b\u2b1b")}return!1}function f(e,t,n){var r="undefined"!=typeof WorkerGlobalScope&&self instanceof WorkerGlobalScope?new OffscreenCanvas(300,150):i.createElement("canvas"),a=r.getContext("2d",{willReadFrequently:!0}),o=(a.textBaseline="top",a.font="600 32px Arial",{});return e.forEach(function(e){o[e]=t(a,e,n)}),o}function t(e){var t=i.createElement("script");t.src=e,t.defer=!0,i.head.appendChild(t)}"undefined"!=typeof Promise&&(o="wpEmojiSettingsSupports",s=["flag","emoji"],n.supports={everything:!0,everythingExceptFlag:!0},e=new Promise(function(e){i.addEventListener("DOMContentLoaded",e,{once:!0})}),new Promise(function(t){var n=function(){try{var e=JSON.parse(sessionStorage.getItem(o));if("object"==typeof e&&"number"==typeof e.timestamp&&(new Date).valueOf()<e.timestamp+604800&&"object"==typeof e.supportTests)return e.supportTests}catch(e){}return null}();if(!n){if("undefined"!=typeof Worker&&"undefined"!=typeof OffscreenCanvas&&"undefined"!=typeof URL&&URL.createObjectURL&&"undefined"!=typeof Blob)try{var e="postMessage("+f.toString()+"("+[JSON.stringify(s),u.toString(),p.toString()].join(",")+"));",r=new Blob([e],{type:"text/javascript"}),a=new Worker(URL.createObjectURL(r),{name:"wpTestEmojiSupports"});return void(a.onmessage=function(e){c(n=e.data),a.terminate(),t(n)})}catch(e){}c(n=f(s,u,p))}t(n)}).then(function(e){for(var t in e)n.supports[t]=e[t],n.supports.everything=n.supports.everything&&n.supports[t],"flag"!==t&&(n.supports.everythingExceptFlag=n.supports.everythingExceptFlag&&n.supports[t]);n.supports.everythingExceptFlag=n.supports.everythingExceptFlag&&!n.supports.flag,n.DOMReady=!1,n.readyCallback=function(){n.DOMReady=!0}}).then(function(){return e}).then(function(){var e;n.supports.everything||(n.readyCallback(),(e=n.source||{}).concatemoji?t(e.concatemoji):e.wpemoji&&e.twemoji&&(t(e.twemoji),t(e.wpemoji)))}))}((window,document),window._wpemojiSettings);
+/* ]]> */
+</script>
+<link rel='stylesheet' id='fil-autofont-css' href='https://mulsanne.com.mx/wp-content/plugins/font-icons-loader/fonts/autofont/style.css?ver=6.7.2' type='text/css' media='all' />
+<link rel='stylesheet' id='fil-theme-fonts-css' href='https://mulsanne.com.mx/wp-content/plugins/font-icons-loader/fonts/theme-fonts/style.css?ver=6.7.2' type='text/css' media='all' />
+<link rel='stylesheet' id='fil-autodealer-css' href='https://mulsanne.com.mx/wp-content/plugins/font-icons-loader/fonts/autodealer/style.css?ver=6.7.2' type='text/css' media='all' />
+<style id='wp-emoji-styles-inline-css' type='text/css'>
+
+	img.wp-smiley, img.emoji {
+		display: inline !important;
+		border: none !important;
+		box-shadow: none !important;
+		height: 1em !important;
+		width: 1em !important;
+		margin: 0 0.07em !important;
+		vertical-align: -0.1em !important;
+		background: none !important;
+		padding: 0 !important;
+	}
+</style>
+<link rel='stylesheet' id='wp-block-library-css' href='https://mulsanne.com.mx/wp-includes/css/dist/block-library/style.min.css?ver=6.7.2' type='text/css' media='all' />
+<style id='classic-theme-styles-inline-css' type='text/css'>
+/*! This file is auto-generated */
+.wp-block-button__link{color:#fff;background-color:#32373c;border-radius:9999px;box-shadow:none;text-decoration:none;padding:calc(.667em + 2px) calc(1.333em + 2px);font-size:1.125em}.wp-block-file__button{background:#32373c;color:#fff;text-decoration:none}
+</style>
+<style id='global-styles-inline-css' type='text/css'>
+:root{--wp--preset--aspect-ratio--square: 1;--wp--preset--aspect-ratio--4-3: 4/3;--wp--preset--aspect-ratio--3-4: 3/4;--wp--preset--aspect-ratio--3-2: 3/2;--wp--preset--aspect-ratio--2-3: 2/3;--wp--preset--aspect-ratio--16-9: 16/9;--wp--preset--aspect-ratio--9-16: 9/16;--wp--preset--color--black: #000000;--wp--preset--color--cyan-bluish-gray: #abb8c3;--wp--preset--color--white: #ffffff;--wp--preset--color--pale-pink: #f78da7;--wp--preset--color--vivid-red: #cf2e2e;--wp--preset--color--luminous-vivid-orange: #ff6900;--wp--preset--color--luminous-vivid-amber: #fcb900;--wp--preset--color--light-green-cyan: #7bdcb5;--wp--preset--color--vivid-green-cyan: #00d084;--wp--preset--color--pale-cyan-blue: #8ed1fc;--wp--preset--color--vivid-cyan-blue: #0693e3;--wp--preset--color--vivid-purple: #9b51e0;--wp--preset--gradient--vivid-cyan-blue-to-vivid-purple: linear-gradient(135deg,rgba(6,147,227,1) 0%,rgb(155,81,224) 100%);--wp--preset--gradient--light-green-cyan-to-vivid-green-cyan: linear-gradient(135deg,rgb(122,220,180) 0%,rgb(0,208,130) 100%);--wp--preset--gradient--luminous-vivid-amber-to-luminous-vivid-orange: linear-gradient(135deg,rgba(252,185,0,1) 0%,rgba(255,105,0,1) 100%);--wp--preset--gradient--luminous-vivid-orange-to-vivid-red: linear-gradient(135deg,rgba(255,105,0,1) 0%,rgb(207,46,46) 100%);--wp--preset--gradient--very-light-gray-to-cyan-bluish-gray: linear-gradient(135deg,rgb(238,238,238) 0%,rgb(169,184,195) 100%);--wp--preset--gradient--cool-to-warm-spectrum: linear-gradient(135deg,rgb(74,234,220) 0%,rgb(151,120,209) 20%,rgb(207,42,186) 40%,rgb(238,44,130) 60%,rgb(251,105,98) 80%,rgb(254,248,76) 100%);--wp--preset--gradient--blush-light-purple: linear-gradient(135deg,rgb(255,206,236) 0%,rgb(152,150,240) 100%);--wp--preset--gradient--blush-bordeaux: linear-gradient(135deg,rgb(254,205,165) 0%,rgb(254,45,45) 50%,rgb(107,0,62) 100%);--wp--preset--gradient--luminous-dusk: linear-gradient(135deg,rgb(255,203,112) 0%,rgb(199,81,192) 50%,rgb(65,88,208) 100%);--wp--preset--gradient--pale-ocean: linear-gradient(135deg,rgb(255,245,203) 0%,rgb(182,227,212) 50%,rgb(51,167,181) 100%);--wp--preset--gradient--electric-grass: linear-gradient(135deg,rgb(202,248,128) 0%,rgb(113,206,126) 100%);--wp--preset--gradient--midnight: linear-gradient(135deg,rgb(2,3,129) 0%,rgb(40,116,252) 100%);--wp--preset--font-size--small: 13px;--wp--preset--font-size--medium: 20px;--wp--preset--font-size--large: 36px;--wp--preset--font-size--x-large: 42px;--wp--preset--font-family--inter: "Inter", sans-serif;--wp--preset--font-family--cardo: Cardo;--wp--preset--spacing--20: 0.44rem;--wp--preset--spacing--30: 0.67rem;--wp--preset--spacing--40: 1rem;--wp--preset--spacing--50: 1.5rem;--wp--preset--spacing--60: 2.25rem;--wp--preset--spacing--70: 3.38rem;--wp--preset--spacing--80: 5.06rem;--wp--preset--shadow--natural: 6px 6px 9px rgba(0, 0, 0, 0.2);--wp--preset--shadow--deep: 12px 12px 50px rgba(0, 0, 0, 0.4);--wp--preset--shadow--sharp: 6px 6px 0px rgba(0, 0, 0, 0.2);--wp--preset--shadow--outlined: 6px 6px 0px -3px rgba(255, 255, 255, 1), 6px 6px rgba(0, 0, 0, 1);--wp--preset--shadow--crisp: 6px 6px 0px rgba(0, 0, 0, 1);}:where(.is-layout-flex){gap: 0.5em;}:where(.is-layout-grid){gap: 0.5em;}body .is-layout-flex{display: flex;}.is-layout-flex{flex-wrap: wrap;align-items: center;}.is-layout-flex > :is(*, div){margin: 0;}body .is-layout-grid{display: grid;}.is-layout-grid > :is(*, div){margin: 0;}:where(.wp-block-columns.is-layout-flex){gap: 2em;}:where(.wp-block-columns.is-layout-grid){gap: 2em;}:where(.wp-block-post-template.is-layout-flex){gap: 1.25em;}:where(.wp-block-post-template.is-layout-grid){gap: 1.25em;}.has-black-color{color: var(--wp--preset--color--black) !important;}.has-cyan-bluish-gray-color{color: var(--wp--preset--color--cyan-bluish-gray) !important;}.has-white-color{color: var(--wp--preset--color--white) !important;}.has-pale-pink-color{color: var(--wp--preset--color--pale-pink) !important;}.has-vivid-red-color{color: var(--wp--preset--color--vivid-red) !important;}.has-luminous-vivid-orange-color{color: var(--wp--preset--color--luminous-vivid-orange) !important;}.has-luminous-vivid-amber-color{color: var(--wp--preset--color--luminous-vivid-amber) !important;}.has-light-green-cyan-color{color: var(--wp--preset--color--light-green-cyan) !important;}.has-vivid-green-cyan-color{color: var(--wp--preset--color--vivid-green-cyan) !important;}.has-pale-cyan-blue-color{color: var(--wp--preset--color--pale-cyan-blue) !important;}.has-vivid-cyan-blue-color{color: var(--wp--preset--color--vivid-cyan-blue) !important;}.has-vivid-purple-color{color: var(--wp--preset--color--vivid-purple) !important;}.has-black-background-color{background-color: var(--wp--preset--color--black) !important;}.has-cyan-bluish-gray-background-color{background-color: var(--wp--preset--color--cyan-bluish-gray) !important;}.has-white-background-color{background-color: var(--wp--preset--color--white) !important;}.has-pale-pink-background-color{background-color: var(--wp--preset--color--pale-pink) !important;}.has-vivid-red-background-color{background-color: var(--wp--preset--color--vivid-red) !important;}.has-luminous-vivid-orange-background-color{background-color: var(--wp--preset--color--luminous-vivid-orange) !important;}.has-luminous-vivid-amber-background-color{background-color: var(--wp--preset--color--luminous-vivid-amber) !important;}.has-light-green-cyan-background-color{background-color: var(--wp--preset--color--light-green-cyan) !important;}.has-vivid-green-cyan-background-color{background-color: var(--wp--preset--color--vivid-green-cyan) !important;}.has-pale-cyan-blue-background-color{background-color: var(--wp--preset--color--pale-cyan-blue) !important;}.has-vivid-cyan-blue-background-color{background-color: var(--wp--preset--color--vivid-cyan-blue) !important;}.has-vivid-purple-background-color{background-color: var(--wp--preset--color--vivid-purple) !important;}.has-black-border-color{border-color: var(--wp--preset--color--black) !important;}.has-cyan-bluish-gray-border-color{border-color: var(--wp--preset--color--cyan-bluish-gray) !important;}.has-white-border-color{border-color: var(--wp--preset--color--white) !important;}.has-pale-pink-border-color{border-color: var(--wp--preset--color--pale-pink) !important;}.has-vivid-red-border-color{border-color: var(--wp--preset--color--vivid-red) !important;}.has-luminous-vivid-orange-border-color{border-color: var(--wp--preset--color--luminous-vivid-orange) !important;}.has-luminous-vivid-amber-border-color{border-color: var(--wp--preset--color--luminous-vivid-amber) !important;}.has-light-green-cyan-border-color{border-color: var(--wp--preset--color--light-green-cyan) !important;}.has-vivid-green-cyan-border-color{border-color: var(--wp--preset--color--vivid-green-cyan) !important;}.has-pale-cyan-blue-border-color{border-color: var(--wp--preset--color--pale-cyan-blue) !important;}.has-vivid-cyan-blue-border-color{border-color: var(--wp--preset--color--vivid-cyan-blue) !important;}.has-vivid-purple-border-color{border-color: var(--wp--preset--color--vivid-purple) !important;}.has-vivid-cyan-blue-to-vivid-purple-gradient-background{background: var(--wp--preset--gradient--vivid-cyan-blue-to-vivid-purple) !important;}.has-light-green-cyan-to-vivid-green-cyan-gradient-background{background: var(--wp--preset--gradient--light-green-cyan-to-vivid-green-cyan) !important;}.has-luminous-vivid-amber-to-luminous-vivid-orange-gradient-background{background: var(--wp--preset--gradient--luminous-vivid-amber-to-luminous-vivid-orange) !important;}.has-luminous-vivid-orange-to-vivid-red-gradient-background{background: var(--wp--preset--gradient--luminous-vivid-orange-to-vivid-red) !important;}.has-very-light-gray-to-cyan-bluish-gray-gradient-background{background: var(--wp--preset--gradient--very-light-gray-to-cyan-bluish-gray) !important;}.has-cool-to-warm-spectrum-gradient-background{background: var(--wp--preset--gradient--cool-to-warm-spectrum) !important;}.has-blush-light-purple-gradient-background{background: var(--wp--preset--gradient--blush-light-purple) !important;}.has-blush-bordeaux-gradient-background{background: var(--wp--preset--gradient--blush-bordeaux) !important;}.has-luminous-dusk-gradient-background{background: var(--wp--preset--gradient--luminous-dusk) !important;}.has-pale-ocean-gradient-background{background: var(--wp--preset--gradient--pale-ocean) !important;}.has-electric-grass-gradient-background{background: var(--wp--preset--gradient--electric-grass) !important;}.has-midnight-gradient-background{background: var(--wp--preset--gradient--midnight) !important;}.has-small-font-size{font-size: var(--wp--preset--font-size--small) !important;}.has-medium-font-size{font-size: var(--wp--preset--font-size--medium) !important;}.has-large-font-size{font-size: var(--wp--preset--font-size--large) !important;}.has-x-large-font-size{font-size: var(--wp--preset--font-size--x-large) !important;}
+:where(.wp-block-post-template.is-layout-flex){gap: 1.25em;}:where(.wp-block-post-template.is-layout-grid){gap: 1.25em;}
+:where(.wp-block-columns.is-layout-flex){gap: 2em;}:where(.wp-block-columns.is-layout-grid){gap: 2em;}
+:root :where(.wp-block-pullquote){font-size: 1.5em;line-height: 1.6;}
+</style>
+<link rel='stylesheet' id='contact-form-7-css' href='https://mulsanne.com.mx/wp-content/plugins/contact-form-7/includes/css/styles.css?ver=6.0.4' type='text/css' media='all' />
+<link rel='stylesheet' id='kswr-front-style-css' href='https://mulsanne.com.mx/wp-content/plugins/kaswara/front/assets/css/style.css?ver=6.7.2' type='text/css' media='all' />
+<link rel='stylesheet' id='bootstrap-css' href='https://mulsanne.com.mx/wp-content/plugins/pix-auto-deal/assets/css/bootstrap.css?ver=3.2.0' type='text/css' media='all' />
+<link rel='stylesheet' id='pixad-autos-css' href='https://mulsanne.com.mx/wp-content/plugins/pix-auto-deal/assets/css/pixad-autos.css?ver=6.7.2' type='text/css' media='all' />
+<link rel='stylesheet' id='font-awesome-css' href='https://mulsanne.com.mx/wp-content/plugins/pix-auto-deal/assets/css/font-awesome.min.css?ver=4.2.0' type='text/css' media='all' />
+<link rel='stylesheet' id='magnific-popup-css' href='https://mulsanne.com.mx/wp-content/plugins/pix-auto-deal/assets/css/magnific-popup.css?ver=1.0.0' type='text/css' media='all' />
+<link rel='stylesheet' id='theme-my-login-css' href='https://mulsanne.com.mx/wp-content/plugins/theme-my-login/assets/styles/theme-my-login.min.css?ver=7.1.10' type='text/css' media='all' />
+<link rel='stylesheet' id='woocommerce-layout-css' href='https://mulsanne.com.mx/wp-content/themes/autodealer/assets/woocommerce/css/woocommerce-layout.css?ver=9.7.0' type='text/css' media='all' />
+<link rel='stylesheet' id='woocommerce-smallscreen-css' href='https://mulsanne.com.mx/wp-content/plugins/woocommerce/assets/css/woocommerce-smallscreen.css?ver=9.7.0' type='text/css' media='only screen and (max-width: 768px)' />
+<link rel='stylesheet' id='woocommerce-general-css' href='https://mulsanne.com.mx/wp-content/themes/autodealer/assets/woocommerce/css/woocommerce.css?ver=9.7.0' type='text/css' media='all' />
+<style id='woocommerce-inline-inline-css' type='text/css'>
+.woocommerce form .form-row .required { visibility: visible; }
+</style>
+<link rel='stylesheet' id='brands-styles-css' href='https://mulsanne.com.mx/wp-content/plugins/woocommerce/assets/css/brands.css?ver=9.7.0' type='text/css' media='all' />
+<link rel='stylesheet' id='style-css' href='https://mulsanne.com.mx/wp-content/themes/autodealer/style.css?ver=6.7.2' type='text/css' media='all' />
+<link rel='stylesheet' id='autodealer-master-css' href='https://mulsanne.com.mx/wp-content/themes/autodealer/css/theme.css?ver=6.7.2' type='text/css' media='all' />
+<link rel='stylesheet' id='autodealer-responsive-css' href='https://mulsanne.com.mx/wp-content/themes/autodealer/css/responsive.css?ver=6.7.2' type='text/css' media='all' />
+<link rel='stylesheet' id='autodealer-bootstrap-css' href='https://mulsanne.com.mx/wp-content/themes/autodealer/assets/bootstrap/css/bootstrap.css?ver=6.7.2' type='text/css' media='all' />
+<link rel='stylesheet' id='owl-css' href='https://mulsanne.com.mx/wp-content/themes/autodealer/assets/owl-carousel/owl.carousel.css?ver=6.7.2' type='text/css' media='all' />
+<link rel='stylesheet' id='owl-transitions-css' href='https://mulsanne.com.mx/wp-content/themes/autodealer/assets/owl-carousel/owl.transitions.css?ver=6.7.2' type='text/css' media='all' />
+<link rel='stylesheet' id='owltheme-css' href='https://mulsanne.com.mx/wp-content/themes/autodealer/assets/owl-carousel/owl.theme.css?ver=6.7.2' type='text/css' media='all' />
+<link rel='stylesheet' id='prettyphoto-css' href='https://mulsanne.com.mx/wp-content/plugins/js_composer/assets/lib/vendor/prettyphoto/css/prettyPhoto.min.css?ver=8.2' type='text/css' media='all' />
+<link rel='stylesheet' id='isotope-css' href='https://mulsanne.com.mx/wp-content/themes/autodealer/assets/isotope/isotope.css?ver=6.7.2' type='text/css' media='all' />
+<link rel='stylesheet' id='nouislider_css-css' href='https://mulsanne.com.mx/wp-content/themes/autodealer/assets/nouislider/jquery.nouislider.css?ver=6.7.2' type='text/css' media='all' />
+<link rel='stylesheet' id='jelect-css' href='https://mulsanne.com.mx/wp-content/themes/autodealer/assets/jelect/jelect.css?ver=6.7.2' type='text/css' media='all' />
+<link rel='stylesheet' id='easydropdown-css' href='https://mulsanne.com.mx/wp-content/themes/autodealer/assets/easydropdown/css/easydropdown.css?ver=6.7.2' type='text/css' media='all' />
+<link rel='stylesheet' id='flexslider-css-css' href='https://mulsanne.com.mx/wp-content/themes/autodealer/assets/flexslider/flexslider.css?ver=6.7.2' type='text/css' media='all' />
+<link rel='stylesheet' id='fancybox-css' href='https://mulsanne.com.mx/wp-content/themes/autodealer/assets/fancybox/jquery.fancybox.min.css?ver=6.7.2' type='text/css' media='all' />
+<link rel='stylesheet' id='autodealer-header-css' href='https://mulsanne.com.mx/wp-content/themes/autodealer/assets/header/header.css?ver=6.7.2' type='text/css' media='all' />
+<link rel='stylesheet' id='autodealer-header-yamm-css' href='https://mulsanne.com.mx/wp-content/themes/autodealer/assets/header/yamm.css?ver=6.7.2' type='text/css' media='all' />
+<link rel='stylesheet' id='autodealer-swipebox-css' href='https://mulsanne.com.mx/wp-content/themes/autodealer/assets/swipebox/css/swipebox.min.css?ver=6.7.2' type='text/css' media='all' />
+<style id='autodealer-swipebox-inline-css' type='text/css'>
+ 
+
+
+
+html .section_mod-h:after {
+    background-image: url(https://mulsanne.com.mx/wp-content/themes/autodealer/images/footer.jpg);
+}
+
+
+
+
+html .block-title span.vc_row-overlay{
+	background-color: #888888 !important;
+	opacity: 1;
+}
+
+html .block-title{
+	padding: 0px 0 10px;
+	margin-bottom: 10px;
+    border-bottom:  none ;
+    }
+
+
+ html  .page-decor{
+             top: -10px;
+            }
+
+
+
+
+
+html body, html p,
+html .post .entry-date__inner {
+	font-family: 'Source Sans Pro' !important;     font-weight: 400 !important; }
+
+
+
+
+
+html .main-block__title ,
+html .car-details__title,
+html .ui-title-block,
+html .post-nav__title,
+html .list-services__title,
+html .list-services__title strong,
+html .ui-title-inner,
+.quote-form input[type=submit] ,
+html .reviews__title,
+html .post .entry-title ,
+html .link-img__title ,
+html .list-staff__name,
+html .ui-title-page,
+html .widget-title,
+.stats > div > div,
+footer h2,
+footer h3,
+footer h4,
+footer h5,
+footer h6 ,
+.title,
+.feature-item h5 ,
+.blog-description h4 ,
+.blog-description h4 a ,
+.work-heading  h3 ,
+.work-body  h5 ,
+.services h4 ,
+.ui-title-page.pull-left h1, .ui-title-page.pull-left .subtitle ,
+.work-body h3 ,
+.reply-title ,
+.woocommerce #reviews #comments h2 ,
+.woocommerce .rtd div.product .product_title ,
+.car-details-box a
+{
+	font-family: 'Source Sans Pro' !important; 	font-weight: 700 !important; }
+
+.tmpl-title-font , .tmpl-title-font * , .syp-itemgrid-title a{
+  font-family: 'Source Sans Pro' !important; }
+
+
+.nav-tabs-vertical>li>a{
+  font-family: 'Source Sans Pro' !important; }
+
+
+
+
+
+
+
+
+html .main-block__label ,
+html .brand-link ,
+html .slider-grid__name ,
+html .staff-progress__title,
+html .reviews__name,
+html .list-progress__name,
+html .btn,
+html .main-slider__btn_inner
+{
+	font-family: 'Source Sans Pro' !important;     font-weight: 700 !important; }
+
+
+
+
+
+html .header-top_button_2 .button_header {
+    background: #d71921 ;
+}
+
+
+html .header-top_button_2:before , html .post .entry-date__inner:before{
+  border-top-color: #d71921 !important;
+}
+
+html header{
+   border-top-color: #d71921 !important;
+}
+
+
+html #booking_car_info .car-details__price-inner , html .grid-absolute-foot {
+    background: #d71921 ;
+}
+
+html .header-banner_icon{
+  color: #d71921 ;
+}
+
+
+
+
+
+html .button_header span i {
+    color: #d71921 !important;
+}
+
+html .tmpl-data-list i{
+   color: #d71921 !important;
+}
+
+
+html .wd-auto_sell_page{
+   background: #d71921 ;
+}
+
+ html .nav-tabs-vertical>li.active a , html .text-white-color  .nav-tabs-vertical>li.active a{
+  color: #d71921 !important;
+}
+
+.syp-itemgrid[data-style=style4] .syp-itemgrid-date{
+  color: #d71921 !important;
+}
+
+html .b-submit__aside-step-inner.m-active{
+  background-color: #d71921 !important;
+}
+
+html .b-submit__aside-step-inner-info-triangle{
+  border-left-color: #d71921 ;
+}
+ 
+
+html .car-details__price{
+   color: #d71921 !important;
+}
+
+html .car-details-box:hover{
+   background-color: #d71921 !important;
+}
+
+
+.wrap-nav-tabs .nav-tabs > li.active > a{
+   color: #d71921 !important;
+   background: transparent !important;
+}
+
+
+.vc-auto-search  .btn-skew-r:hover{
+  background-color: #d71921 !important;
+  border-color: #d71921 !important;
+}
+
+
+.top-bar{
+ background-color: #d71921;
+}
+
+html .car-details-box{
+   background-color: #d71921 !important;
+}
+
+
+
+.btn-theme:hover , .slider-grid__inner:hover .btn-theme{
+  background-color: #d71921 !important;
+  border-color: #d71921 !important;
+  color:#fff;
+}
+
+html .add-to-compare, html .car-favorite {
+    background-color: rgba(255, 255, 255, .8);
+    color: #222 !important;
+    border-radius: 100px !important;
+}
+
+
+.slider-grid__inner_mod-b .slider-grid__price{
+    color: #d71921;
+}
+
+
+.sticky .entry-main_mod-a {
+    border:2px solid  #d71921  !important ;
+}
+
+code {
+    color:#222 !important;
+    background-color: #d71921;
+
+}
+
+.btn  .home-search-label a:hover{
+  color: #d71921;
+}
+
+
+.hsearch_style_1.vc-auto-search .btn-skew-r{
+   background-color: #d71921 !important;
+}
+
+
+
+.after-title:before , .after-title:after{
+   border-color: #d71921  !important ;
+}
+
+
+
+html .woocommerce-result-count.sorting__title{
+  border-color: #d71921  !important ;
+}
+
+
+html .rtd ul:not([class]) li::before , html blockquote:not([class]):after{
+  color:  #d71921  !important;
+}
+
+
+html body .add-to-compare.active-add-compare, html body .active-add-favorite {
+    background-color: #d71921  !important;
+    opacity: 0.9 !important;
+    color: #fff !important;
+}
+
+.woocommerce ul.products li.product .onsale{
+   background-color: #d71921  !important;
+}
+
+html .single-add-to-compare{
+   background-color: #d71921  !important;
+}
+
+
+html .woocommerce div.product .woocommerce-tabs ul.tabs li.active a{
+  border-color: #d71921  !important ;
+}
+
+
+.vc_toggle.vc_toggle_arrow .vc_toggle_icon::after, .vc_toggle.vc_toggle_arrow .vc_toggle_icon::before{
+  border-color:  #d71921  !important;
+}
+
+html aside .button{
+   background-color: #d71921;
+}
+
+
+.auto_cmpg_icon{
+   color:  #d71921  !important;
+}
+
+.widget-info-car i{
+   color:  #d71921  !important;
+}
+	
+.period_picker_box .period_picker_show:before , html .booking-auto-form button.submit{
+   background-color: #d71921 !important;
+}
+
+html .footer h3:before{
+   border-color:  #d71921  !important;
+}
+
+.footer__btn:before{
+    border-bottom: 33px solid #d71921;
+}
+
+.thecube .cube:before {
+  background-color: #d71921;
+}
+.list-services:hover .list-services__title *{
+color: #d71921;
+}
+
+html input[type="submit"] {
+    background-color: #d71921;
+}
+
+
+.noUi-horizontal .noUi-handle:after{
+    background-color: #d71921 !important;
+}
+
+
+.tmp-select-dropdown .active , .tmp-select-dropdown li:hover{
+     background-color: #d71921 !important;
+     color: #fff !important;
+}
+
+
+.woocommerce .widget_price_filter .ui-slider .ui-slider-range , .woocommerce .widget_price_filter .ui-slider .ui-slider-handle{
+   background-color: #d71921 !important;
+}
+
+.card:hover .card__price-number{
+  color: #d71921 !important;
+}
+
+ .remove-from-compare {
+   background-color: #d71921 !important;
+}
+.car-listing-row .listing-car-item-meta .price ,.listing-car-item-meta .sale-price  {
+   color: #d71921 !important;
+}
+
+.post-btn:hover{
+   background-color: #d71921 !important;
+   border-color: #d71921 !important;
+}
+
+a, a:hover, a:focus,
+.color_primary,
+.ui-title-inner .icon:before,
+.link-img__link:hover .link-img__title,
+.main-block__title strong,
+.decor-3,
+.list-services:hover .list-services__title,
+.list-progress .icon,
+.footer-title__inner,
+.card__price-number,
+.list-categories__link:before,
+.list-categories__link:hover,
+.list-descriptions dt:before,
+.widget-post1__price,
+.nav-tabs > li.active > a,
+.nav-tabs > li > a:hover,
+.nav-tabs > li.active > a:focus,
+.social-blog__item:before,
+blockquote:before,
+.comments-list .comment-datetime,
+.sidebar .widget_product_categories ul li a:before {
+    color: #d71921;
+}
+
+
+.bg-color_primary,
+.main-slider__link,
+.decor-2:before,
+.decor-2:after,
+.section-bg_primary,
+.border-section-top_mod-b:before,
+.border-section-top_mod-b:after,
+.slider-grid__price,
+.btn-default:after,
+.owl-theme_mod-c .owl-controls .owl-page.active span,
+.owl-theme_mod-c .owl-controls.clickable .owl-page:hover span,
+.owl-theme_mod-d .owl-controls .owl-page.active span,
+.owl-theme_mod-d .owl-controls.clickable .owl-page:hover span,
+.list-staff__item:hover .list-staff__info,
+.progress-bar,
+.post .entry-date,
+.post:hover .entry-main__inner_mod-a:after,
+.btn-effect:after,
+.yamm .navbar-toggle,
+.ui-btn_mod-a,
+.jelect-option:hover,
+.jelect-option_state_active,
+.car-details__price,
+.noUi-origin,
+.btn-skew-r,
+.list-tags__link:hover,
+.about-autor,
+.card__wrap-label,
+html .vc_btn3.vc_btn3-color-juicy-pink,
+html .vc_btn3.vc_btn3-color-juicy-pink.vc_btn3-style-flat,
+html .vc_btn3.vc_btn3-color-juicy-pink.vc_btn3-style-flat:hover, html .vc_btn3.vc_btn3-color-juicy-pink:hover , .subscribe-text  {
+    background-color: #d71921;
+}
+
+
+aside .mc4wp-form-fields .btn{
+   background-color: #d71921;
+}
+
+.wpt_widget_content #tags-tab-content ul li a:hover{
+   background-color: #d71921 !important;
+}
+
+.link-img__link,
+.owl-theme_mod-c .owl-controls .owl-page.active span,
+.owl-theme_mod-c .owl-controls.clickable .owl-page:hover span,
+.owl-theme_mod-d .owl-controls .owl-page.active span,
+.owl-theme_mod-d .owl-controls.clickable .owl-page:hover span,
+.current-menu-item > a:before, .current-page-parent > a:before ,  {
+	border-color: #d71921;
+}
+
+.page-template-page-home .current-menu-parent.current_page_item > a:before, .current_page_item > a:before {
+border-color: #d71921 !important;
+}
+
+
+
+#iview div.iview-directionNav a.iview-nextNav:hover:before,
+.list-staff__item:nth-child(even):hover .list-staff__info:after,
+.reviews:hover .reviews__title {border-left-color: #d71921;}
+
+#iview div.iview-directionNav a.iview-prevNav:hover:before,
+.list-staff__item:nth-child(odd):hover .list-staff__info:after {border-right-color: #d71921;}
+
+.header.sticky .navbar,
+.form-control:focus {border-bottom-color: #DC2D13;}
+
+.yamm .nav > li > a:hover {
+    box-shadow: 0 -5px 0 0 #d71921;
+    background: none !important;
+}
+
+.list-type__item , .list-type__name:after {
+    border-bottom-color: #d71921 !important;
+}
+
+.list-type__item:hover   .list-type__link{
+    border-bottom-color: #d71921 !important;
+}
+
+
+.kswr-mdnflb-front-subtitle:after {
+    border-bottom-color: #d71921 !important;
+}
+
+
+.pagination > .active > a,
+.pagination > .active > span,
+.pagination > .active > a:hover,
+.pagination > .active > span:hover,
+.pagination > .active > a:focus,
+.pagination > .active > span:focus,
+.pagination > li > a:hover,
+.pagination > li > span:hover,
+.pagination > li > a:focus,
+.pagination > li > span:focus {
+	box-shadow: 0 3px 0 0 #d71921;
+}
+
+
+
+.pixad-features-list i{
+  color:#d71921 !important;
+}
+
+
+.slider-grid  .owl-page.active span, .slider-grid .owl-page span:hover{
+    background-color: #d71921 !important;
+    border-color:#d71921 !important;
+}
+
+
+.btn-rent-car{
+ background-color: #d71921 !important;
+}
+
+.btn-rent-car:before{
+  border-top-color:#d71921 !important;
+}
+
+.slider-grid__inner:hover .tmpl-gray-footer{
+border-bottom-color:#d71921 !important;
+}
+
+/*Headers color*/
+
+
+html .header-cart-count{
+    background: #d71921 !important;
+}
+
+.footer h3:after{
+      border-color:#d71921 !important;
+}
+
+
+.topfb1:before , .topfb1 , .topfb1:after{
+   background-color: #d71921 !important;
+}
+
+
+
+html body  .fullscreen-center-menu li > a:hover {
+    color: #d71921 !important;
+}
+
+html body [off-canvas] li a:hover {
+    color: #d71921;
+}
+
+
+
+a {
+	color: #d71921;
+}
+html .nav > li > a:hover, html .nav > li > a:focus {
+	color: #d71921;
+}
+html .pre-footer {
+	background: none repeat scroll 0 0 #d71921;
+}
+html .after-heading-info, .highlight_text {
+	color: #d71921;
+}
+html .bx-wrapper .bx-next {
+	background: #d71921 !important;
+}
+html .bx-wrapper .bx-next {
+	background: #d71921 !important;
+}
+html .full-title.banner-full-width {
+	background-color: #d71921}
+html .featured-item-simple-icon::after {
+	border-color: #d71921;
+}
+html .top-cart i, html .top-cart .icon-basket {
+	color: #d71921;
+}
+html .dropdown-menu > li > a:hover, html .dropdown-menu > li > a:focus {
+	background-color: #d71921}
+html .title-action a {
+	background: none repeat scroll 0 0 #d71921 !important;
+	border-color: #d71921 !important;
+}
+html .full-title-name .btn {
+	background: none repeat scroll 0 0 #d71921!important;
+	border-color: #d71921 !important;
+}
+html .marked_list1 li:before {
+	color: #d71921;
+}
+html .woocommerce #respond input#submit, html .woocommerce a.button, html .woocommerce button.button, html .woocommerce input.button {
+	background-color: #d71921 !important;
+	border-color: #d71921 !important;
+}
+html .product-info .nav-tabs > li.active a, html .product-info .nav-tabs > li:hover a {
+	background: #d71921 !important;
+	color: #fff !important;
+	outline: none !important;
+	border: 1px solid #d71921;
+}
+html .product-info .nav-tabs {
+	border-top-color: #d71921;
+}
+html .nav > li > a:hover, html .nav > li > a:focus {
+	color: #d71921;
+}
+html .label-sale, .label-hot, html .label-not-available, html .label-best {
+	color: #526aff;
+}
+html .woocommerce nav.woocommerce-pagination ul li a:focus, html .woocommerce nav.woocommerce-pagination ul li a:hover, html .woocommerce nav.woocommerce-pagination ul li span.current {
+	box-shadow: #d71921 0px 3px 0px 0px;
+}
+
+.box-date-post .date-2 {
+   color: #d71921;
+}
+
+html .custom-post-item h4:after{
+  border-color: #d71921;
+}
+
+html body  .type-post.sticky:after {
+		color: #d71921;
+
+}
+
+.widget-title{
+     border-bottom-color: #d71921 !important;
+}
+
+
+html .reviews__text:after {
+		color: #d71921;
+}
+
+.custom-post-item ul li i{
+  color: #d71921;
+}
+
+
+
+    <!--END MAIN COLOR-->
+    
+
+   
+  
+  
+    
+
+
+html .btn-link,html  .view-post-btn {
+  color: #000000 !important;
+}
+html .demo_changer .demo-icon {
+	background: #000000;
+}
+html .woocommerce nav.woocommerce-pagination ul li a:focus, html .woocommerce nav.woocommerce-pagination ul li a:hover, html .woocommerce nav.woocommerce-pagination ul li span.current {
+	background: #000000 !important;
+}
+html .pagination li, html .woocommerce-pagination li {
+	border-color: #000000 !important;
+}
+html .tagcloud a:hover {
+	background: #000000 !important;
+}
+html .title-option {
+	background: #000000;
+}
+html .ip-header .ip-loader svg path.ip-loader-circle {
+	stroke: #000000 !important;
+}
+.yamm .dropdown-menu h1:after, .yamm .dropdown-menu h2:after, .yamm .dropdown-menu h3:after, .yamm .dropdown-menu h4:after, .yamm .dropdown-menu h5:after, .yamm .dropdown-menu h6:after {
+	border-color: #000000 !important;
+}
+html .banner-full-width .btn.btn-primary {
+	background-color: #000000;
+	border-color: #000000;
+	color: #ffffff;
+}
+html .full-title-name {
+	background-color: #000000;
+}
+html .carousel-text a.btn-read-more.btn {
+	color: #000000;
+}
+html a.btn-read-more.btn {
+	color: #ffc300;
+}
+html .btn-primary, html .wpcf7-submit {
+	background-color: #000000;
+	border-color: #000000;
+}
+html .service-icon {
+	border-color: #000000;
+}
+html .service-item:hover .service-icon,
+html .pre-footer:hover,
+html .pagination li.active a,
+html .pagination li.active a:hover, {
+	background-color: #000000;
+}
+.footer-shop .widgettitle:after {
+	border-bottom: 1px solid #000000;
+}
+html .footer-absolute {
+	background-color: #000000;
+}
+
+
+html .header.header-background-black{
+  background-color: #000000;
+}
+
+
+
+html .btn-location-open i {
+	color: #fff;
+}
+html .product-grid li:hover .product-bottom .btn-group .btn {
+	background-color: #000000;
+	border-color: #000000;
+}
+html .pp-content:hover {
+	background: none repeat scroll 0 0 #000000;
+}
+html .pp-content:hover .arrow {
+	border-color: #000000;
+}
+html .parallax-black .service-item .fa::before {
+	color: #000000;
+}
+html .btn-download {
+	background: #000000;
+	color: #fff !important;
+}
+html body aside .widget_nav_menu li:before, html body aside .widget_product_categories li:before {
+	color: #000000;
+}
+html aside .widget_nav_menu li:hover, aside .widget_product_categories li:hover {
+	border-left-color: #000000;
+}
+.info-desc {
+	border: 7px solid #000000;
+	box-shadow: 1px 1px 3px #000000 inset;
+}
+html .info-desc:after {
+	background: none repeat scroll 0 0 #000000;
+}
+html .info-desc:before {
+	background: none repeat scroll 0 0 #000000;
+}
+html .info-desc td i {
+	color: #000000;
+}
+html .marked_list2 li:before {
+	color: #000000;
+}
+
+html  blockquote {
+  border-left: 3px solid #000000;
+}
+
+
+
+
+html .banner-full-width {
+	background: none;
+	color: #333333;
+	border-top: #eeeeee 1px solid;
+	border-bottom: #eeeeee 1px solid;
+}
+html .banner-full-width p {
+	color: #333333;
+}
+html .banner-full-width .btn {
+	border-color: #333333;
+	color: #333333;
+}
+
+
+   
+  
+
+   
+   
+   
+   
+    
+      
+
+
+</style>
+<link rel='stylesheet' id='autodealer-fonts-css' href='https://fonts.googleapis.com/css?family=Titillium+Web%3A300%2C400%2C600%2C700%7CSource+Sans+Pro%3A300%2C400%2C600%2C700%7CSource+Sans+Pro%3A700%7CSource+Sans+Pro%3A600&#038;subset=latin%2Clatin-ext' type='text/css' media='all' />
+<link rel='stylesheet' id='js_composer_front-css' href='https://mulsanne.com.mx/wp-content/plugins/js_composer/assets/css/js_composer.min.css?ver=8.2' type='text/css' media='all' />
+<script type="text/javascript" src="https://mulsanne.com.mx/wp-includes/js/jquery/jquery.min.js?ver=3.7.1" id="jquery-core-js"></script>
+<script type="text/javascript" src="https://mulsanne.com.mx/wp-includes/js/jquery/jquery-migrate.min.js?ver=3.4.1" id="jquery-migrate-js"></script>
+<script type="text/javascript" id="ajax_script-js-extra">
+/* <![CDATA[ */
+var pixadAjax = {"url":"https:\/\/mulsanne.com.mx\/wp-admin\/admin-ajax.php","nonce":"476c5e5025"};
+/* ]]> */
+</script>
+<script type="text/javascript" src="https://mulsanne.com.mx/wp-content/plugins/pix-auto-deal/assets/js/pixad-ajax.js?ver=1" id="ajax_script-js"></script>
+<script type="text/javascript" src="https://mulsanne.com.mx/wp-content/plugins/woocommerce/assets/js/jquery-blockui/jquery.blockUI.min.js?ver=2.7.0-wc.9.7.0" id="jquery-blockui-js" data-wp-strategy="defer"></script>
+<script type="text/javascript" id="wc-add-to-cart-js-extra">
+/* <![CDATA[ */
+var wc_add_to_cart_params = {"ajax_url":"\/wp-admin\/admin-ajax.php","wc_ajax_url":"\/?wc-ajax=%%endpoint%%","i18n_view_cart":"Ver carrito","cart_url":"https:\/\/mulsanne.com.mx\/cart\/","is_cart":"","cart_redirect_after_add":"no"};
+/* ]]> */
+</script>
+<script type="text/javascript" src="https://mulsanne.com.mx/wp-content/plugins/woocommerce/assets/js/frontend/add-to-cart.min.js?ver=9.7.0" id="wc-add-to-cart-js" data-wp-strategy="defer"></script>
+<script type="text/javascript" src="https://mulsanne.com.mx/wp-content/plugins/woocommerce/assets/js/js-cookie/js.cookie.min.js?ver=2.1.4-wc.9.7.0" id="js-cookie-js" defer="defer" data-wp-strategy="defer"></script>
+<script type="text/javascript" id="woocommerce-js-extra">
+/* <![CDATA[ */
+var woocommerce_params = {"ajax_url":"\/wp-admin\/admin-ajax.php","wc_ajax_url":"\/?wc-ajax=%%endpoint%%","i18n_password_show":"Show password","i18n_password_hide":"Hide password"};
+/* ]]> */
+</script>
+<script type="text/javascript" src="https://mulsanne.com.mx/wp-content/plugins/woocommerce/assets/js/frontend/woocommerce.min.js?ver=9.7.0" id="woocommerce-js" defer="defer" data-wp-strategy="defer"></script>
+<script type="text/javascript" src="https://mulsanne.com.mx/wp-content/plugins/js_composer/assets/js/vendors/woocommerce-add-to-cart.js?ver=8.2" id="vc_woocommerce-add-to-cart-js-js"></script>
+<script type="text/javascript" src="https://mulsanne.com.mx/wp-content/themes/autodealer/js/jquery-migrate-1.2.1.js?ver=3.3" id="migrate-js"></script>
+<script type="text/javascript" src="https://mulsanne.com.mx/wp-content/themes/autodealer/js/modernizr.custom.js?ver=3.3" id="modernizr-js"></script>
+<script></script><link rel="https://api.w.org/" href="https://mulsanne.com.mx/wp-json/" /><link rel="alternate" title="JSON" type="application/json" href="https://mulsanne.com.mx/wp-json/wp/v2/pages/12737" /><link rel="EditURI" type="application/rsd+xml" title="RSD" href="https://mulsanne.com.mx/xmlrpc.php?rsd" />
+<meta name="generator" content="WordPress 6.7.2" />
+<meta name="generator" content="WooCommerce 9.7.0" />
+<link rel="canonical" href="https://mulsanne.com.mx/" />
+<link rel='shortlink' href='https://mulsanne.com.mx/' />
+<link rel="alternate" title="oEmbed (JSON)" type="application/json+oembed" href="https://mulsanne.com.mx/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fmulsanne.com.mx%2F" />
+<link rel="alternate" title="oEmbed (XML)" type="text/xml+oembed" href="https://mulsanne.com.mx/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fmulsanne.com.mx%2F&#038;format=xml" />
+<style type="text/css" media="screen"></style>
+<style type="text/css" media="screen" data-type="ms-style"></style>
+	<noscript><style>.woocommerce-product-gallery{ opacity: 1 !important; }</style></noscript>
+	<meta name="generator" content="Powered by WPBakery Page Builder - drag and drop page builder for WordPress."/>
+<meta name="generator" content="Powered by Slider Revolution 6.7.18 - responsive, Mobile-Friendly Slider Plugin for WordPress with comfortable drag and drop interface." />
+<style class='wp-fonts-local' type='text/css'>
+@font-face{font-family:Inter;font-style:normal;font-weight:300 900;font-display:fallback;src:url('https://mulsanne.com.mx/wp-content/plugins/woocommerce/assets/fonts/Inter-VariableFont_slnt,wght.woff2') format('woff2');font-stretch:normal;}
+@font-face{font-family:Cardo;font-style:normal;font-weight:400;font-display:fallback;src:url('https://mulsanne.com.mx/wp-content/plugins/woocommerce/assets/fonts/cardo_normal_400.woff2') format('woff2');}
+</style>
+<link rel="icon" href="https://mulsanne.com.mx/wp-content/uploads/2023/06/cropped-logo_Mulsanne-32x32.png" sizes="32x32" />
+<link rel="icon" href="https://mulsanne.com.mx/wp-content/uploads/2023/06/cropped-logo_Mulsanne-192x192.png" sizes="192x192" />
+<link rel="apple-touch-icon" href="https://mulsanne.com.mx/wp-content/uploads/2023/06/cropped-logo_Mulsanne-180x180.png" />
+<meta name="msapplication-TileImage" content="https://mulsanne.com.mx/wp-content/uploads/2023/06/cropped-logo_Mulsanne-270x270.png" />
+<script>function setREVStartSize(e){
+			//window.requestAnimationFrame(function() {
+				window.RSIW = window.RSIW===undefined ? window.innerWidth : window.RSIW;
+				window.RSIH = window.RSIH===undefined ? window.innerHeight : window.RSIH;
+				try {
+					var pw = document.getElementById(e.c).parentNode.offsetWidth,
+						newh;
+					pw = pw===0 || isNaN(pw) || (e.l=="fullwidth" || e.layout=="fullwidth") ? window.RSIW : pw;
+					e.tabw = e.tabw===undefined ? 0 : parseInt(e.tabw);
+					e.thumbw = e.thumbw===undefined ? 0 : parseInt(e.thumbw);
+					e.tabh = e.tabh===undefined ? 0 : parseInt(e.tabh);
+					e.thumbh = e.thumbh===undefined ? 0 : parseInt(e.thumbh);
+					e.tabhide = e.tabhide===undefined ? 0 : parseInt(e.tabhide);
+					e.thumbhide = e.thumbhide===undefined ? 0 : parseInt(e.thumbhide);
+					e.mh = e.mh===undefined || e.mh=="" || e.mh==="auto" ? 0 : parseInt(e.mh,0);
+					if(e.layout==="fullscreen" || e.l==="fullscreen")
+						newh = Math.max(e.mh,window.RSIH);
+					else{
+						e.gw = Array.isArray(e.gw) ? e.gw : [e.gw];
+						for (var i in e.rl) if (e.gw[i]===undefined || e.gw[i]===0) e.gw[i] = e.gw[i-1];
+						e.gh = e.el===undefined || e.el==="" || (Array.isArray(e.el) && e.el.length==0)? e.gh : e.el;
+						e.gh = Array.isArray(e.gh) ? e.gh : [e.gh];
+						for (var i in e.rl) if (e.gh[i]===undefined || e.gh[i]===0) e.gh[i] = e.gh[i-1];
+											
+						var nl = new Array(e.rl.length),
+							ix = 0,
+							sl;
+						e.tabw = e.tabhide>=pw ? 0 : e.tabw;
+						e.thumbw = e.thumbhide>=pw ? 0 : e.thumbw;
+						e.tabh = e.tabhide>=pw ? 0 : e.tabh;
+						e.thumbh = e.thumbhide>=pw ? 0 : e.thumbh;
+						for (var i in e.rl) nl[i] = e.rl[i]<window.RSIW ? 0 : e.rl[i];
+						sl = nl[0];
+						for (var i in nl) if (sl>nl[i] && nl[i]>0) { sl = nl[i]; ix=i;}
+						var m = pw>(e.gw[ix]+e.tabw+e.thumbw) ? 1 : (pw-(e.tabw+e.thumbw)) / (e.gw[ix]);
+						newh =  (e.gh[ix] * m) + (e.tabh + e.thumbh);
+					}
+					var el = document.getElementById(e.c);
+					if (el!==null && el) el.style.height = newh+"px";
+					el = document.getElementById(e.c+"_wrapper");
+					if (el!==null && el) {
+						el.style.height = newh+"px";
+						el.style.display = "block";
+					}
+				} catch(e){
+					console.log("Failure at Presize of Slider:" + e)
+				}
+			//});
+		  };</script>
+		<style type="text/css" id="wp-custom-css">
+			.wpcf7-not-valid-tip {
+	color: white !important;
+}
+
+
+
+#trp-floater-ls-current-language.trp-with-flags, #trp-floater-ls-language-list.trp-with-flags{
+	display:none;
+}
+
+.content-column.one_half{
+	padding-right: 10px;
+}
+
+.wrap-comments{
+	margin-top:0px;
+	border:0px;
+}
+
+.tmpl-slider-grid__name:before{
+    content: "";
+    width: 40px;
+    border-bottom: 1px solid #D71921;
+    display: block;
+    position: absolute;
+    bottom: 23px;
+    left: 48%;
+    margin-left: -20px;
+}
+
+.tmpl-slider-grid__name:after {
+ border-bottom: 1px solid #D71921;
+}
+	
+	
+
+.list-type__name{
+	color:#888;
+}
+
+.header-banner_title a{
+	color:#888;
+}
+
+.header-banner_title h3 {
+	color:#888 ;
+}
+
+.header-banner_title{
+	color:#888;
+}
+
+#text {
+	color:#888 !important;
+}
+
+.button_header{
+	background:#888;
+}
+
+
+[data-off-canvas] {
+    
+    background-color: #888888;
+    /* Basic background color, overwrite this in your own css. */
+    color: #fff;
+    /* Basic colors, overwrite this in your own css. */
+    -webkit-overflow-scrolling: touch;
+    /* Enables momentum scrolling on iOS devices, may be removed by setting to 'auto' in your own CSS. */
+}
+
+
+.header-top_button_1:after{
+    border-bottom: 53px solid #888888;
+ 
+}
+
+.header-bottom_search:after{
+    border-bottom: 64px solid #888888;
+    border-right: 20px solid transparent;
+}
+
+.header-bottom{
+	 background:#888888;
+}
+
+.header-navbar:before{
+	
+    background: #888888;
+    
+}
+
+html .comment-respond {
+	display:none;
+}
+
+.vc_col-has-fill > .vc_column-inner, .vc_row-has-fill + .vc_row-full-width + .vc_row > .vc_column_container > .vc_column-inner, .vc_row-has-fill + .vc_row > .vc_column_container > .vc_column-inner, .vc_row-has-fill > .vc_column_container > .vc_column-inner {
+	padding-top:0px;
+}
+
+.wpb_button, .wpb_content_element, ul.wpb_thumbnails-fluid > li{
+	margin-bottom:0px !important ;
+}
+
+.section-bg_second{
+	z-index:9;
+}
+
+.top-footer-box{
+ display:none;
+}
+
+.sticky-bar{
+	z-index: 999
+}
+#pix-sorting > .sorting__inner > .sorting__item{
+	display:none;
+}
+#pix-sorting > .sorting__inner > .sorting__item.view-by{
+	display:block;
+	float: inherit
+}
+.header-bottom_search {
+	display: none
+}.is-menu .search-icon-path {
+    fill: #fff;
+}
+.header-navbar ul {
+    width: 100%;
+}
+li.astm-search-menu {
+    float: right;
+}
+html .dropdown-menu {
+    -webkit-transition: all 0ms ease 0s;
+    -moz-transition: all 300ms ease 0s;
+    -o-transition: all 300ms ease 0s;
+    transition: all 0ms ease 0s !important;
+}
+html .header-2.header-navbar .yamm .dropdown-menu {
+    width: initial !important;
+}
+.home .list-type__info {
+    display: none;
+}		</style>
+		<style type="text/css" data-type="vc_shortcodes-custom-css">.vc_custom_1509965121567{padding-top: 100px !important;background-color: #ffffff !important;background-position: center !important;background-repeat: no-repeat !important;background-size: cover !important;}.vc_custom_1509965175183{padding-top: 0px !important;padding-bottom: 125px !important;background-color: #ffffff !important;}.vc_custom_1686892283428{padding-top: 100px !important;padding-bottom: 100px !important;background-color: #707070 !important;background-position: 0 0 !important;background-repeat: no-repeat !important;}.vc_custom_1686278511883{padding-top: 0px !important;padding-bottom: 100px !important;background-color: #ffffff !important;}.vc_custom_1687842011491{padding-top: 30px !important;padding-bottom: 30px !important;background-color: #d8d8d8 !important;}.vc_custom_1687842050337{padding-top: 30px !important;padding-bottom: 60px !important;background-color: #d8d8d8 !important;}.vc_custom_1560977261681{background-color: #f6f6f6 !important;}.vc_custom_1686277807394{padding-top: 10px !important;padding-bottom: 25px !important;}.vc_custom_1687489420141{margin-bottom: 100px !important;background-color: #dad8d9 !important;}.vc_custom_1686892328714{background-color: #707070 !important;}.vc_custom_1687489448328{background-color: #dad8d9 !important;}.vc_custom_1686893731929{padding-top: 10px !important;padding-bottom: 25px !important;}.vc_custom_1686277818039{padding-top: 10px !important;padding-bottom: 25px !important;}</style><noscript><style> .wpb_animate_when_almost_visible { opacity: 1; }</style></noscript></head>
+
+<body class="home page-template page-template-page-home page-template-page-home-php page page-id-12737 theme-autodealer user-role- woocommerce-no-js animated-css layout-switch wpb-js-composer js-comp-ver-8.2 vc_responsive" data-scrolling-animations="false" data-header="fixed-header">
+
+
+
+
+
+<!-- ========================== --> 
+<!-- SEARCH MODAL  --> 
+<!-- ========================== -->
+
+<div class="header-search">
+	<div class="container">
+		<div class="row">
+			<div class="col-sm-8 col-sm-offset-2 col-xs-10 col-xs-offset-1">
+				<div class="navbar-search">
+					<form action="https://mulsanne.com.mx" method="get" id="search-global-form" class="search-global">
+						<input type="text" placeholder="Type to search" autocomplete="off" name="s" id="search" value="" class="search-global__input">
+						<button class="search-global__btn"><i class="icon fa fa-search"></i></button>
+						<div class="search-global__note">Begin typing your search above and press return to search.</div>
+					</form>
+				</div>
+			</div>
+		</div>
+	</div>
+	<button type="button" class="search-close search-form_close close"><i class="fa fa-times"></i></button>
+</div>
+	<div data-off-canvas="slidebar-5 left overlay" class="mobile-slidebar-menu">
+		<button class="menu-mobile-button visible-xs-block js-toggle-mobile-slidebar toggle-menu-button">
+			<span class="toggle-menu-button-icon"><span></span> <span></span> <span></span> <span></span>
+				<span></span> <span></span></span>
+		</button>
+		<ul id="menu-main-menu" class="yamm main-menu nav navbar-nav"><li id="menu-item-12733" class="menu-item menu-item-type-custom menu-item-object-custom current-menu-item current_page_item menu-item-home menu-item-12733 dropdown"><a href="https://mulsanne.com.mx/">INICIO</a></li>
+<li id="menu-item-13048" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-13048 dropdown"><a href="https://mulsanne.com.mx/compania/">COMPAÑÍA</a></li>
+<li id="menu-item-15403" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-15403 dropdown"><a href="https://mulsanne.com.mx/cars/?make=&#038;model=&#038;fuel=diesel">MULSANNE TITANIUM</a></li>
+<li id="menu-item-15404" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-15404 dropdown"><a href="https://mulsanne.com.mx/cars/?make=&#038;model=&#038;fuel=petrol">MULSANNE ALTAVISTA</a></li>
+<li id="menu-item-13051" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-13051 dropdown"><a href="#">SHOWROOM</a>
+<ul class="dropdown-menu">
+	<li id="menu-item-12808" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-12808 dropdown"><a href="https://mulsanne.com.mx/cars/?view_type=list">TODOS LOS AUTOS</a></li>
+</ul>
+</li>
+<li id="menu-item-13052" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-13052 dropdown"><a href="#">SERVICIOS</a>
+<ul class="dropdown-menu">
+	<li id="menu-item-13056" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-13056 dropdown"><a href="https://mulsanne.com.mx/compra-venta-y-consignacion/">COMPRA, VENTA Y CONSIGNACIÓN</a></li>
+	<li id="menu-item-13055" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-13055 dropdown"><a href="https://mulsanne.com.mx/servicio-de-estetica-automotriz/">SERVICIO DE ESTÉTICA AUTOMOTRÍZ</a></li>
+	<li id="menu-item-13054" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-13054 dropdown"><a href="https://mulsanne.com.mx/valuacion-mulsanne/">VALUACIÓN MULSANNE</a></li>
+</ul>
+</li>
+</ul>	</div>
+	
+
+
+
+<div class="layout-theme animated-css tmpl-plugins-activated "  data-header="sticky" data-header-top="200"  >
+
+
+
+
+
+<header>
+
+
+
+            <div class="container">
+                <div class="header-top row">
+                    <div class="col-md-6">
+                        <div class="header-top_content">
+                            <span></span>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="header-top_buttons">
+                     
+                            
+                               						 <ul class="header-social">
+																																																																												</ul>	
+						                            
+                            
+                            
+                            <div class="header-top_button_1">
+                                <a class="btn button_header" title="number">
+                                    <span class="filter-disc-btn pull-left"><i class="fa fa-phone" aria-hidden="true"></i> </span>
+                                </a>
+                            </div>
+                            <div class="header-top_button_2">
+                                <a href="https://mulsanne.com.mx/contactanos/" class="btn button_header" title="Contáctanos">
+                                    <span class="filter-disc-btn pull-left">Contáctanos</span>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="header-middle row">
+                    <div class="col-lg-4 col-md-3">
+                        <div class="header-logo">
+                           <a class="navbar-brand scroll" href="https://mulsanne.com.mx/" style="max-width:210px;top:0px;left:0px;">
+															<img class="normal-logo"
+								     src="https://mulsanne.com.mx/wp-content/uploads/2023/10/logo-3.png"
+								     alt="logo"/>
+																						<img class="scroll-logo hidden-xs"
+								     src="https://mulsanne.com.mx/wp-content/themes/autodealer/images/logo.png" alt="logo"/>
+													</a>
+                        </div>
+
+                        <button class="menu-mobile-button visible-xs-block js-toggle-mobile-slidebar toggle-menu-button ">
+                            <span class="toggle-menu-button-icon"><span></span> <span></span> <span></span> <span></span>
+                            <span></span> <span></span></span>
+                        </button>
+
+
+                    </div>
+                    <div class="col-lg-8 col-md-9">
+                        <div class="row">
+                            <div class="col-md-4">
+                                <div class="header-banner">
+                                    <span class=""></span>
+                                    <div class="header-banner_title">
+                                                                         </div>
+                                </div>
+                            </div>
+                        <div class="col-md-4">
+                              <div class="header-banner">
+                                    <span class=""></span>
+                                    <div class="header-banner_title">
+                                     <h3>Titanium</h3><p><a href="https://wa.me/525535403953" target="_blank" rel="noopener">WhatsApp: (55) 3540 3953</a></p><p><a href="/cdn-cgi/l/email-protection#badbced4d9d6d3dfd4cedfc9fad7cfd6c9dbd4d4df94d9d5d794d7c2" target="_blank" rel="noopener"><b>Mail: <span class="__cf_email__" data-cfemail="d0b1a4beb3bcb9b5bea4b5a390bda5bca3b1bebeb5feb3bfbdfebda8">[email&#160;protected]</span></b></a></p>                                    </div>
+                                </div>
+                            </div>
+                         <div class="col-md-4">
+                                <div class="header-banner">
+                                    <span class=""></span>
+                                    <div class="header-banner_title">
+                                     <h3>Altavista</h3><p><a href="https://wa.me/525552481870" target="_blank" rel="noopener">WhatsApp: (55) 5248 1870</a></p><p><a href="/cdn-cgi/l/email-protection#cdacb9a3aea1a4a8a3b9a8be8da0b8a1beaca3a3a8e0aca1b9acbba4beb9ace3aea2a0e3a0b5" target="_blank" rel="noopener"><b>Mail: <span class="__cf_email__" data-cfemail="eb8a9f858887828e859f8e98ab869e87988a85858ec68a879f8a9d82989f8ac5888486c58693">[email&#160;protected]</span></b></a></p>                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="header-bottom row">
+                    <div class="col-md-12">
+                        <div class="nav header-navbar header-2">
+                            
+                            
+                            
+<ul id="menu-main-menu-1" class="yamm main-menu nav navbar-nav  menu-marker-arrow"><li class="menu-item menu-item-type-custom menu-item-object-custom current-menu-item current_page_item menu-item-home menu-item-12733 dropdown"><a href="https://mulsanne.com.mx/">INICIO</a></li>
+<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-13048 dropdown"><a href="https://mulsanne.com.mx/compania/">COMPAÑÍA</a></li>
+<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-15403 dropdown"><a href="https://mulsanne.com.mx/cars/?make=&#038;model=&#038;fuel=diesel">MULSANNE TITANIUM</a></li>
+<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-15404 dropdown"><a href="https://mulsanne.com.mx/cars/?make=&#038;model=&#038;fuel=petrol">MULSANNE ALTAVISTA</a></li>
+<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-13051 dropdown"><a href="#">SHOWROOM</a>
+<ul class="dropdown-menu">
+	<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-12808 dropdown"><a href="https://mulsanne.com.mx/cars/?view_type=list">TODOS LOS AUTOS</a></li>
+</ul>
+</li>
+<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-13052 dropdown"><a href="#">SERVICIOS</a>
+<ul class="dropdown-menu">
+	<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-13056 dropdown"><a href="https://mulsanne.com.mx/compra-venta-y-consignacion/">COMPRA, VENTA Y CONSIGNACIÓN</a></li>
+	<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-13055 dropdown"><a href="https://mulsanne.com.mx/servicio-de-estetica-automotriz/">SERVICIO DE ESTÉTICA AUTOMOTRÍZ</a></li>
+	<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-13054 dropdown"><a href="https://mulsanne.com.mx/valuacion-mulsanne/">VALUACIÓN MULSANNE</a></li>
+</ul>
+</li>
+</ul>
+
+                        </div>
+                    </div>
+                    <div class="col-md-2">
+                        <div class="header-bottom_search">
+                           <a class="btn_header_search" href="#"><i class="fa fa-search"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </header>
+<div id="wrapper">
+
+
+
+
+
+    <div class="home-template">
+    	<div class="container">
+	        <div class="wpb-content-wrapper"><div data-vc-full-width="true" data-vc-full-width-init="false" data-vc-stretch-content="true" class="vc_row wpb_row vc_row-fluid pix-vc_row-no-padding pix-row-overlay pix-row-decor vc_row-no-padding"><div class="wpb_column vc_column_container vc_col-sm-12"><div class="vc_column-inner " ><div class="wpb_wrapper"><div class="wpb_revslider_element wpb_content_element">
+			<!-- START home REVOLUTION SLIDER 6.7.18 --><p class="rs-p-wp-fix"></p>
+			<rs-module-wrap id="rev_slider_6_1_wrapper" data-source="gallery" style="visibility:hidden;background:transparent;padding:0;margin:0px auto;margin-top:0;margin-bottom:0;">
+				<rs-module id="rev_slider_6_1" style="" data-version="6.7.18">
+					<rs-slides style="overflow: hidden; position: absolute;">
+						<rs-slide style="position: absolute;" data-key="rs-16" data-title="Slide" data-thumb="//mulsanne.com.mx/wp-content/uploads/2024/05/FERRARI-sf90-1-100x50.jpeg" data-anim="ms:800;" data-in="o:1;e:power1.inOut;" data-out="x:(-100%);e:power1.inOut;">
+							<img fetchpriority="high" decoding="async" src="//mulsanne.com.mx/wp-content/plugins/revslider/sr6/assets/assets/dummy.png" alt="" title="FERRARI sf90 (1)" width="1920" height="600" class="rev-slidebg tp-rs-img rs-lazyload" data-lazyload="//mulsanne.com.mx/wp-content/uploads/2024/05/FERRARI-sf90-1.jpeg" data-parallax="5" data-panzoom="d:10000;ss:105;se:120;" data-no-retina>
+<!---->					</rs-slide>
+						<rs-slide style="position: absolute;" data-key="rs-14" data-title="Slide" data-thumb="//mulsanne.com.mx/wp-content/uploads/2024/05/KG-1-100x50.png" data-anim="ms:800;" data-in="o:1;e:power1.inOut;" data-out="x:(-100%);e:power1.inOut;">
+							<img decoding="async" src="//mulsanne.com.mx/wp-content/plugins/revslider/sr6/assets/assets/dummy.png" alt="" title="KG (1)" width="1264" height="675" class="rev-slidebg tp-rs-img rs-lazyload" data-lazyload="//mulsanne.com.mx/wp-content/uploads/2024/05/KG-1.png" data-parallax="5" data-panzoom="d:10000;ss:105;se:120;" data-no-retina>
+<!---->					</rs-slide>
+						<rs-slide style="position: absolute;" data-key="rs-15" data-title="Slide" data-thumb="//mulsanne.com.mx/wp-content/uploads/2024/05/MB-ALAS-GAVIOTA-1-scaled-100x50.jpeg" data-anim="ms:800;" data-in="o:1;e:power1.inOut;" data-out="x:(-100%);e:power1.inOut;">
+							<img decoding="async" src="//mulsanne.com.mx/wp-content/plugins/revslider/sr6/assets/assets/dummy.png" alt="" title="MB ALAS GAVIOTA (1)" width="2560" height="1709" class="rev-slidebg tp-rs-img rs-lazyload" data-lazyload="//mulsanne.com.mx/wp-content/uploads/2024/05/MB-ALAS-GAVIOTA-1-scaled.jpeg" data-parallax="5" data-panzoom="d:10000;ss:105;se:120;" data-no-retina>
+<!---->					</rs-slide>
+					</rs-slides>
+				</rs-module>
+				<script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script>
+					setREVStartSize({c: 'rev_slider_6_1',rl:[1240,1024,778,480],el:[650,600,550,450],gw:[1240,1024,778,480],gh:[650,600,550,450],type:'standard',justify:'',layout:'fullwidth',mh:"0"});if (window.RS_MODULES!==undefined && window.RS_MODULES.modules!==undefined && window.RS_MODULES.modules["revslider61"]!==undefined) {window.RS_MODULES.modules["revslider61"].once = false;window.revapi6 = undefined;if (window.RS_MODULES.checkMinimal!==undefined) window.RS_MODULES.checkMinimal()}
+				</script>
+			</rs-module-wrap>
+			<!-- END REVOLUTION SLIDER -->
+</div></div></div></div><div class="kswr-column-settings" data-minheight="0px" data-isminheight="off" data-theclasses="kswr_pnone kswr_mnone kswr_bnone"></div></div><div class="vc_row-full-width vc_clearfix"></div><div class="kswr-row-element-back kswr-vc-ctn-element" data-classes="kswr_pnone kswr_mnone kswr_bnone" ></div><section class="vc_section"><div data-vc-full-width="true" data-vc-full-width-init="false" class="vc_row wpb_row vc_row-fluid vc_row-padding-bottom pix-row-overlay pix-row-decor vc_custom_1560977261681 vc_row-has-fill"><div class="wpb_column vc_column_container vc_col-sm-12"><div class="vc_column-inner " ><div class="wpb_wrapper"><div class="vc_row wpb_row vc_inner vc_row-fluid"><div class="wpb_column vc_column_container vc_col-sm-12"><div class="vc_column-inner"><div class="wpb_wrapper"><form action="https://mulsanne.com.mx/cars/" method="get" id="findCarNowForm">
+    
+    
+      <div class="home-search-fields">
+          
+          
+          	          
+          	<div class="vc-auto-search hsearch_style_1">
+			
+		
+	
+        
+        
+        
+      
+		
+        
+    <div  class="select select_mod-a jelect pixad-makes-models-select">
+        <div class="home-search-label">Marca</div>
+			<input data-type="jelect" data-field="make" id="ajax-make" name="make" value="" data-text="imagemin" type="text" class="jelect-input">
+			<div tabindex="0" role="button" class="jelect-current">Todas las marcas</div>
+			<ul class="jelect-options">
+				<li data-val="" class="jelect-option jelect-option_state_active">Todas las marcas</li>
+				<li data-val="aprilia" class="jelect-option ">Aprilia</li><li data-val="ram" class="jelect-option ">RAM</li><li data-val="pontiac" class="jelect-option ">Pontiac</li><li data-val="acura" class="jelect-option ">Acura</li><li data-val="mg" class="jelect-option ">MG</li><li data-val="mercedes-benz-c180-cgi" class="jelect-option ">MERCEDES BENZ C180 CGI</li><li data-val="audi-s5-coupe" class="jelect-option ">Audi S5 coupé</li><li data-val="suzuki" class="jelect-option ">Suzuki</li><li data-val="yamaha" class="jelect-option ">Yamaha</li><li data-val="alfa-romeo" class="jelect-option ">Alfa Romeo</li><li data-val="astonmartin" class="jelect-option ">Aston Martin</li><li data-val="audi" class="jelect-option ">Audi</li><li data-val="bentley" class="jelect-option ">Bentley</li><li data-val="bmw" class="jelect-option ">BMW</li><li data-val="cadillac" class="jelect-option ">Cadillac</li><li data-val="chevrolet" class="jelect-option ">Chevrolet</li><li data-val="chrysler" class="jelect-option ">Chrysler</li><li data-val="dodge" class="jelect-option ">Dodge</li><li data-val="ducati" class="jelect-option ">Ducati</li><li data-val="ferrari" class="jelect-option ">Ferrari</li><li data-val="fiat" class="jelect-option ">Fiat</li><li data-val="ford" class="jelect-option ">Ford</li><li data-val="gmc" class="jelect-option ">GMC</li><li data-val="harleydavidson" class="jelect-option ">Harley Davidson</li><li data-val="honda" class="jelect-option ">Honda</li><li data-val="hummer" class="jelect-option ">Hummer</li><li data-val="infiniti" class="jelect-option ">Infiniti</li><li data-val="jaguar" class="jelect-option ">Jaguar</li><li data-val="jeep" class="jelect-option ">Jeep</li><li data-val="kia" class="jelect-option ">KIA</li><li data-val="land-rover" class="jelect-option ">Land Rover</li><li data-val="lamborghini" class="jelect-option ">Lamborghini</li><li data-val="lexus" class="jelect-option ">Lexus</li><li data-val="lincoln" class="jelect-option ">Lincoln</li><li data-val="lotus" class="jelect-option ">Lotus</li><li data-val="maserati" class="jelect-option ">Maserati</li><li data-val="mastretta" class="jelect-option ">Mastretta</li><li data-val="mazda" class="jelect-option ">Mazda</li><li data-val="mclaren" class="jelect-option ">Mclaren</li><li data-val="mini" class="jelect-option ">Mini</li><li data-val="minicooper" class="jelect-option ">Mini Cooper</li><li data-val="mercedes-benz" class="jelect-option ">Mercedes Benz</li><li data-val="nissan" class="jelect-option ">Nissan</li><li data-val="peugeot" class="jelect-option ">Peugeot</li><li data-val="porsche" class="jelect-option ">Porsche</li><li data-val="seat" class="jelect-option ">Seat</li><li data-val="samart" class="jelect-option ">Smart</li><li data-val="tesla" class="jelect-option ">Tesla</li><li data-val="triumph" class="jelect-option ">Triumph</li><li data-val="toyota" class="jelect-option ">Toyota</li><li data-val="volkswagen" class="jelect-option ">Volkswagen</li><li data-val="volvo" class="jelect-option ">Volvo</li><li data-val="otros" class="jelect-option ">Otros</li>			</ul>
+      
     </div>
-    <footer>
-        <p>&copy; 2025 Concesionario de Vehículos Deportivos. Todos los derechos reservados.</p>
-    </footer>
-</body>
-</html>
+				<div class="select select_mod-a jelect">
+            
+            <div class="home-search-label mlabel-1">model</div>
+            
+			<input data-type="jelect" data-field="model" id="pixad-model" name="model" value="" data-text="imagemin" type="text" class="jelect-input">
+			<input type="hidden" class="pixad-model-default-hidden" value="Todos los modelos">
+			<div tabindex="0" role="button" class="jelect-current pixad-model">Todos los modelos</div>
+			<ul class="jelect-options pixad-model">
+				<li data-val="" class="jelect-option jelect-option_state_active">Todos los modelos</li>
+							</ul>
+		 
+		</div>
+ 
+            
+	
+            
+					<div  class="select select_mod-a jelect">
+                        
+                        <div class="home-search-label">Vendido por:</div>
+                        
+							<input data-type="jelect" data-field="fuel" id="pixad-fuel" name="fuel" value="" data-text="imagemin" type="text" class="jelect-input">
+							<div tabindex="0" role="button" class="jelect-current mlabel-3">Todas las sucursales</div>
+							<ul class="jelect-options">
+								<li data-val="" class="jelect-option jelect-option_state_active  mlabel-3">Todas</li>
+								<li data-val="petrol" class="jelect-option">Altavista</li>
+								<li data-val="diesel" class="jelect-option">Titanium</li>
+								
+																
+							</ul>
+
+							
+						</div>
+			
+		<div class="btn-home-filter">
+				<div class="btn-filter wrap__btn-skew-r js-filter">
+									<button type="button" onclick="findCarNowVc(); return false;"  class="btn-skew-r"><span class="btn-skew-r__inner">Buscar</span></button>
+
+				</div>
+            
+             
+            
+            
+            </div>
+            
+			</div>
+
+	</div>
+</form>
+<script type="text/javascript">
+	function findCarNowVc(){
+
+		/*PRICE*/
+		var _price_from = jQuery('#slider-price_min').val();
+		var _price_to = jQuery('#slider-price_max').val();
+		jQuery('#slider-price_total').val(_price_from + "," + _price_to);
+
+		/*BODY*/
+		var checked_body = '';
+		jQuery("input[name='body']").each(function(key,val) {
+			if( jQuery(this).prop( "checked" ) ){
+				checked_body = checked_body + ',' + jQuery(this).val();
+			}
+		});
+		jQuery("input[name='body']").val(checked_body);
+
+		/*MILEAGE*/	
+		var mileage_from = jQuery('#slider-mileage_min').val();
+		var mileage_to = jQuery('#slider-mileage_max').val();
+		jQuery('#pix-max-slider-mileage_total').val(mileage_from + "," + mileage_to);
+
+		/*YEAR*/	
+		var year_from = jQuery('#slider-year_min').val();
+		var year_to = jQuery('#slider-year_max').val();
+		jQuery('#pix-max-slider-year_total').val(year_from + "," + year_to);
+
+		/*ENGINE*/	
+		var engine_from = jQuery('#slider-engine_min').val();
+		var engine_to = jQuery('#slider-engine_max').val();
+		jQuery('#pix-max-slider-engine_total').val(engine_from + "," + engine_to);
+
+
+		jQuery('#findCarNowForm').submit();
+		
+	}
+</script></div></div></div><div class="kswr-column-settings" data-minheight="0px" data-isminheight="off" data-theclasses="kswr_pnone kswr_mnone kswr_bnone"></div></div><div class="kswr-row-element-back kswr-vc-ctn-element" data-classes="kswr_pnone kswr_mnone kswr_bnone" ></div></div></div></div><div class="kswr-column-settings" data-minheight="0px" data-isminheight="off" data-theclasses="kswr_pnone kswr_mnone kswr_bnone"></div>
+		<div class="section-decor-wrap top" data-top="70" data-height="70" style="top: -69px; height:70px">
+			<svg width="100%" data-height="70" height="70px">
+				<defs>
+					<pattern id="pix-decor-shape-505997445" preserveAspectRatio="none" patternUnits="userSpaceOnUse" x="0" y="0" width="100%" data-height="70" height="700px" viewBox="0 0 100 1000"><polygon fill="#f6f6f6" points="0,100 0,100 10,100 15,40 85,40 90,100 100,100  100,100 "></polygon>
+					</pattern>
+				</defs>
+				<rect x="0" y="0" width="100%" data-height="70" height="70px" fill="url(#pix-decor-shape-505997445)"></rect><style scoped>
+					#pix-decor-shape-505997445 > polygon {
+					    fill: #f6f6f6!important;
+					}
+			    </style>
+			</svg>
+		</div>
+	</div><div class="vc_row-full-width vc_clearfix"></div><div class="kswr-row-element-back kswr-vc-ctn-element" data-classes="kswr_pnone kswr_mnone kswr_bnone" ></div></section><div data-vc-full-width="true" data-vc-full-width-init="false" class="vc_row wpb_row vc_row-fluid pix-vc_row-no-padding pix-row-overlay vc_custom_1509965121567 vc_row-has-fill vc_column-gap-1"><div class="wpb_column vc_column_container vc_col-sm-12"><div class="vc_column-inner " ><div class="wpb_wrapper"><div class="kswr-fancytext-container kswr-theelement" style="text-align:center;">
+					<span class="kswr-fancytext-prefix kswr-shortcode-element" data-fontsettings="font-size:48px;" style="font-size:48px; font-family:Inherit;font-weight:700;  color:#222222;-webkit-text-fill-color:#222222;">BIENVENIDO A</span> 
+					<span class="kswr-fancytext kswr-shortcode-element" data-fontsettings="font-size:48px;" style="font-size:48px; font-family:Inherit;font-weight:700;  color:#8b8b8b;" data-style="typing" data-holdtime="5000" data-cursor="true" data-typespeed="100" data-typeanimation="fade" data-words="[&quot;MULSANNE&quot;]"></span>
+					<span class="kswr-fancytext-suffix kswr-shortcode-element" data-fontsettings="font-size:19px;" style="font-size:19px; font-family:Inherit;font-weight:inherit;  color:#222222;-webkit-text-fill-color:#222222;"></span> 
+				</div><div class="vc_separator wpb_content_element vc_separator_align_center vc_sep_width_40 vc_sep_pos_align_center vc_custom_1686277807394 wpb_content_element" ><span class="vc_sep_holder vc_sep_holder_l"><span style="border-color:#ecba00;" class="vc_sep_line"></span></span><span class="vc_sep_holder vc_sep_holder_r"><span style="border-color:#ecba00;" class="vc_sep_line"></span></span>
+</div><div class="vc_row wpb_row vc_inner vc_row-fluid"><div class="wpb_column vc_column_container vc_col-sm-12"><div class="vc_column-inner"><div class="wpb_wrapper"><div class="km-line-sep-container" style="height:2px; margin-top:0px;margin-bottom:4px;margin-left:0px;margin-right:0px; text-align:center;" data-style="from-left">
+				<div class="km-line-sep-insider" style="    float: left;margin-left: 50%;transform: translateX(-50%);width:50px; height:2px; text-align:center;">
+					<div class="km-line-sep-fill" style="background-color:#666666;"></div>
+				</div>
+			</div><div class="km-line-sep-container" style="height:2px; margin-top:0px;margin-bottom:4px;margin-left:10px;margin-right:0px; text-align:center;" data-style="from-left">
+				<div class="km-line-sep-insider" style="    float: left;margin-left: 50%;transform: translateX(-50%);width:50px; height:2px; text-align:center;">
+					<div class="km-line-sep-fill" style="background-color:#666666;"></div>
+				</div>
+			</div><div class="km-line-sep-container" style="height:2px; margin-top:0px;margin-bottom:4px;margin-left:20px;margin-right:0px; text-align:center;" data-style="from-left">
+				<div class="km-line-sep-insider" style="    float: left;margin-left: 50%;transform: translateX(-50%);width:50px; height:2px; text-align:center;">
+					<div class="km-line-sep-fill" style="background-color:#666666;"></div>
+				</div>
+			</div><div class="kswr-responsive-spacer" data-desk="60px" data-tablet="60px" data-tablet-sm="60px" data-phone="60px" data-phone-sm="60px" style="--spc-desk:60px;--spc-tablet:60px;--spc-tablet-sm:60px;--spc-phone:60px;--spc-phone-sm:60px;"></div></div></div></div><div class="kswr-column-settings" data-minheight="0px" data-isminheight="off" data-theclasses="kswr_pnone kswr_mnone kswr_bnone"></div></div><div class="kswr-row-element-back kswr-vc-ctn-element" data-classes="kswr_pnone kswr_mnone kswr_bnone" ></div></div></div></div><div class="kswr-column-settings" data-minheight="0px" data-isminheight="off" data-theclasses="kswr_pnone kswr_mnone kswr_bnone"></div></div><div class="vc_row-full-width vc_clearfix"></div><div class="kswr-row-element-back kswr-vc-ctn-element" data-classes="kswr_pnone kswr_mnone kswr_bnone" ></div><div data-vc-full-width="true" data-vc-full-width-init="false" class="vc_row wpb_row vc_row-fluid pix-vc_row-no-padding pix-row-overlay pix-gap-disable vc_custom_1509965175183 vc_row-has-fill"><div class="wpb_column vc_column_container vc_col-sm-12 vc_col-lg-offset-0 vc_col-lg-4 vc_col-md-offset-3 vc_col-md-6 vc_col-sm-offset-0 vc_col-xs-12"><div class="vc_column-inner " ><div class="wpb_wrapper"><div class="kswr-animationblock" data-reanimation="false" data-animation="zoomIn"  style="animation-duration: 1s; -webkit-animation-duration: 1s; animation-delay:0.1s; -webkit-animation-delay:0.1s;"><div class="blockanimecont"><div class="kswr-trcflp-container kswr-theelement" data-layout="toleft">
+					
+				  <div class="kswr-trcflp-card">
+				    <div class="kswr-trcflp-front kswr-trcflp-figure" style="background-color:#D8D8D8;border:0px none transparent;--border-style-realbwidth:0px; padding-top:50px;padding-left:40px;padding-right:40px;padding-bottom:50px;border-radius:0px"><div class="kswr-trcflp-front-icon" style="margin-top:0px;margin-bottom:15px;"><div class="trcflp-front-iconar" style="font-size:46px; width:80px; height:80px; line-height:80px; border-radius:100px; background-color:#ffffff;border:0px none transparent;--border-style-realbwidth:0px;"><svg  width="46" height="46" viewBox="0 0 32 32" fill="#222222" style="color:#222222;"><path d="M15.75 15.229q1.375 0.375 2.281 0.75t1.906 1.031 1.531 1.656 0.531 2.375q0 1.938-1.281 3.156t-3.406 1.594v2.875h-4v-2.875q-2.063-0.438-3.406-1.75t-1.469-3.375h2.938q0.25 2.813 3.938 2.813 1.938 0 2.781-0.719t0.844-1.656q0-2.25-4-3.25-6.25-1.438-6.25-5.5 0-1.813 1.313-3.094t3.313-1.719v-2.875h4v2.938q2.063 0.5 3.156 1.875t1.156 3.188h-2.938q-0.125-2.813-3.375-2.813-1.625 0-2.594 0.688t-0.969 1.813q0 1.813 4 2.875z"></path></svg></div></div>	
+				    	<div class="kswr-trcflp-front-title kswr-shortcode-element" data-fontsettings="font-size:20px;" style="font-size:20px; font-family:Default;font-weight:600;color:#222222; margin-top:20px;margin-bottom:15px;">Compra Venta y Consignación</div>	
+				    	<div class="kswr-trcflp-front-subtitle kswr-shortcode-element" data-fontsettings="font-size:15px;" style="font-size:15px; font-family:Default;font-weight:inherit; color:#666666; margin-top:0px;margin-bottom:0px;">Siempre buscamos tratos donde todas las partes salgan beneficiadas</div>			    	
+				    </div>
+				    
+				    <div class="kswr-trcflp-back kswr-trcflp-figure" style="background-color:rgba(136, 136, 136, 1);border:0px none ;--border-style-realbwidth:0px; padding-top:50px;padding-left:40px;padding-right:40px;padding-bottom:50px;border-radius:0px"><div class="kswr-trcflp-back-title kswr-shortcode-element" data-fontsettings="font-size:20px;" style="font-size:20px; font-family:Default;font-weight:600;color:#222222;margin-top:10px;margin-bottom:15px;"></div>	
+				    	<div class="kswr-trcflp-back-subtitle kswr-shortcode-element" data-fontsettings="font-size:15px;line-height:1.7;" style="font-size:15px;line-height:1.7; font-family:Default;font-weight:inherit;color:#ffffff;margin-top:0px;margin-bottom:12px;">CONOCE MÁS SOBRE NUESTROS SERVICIOS</div>	
+				    	<div class="kswr-trcflp-back-button" style="margin-top:10px;margin-bottom:0px;"><a href="https://mulsanne.com.mx/compra-venta-y-consignacion/" target="" style="color:rgba(255, 255, 255, 1);-webkit-text-fill-color:rgba(255, 255, 255, 1); background-color:#D71921;border:2px solid rgba(230, 187, 14, 1);--border-style-realbwidth:2px;border-radius:0px;height:40px; line-height:40px;font-size:12px;line-height:3;font-family:Default;font-weight:400;padding-top:10;padding-left:15px;padding-right:15px;padding-bottom:;" class="kswr-trcflp-back-button kswr-shortcode-element" data-fontsettings="font-size:12px;line-height:3;">MÁS INFO</a></div>
+				    </div>
+				  </div>
+				</div></div></div><div class="vc_empty_space"   style="height: 25px"><span class="vc_empty_space_inner"></span></div></div></div></div><div class="kswr-column-settings" data-minheight="0px" data-isminheight="off" data-theclasses="kswr_pnone kswr_mnone kswr_bnone"></div><div class="wpb_column vc_column_container vc_col-sm-12 vc_col-lg-offset-0 vc_col-lg-4 vc_col-md-offset-3 vc_col-md-6 vc_col-sm-offset-0 vc_col-xs-12"><div class="vc_column-inner " ><div class="wpb_wrapper"><div class="kswr-animationblock" data-reanimation="false" data-animation="zoomIn"  style="animation-duration: 1s; -webkit-animation-duration: 1s; animation-delay:0.3s; -webkit-animation-delay:0.3s;"><div class="blockanimecont"><div class="kswr-trcflp-container kswr-theelement" data-layout="toleft">
+					
+				  <div class="kswr-trcflp-card">
+				    <div class="kswr-trcflp-front kswr-trcflp-figure" style="background-color:#FCFCFC;border:3px solid ;--border-style-realbwidth:3px; padding-top:50px;padding-left:40px;padding-right:40px;padding-bottom:50px;border-radius:0px"><div class="kswr-trcflp-front-icon" style="margin-top:0px;margin-bottom:15px;"><div class="trcflp-front-iconar" style="font-size:46px; width:80px; height:80px; line-height:80px; border-radius:100px; background-color:#858585;border:0px none transparent;--border-style-realbwidth:0px;"></div></div>	
+				    	<div class="kswr-trcflp-front-title kswr-shortcode-element" data-fontsettings="font-size:20px;" style="font-size:20px; font-family:Default;font-weight:600;color:#222222; margin-top:20px;margin-bottom:15px;">Servicio de Estética Automotríz</div>	
+				    	<div class="kswr-trcflp-front-subtitle kswr-shortcode-element" data-fontsettings="font-size:15px;" style="font-size:15px; font-family:Default;font-weight:inherit; color:#666666; margin-top:0px;margin-bottom:0px;">Dejamos tu auto al 100 para que encuentre comprador más rápido</div>			    	
+				    </div>
+				    
+				    <div class="kswr-trcflp-back kswr-trcflp-figure" style="background-color:rgba(136, 136, 136, 1);border:3px solid rgba(240, 194, 8, 1);--border-style-realbwidth:3px; padding-top:50px;padding-left:40px;padding-right:40px;padding-bottom:50px;border-radius:0px"><div class="kswr-trcflp-back-title kswr-shortcode-element" data-fontsettings="font-size:20px;" style="font-size:20px; font-family:Default;font-weight:600;color:#222222;margin-top:10px;margin-bottom:15px;"></div>	
+				    	<div class="kswr-trcflp-back-subtitle kswr-shortcode-element" data-fontsettings="font-size:15px;line-height:1.7;" style="font-size:15px;line-height:1.7; font-family:Default;font-weight:inherit;color:#ffffff;margin-top:0px;margin-bottom:12px;">CONOCE MÁS SOBRE NUESTROS SERVICIOS</div>	
+				    	<div class="kswr-trcflp-back-button" style="margin-top:10px;margin-bottom:0px;"><a href="https://mulsanne.com.mx/servicio-de-estetica-automotriz/" target="" style="color:rgba(255, 255, 255, 1);-webkit-text-fill-color:rgba(255, 255, 255, 1); background-color:#D71921;border:2px solid rgba(230, 187, 14, 1);--border-style-realbwidth:2px;border-radius:0px;height:40px; line-height:40px;font-size:12px;line-height:3;font-family:Default;font-weight:400;padding-top:10;padding-left:15px;padding-right:15px;padding-bottom:;" class="kswr-trcflp-back-button kswr-shortcode-element" data-fontsettings="font-size:12px;line-height:3;">MÁS INFO</a></div>
+				    </div>
+				  </div>
+				</div></div></div><div class="vc_empty_space"   style="height: 25px"><span class="vc_empty_space_inner"></span></div></div></div></div><div class="kswr-column-settings" data-minheight="0px" data-isminheight="off" data-theclasses="kswr_pnone kswr_mnone kswr_bnone"></div><div class="wpb_column vc_column_container vc_col-sm-12 vc_col-lg-offset-0 vc_col-lg-4 vc_col-md-offset-3 vc_col-md-6 vc_col-sm-offset-0 vc_col-xs-12"><div class="vc_column-inner " ><div class="wpb_wrapper"><div class="kswr-animationblock" data-reanimation="false" data-animation="zoomIn"  style="animation-duration: 1s; -webkit-animation-duration: 1s; animation-delay:0.5s; -webkit-animation-delay:0.5s;"><div class="blockanimecont"><div class="kswr-trcflp-container kswr-theelement" data-layout="toleft">
+					
+				  <div class="kswr-trcflp-card">
+				    <div class="kswr-trcflp-front kswr-trcflp-figure" style="background-color:#D8D8D8;border:0px none #D8D8D8;--border-style-realbwidth:0px; padding-top:50px;padding-left:40px;padding-right:40px;padding-bottom:50px;border-radius:0px"><div class="kswr-trcflp-front-icon" style="margin-top:0px;margin-bottom:15px;"><div class="trcflp-front-iconar" style="font-size:46px; width:80px; height:80px; line-height:80px; border-radius:100px; background-color:rgba(255, 255, 255, 1);border:0px none transparent;--border-style-realbwidth:0px;"><svg  width="46" height="46" viewBox="0 0 37 32" fill="#222222" style="color:#222222;"><path d="M3.786 14l11.125 11.875-5.357-11.875h-5.768zM18.286 27.786l6.232-13.786h-12.464zM9.607 11.714l3.643-6.857h-4.679l-5.143 6.857h6.179zM21.661 25.875l11.125-11.875h-5.768zM12.196 11.714h12.179l-3.643-6.857h-4.893zM26.964 11.714h6.179l-5.143-6.857h-4.679zM29.482 3.036l6.857 9.143q0.25 0.321 0.232 0.741t-0.304 0.723l-17.143 18.286q-0.321 0.357-0.839 0.357t-0.839-0.357l-17.143-18.286q-0.286-0.304-0.304-0.723t0.232-0.741l6.857-9.143q0.321-0.464 0.911-0.464h20.571q0.589 0 0.911 0.464z"></path></svg></div></div>	
+				    	<div class="kswr-trcflp-front-title kswr-shortcode-element" data-fontsettings="font-size:20px;" style="font-size:20px; font-family:Default;font-weight:600;color:#222222; margin-top:20px;margin-bottom:15px;">Valuación Mulsanne</div>	
+				    	<div class="kswr-trcflp-front-subtitle kswr-shortcode-element" data-fontsettings="font-size:15px;" style="font-size:15px; font-family:Default;font-weight:inherit; color:#666666; margin-top:0px;margin-bottom:0px;">Valuamos tu auto para clasificarlo y venderlo mejor</div>			    	
+				    </div>
+				    
+				    <div class="kswr-trcflp-back kswr-trcflp-figure" style="background-color:rgba(136, 136, 136, 1);border:0px none ;--border-style-realbwidth:0px; padding-top:50px;padding-left:40px;padding-right:40px;padding-bottom:50px;border-radius:0px"><div class="kswr-trcflp-back-title kswr-shortcode-element" data-fontsettings="font-size:20px;" style="font-size:20px; font-family:Default;font-weight:600;color:#222222;margin-top:10px;margin-bottom:15px;"></div>	
+				    	<div class="kswr-trcflp-back-subtitle kswr-shortcode-element" data-fontsettings="font-size:15px;line-height:1.7;" style="font-size:15px;line-height:1.7; font-family:Default;font-weight:inherit;color:#ffffff;margin-top:0px;margin-bottom:12px;">CONOCE MÁS SOBRE NUESTROS SERVICIOS</div>	
+				    	<div class="kswr-trcflp-back-button" style="margin-top:10px;margin-bottom:0px;"><a href="https://mulsanne.com.mx/valuacion-mulsanne/" target="" style="color:rgba(255, 255, 255, 1);-webkit-text-fill-color:rgba(255, 255, 255, 1); background-color:#D71921;border:2px solid rgba(230, 187, 14, 1);--border-style-realbwidth:2px;border-radius:0px;height:40px; line-height:40px;font-size:12px;line-height:3;font-family:Default;font-weight:400;padding-top:10;padding-left:15px;padding-right:15px;padding-bottom:;" class="kswr-trcflp-back-button kswr-shortcode-element" data-fontsettings="font-size:12px;line-height:3;">MÁS INFO</a></div>
+				    </div>
+				  </div>
+				</div></div></div><div class="vc_empty_space"   style="height: 25px"><span class="vc_empty_space_inner"></span></div></div></div></div><div class="kswr-column-settings" data-minheight="0px" data-isminheight="off" data-theclasses="kswr_pnone kswr_mnone kswr_bnone"></div></div><div class="vc_row-full-width vc_clearfix"></div><div class="kswr-row-element-back kswr-vc-ctn-element" data-classes="kswr_pnone kswr_mnone kswr_bnone" ></div><div data-vc-full-width="true" data-vc-full-width-init="false" class="vc_row wpb_row vc_row-fluid pix-vc_row-no-padding pix-row-overlay vc_custom_1686892283428 vc_row-has-fill"><div class="jarallax jarallax-full-width" data-jarallax='{"speed":"0.2"}' style="background-image:url()">
+	<div class="jarallax-content">
+		<div class="container"><div class="wpb_column vc_column_container vc_col-sm-12 vc_col-has-fill"><div class="vc_column-inner vc_custom_1687489420141" ><div class="wpb_wrapper"><div class="vc_row wpb_row vc_inner vc_row-fluid vc_custom_1686892328714 vc_row-has-fill"><div class="wpb_column vc_column_container vc_col-sm-12 vc_col-has-fill"><div class="vc_column-inner vc_custom_1687489448328"><div class="wpb_wrapper"><div class="kswr-heading-container kswr-theelement" style="text-align:center;">
+				
+				<div class="kswr-heading-content kswr-shortcode-element" data-fontsettings="font-size:48px;" style="font-size:48px; font-family:Inherit;font-weight:600; margin-top:0px;margin-bottom:0px;color:#ffffff;"><span style="color: #888888;">TIPOS DE  VEHÍCULOS</span><span style="color: #ecba00;"><br />
+</span></div>				
+			</div></div></div></div><div class="kswr-column-settings" data-minheight="0px" data-isminheight="off" data-theclasses="kswr_pnone kswr_mnone kswr_bnone"></div></div><div class="kswr-row-element-back kswr-vc-ctn-element" data-classes="kswr_pnone kswr_mnone kswr_bnone" ></div><div class="kswr-responsive-spacer" data-desk="60px" data-tablet="60px" data-tablet-sm="60px" data-phone="60px" data-phone-sm="60px" style="--spc-desk:60px;--spc-tablet:60px;--spc-tablet-sm:60px;--spc-phone:60px;--spc-phone-sm:60px;"></div><div>	
+			<ul class="list-type">
+		
+				<li class="list-type__item">
+					<a class="list-type__link" href="https://mulsanne.com.mx/cars/?body=4x4">
+						<div class="list-type__inner">
+							<div class="list-type__img"><img decoding="async" src="https://mulsanne.com.mx/wp-content/uploads/2023/11/4X4DEF-2-400x249.png" alt="4X4"></div>
+                            <div class="list-type__right">
+							<h4 class="list-type__name tmpl-title-font">4X4</h4>
+							<div class="list-type__info">6 offers starting from $42,000</div>
+                            </div>
+						</div>
+					</a>
+				</li>
+	
+				<li class="list-type__item">
+					<a class="list-type__link" href="https://mulsanne.com.mx/cars/?body=antiguos">
+						<div class="list-type__inner">
+							<div class="list-type__img"><img decoding="async" src="https://mulsanne.com.mx/wp-content/uploads/2023/11/ANTIGUOS-3-400x198.png" alt="Antiguos"></div>
+                            <div class="list-type__right">
+							<h4 class="list-type__name tmpl-title-font">Antiguos</h4>
+							<div class="list-type__info">22 offers starting from $42,000</div>
+                            </div>
+						</div>
+					</a>
+				</li>
+	
+				<li class="list-type__item">
+					<a class="list-type__link" href="https://mulsanne.com.mx/cars/?body=blindados">
+						<div class="list-type__inner">
+							<div class="list-type__img"><img decoding="async" src="https://mulsanne.com.mx/wp-content/uploads/2023/11/BLINDADO2-2-393x260.png" alt="Blindados"></div>
+                            <div class="list-type__right">
+							<h4 class="list-type__name tmpl-title-font">Blindados</h4>
+							<div class="list-type__info">17 offers starting from $42,000</div>
+                            </div>
+						</div>
+					</a>
+				</li>
+	
+				<li class="list-type__item">
+					<a class="list-type__link" href="https://mulsanne.com.mx/cars/?body=delujo">
+						<div class="list-type__inner">
+							<div class="list-type__img"><img decoding="async" src="https://mulsanne.com.mx/wp-content/uploads/2023/10/DELUJO-2-400x207.png" alt="De Lujo"></div>
+                            <div class="list-type__right">
+							<h4 class="list-type__name tmpl-title-font">De Lujo</h4>
+							<div class="list-type__info">21 offers starting from $42,000</div>
+                            </div>
+						</div>
+					</a>
+				</li>
+	
+				<li class="list-type__item">
+					<a class="list-type__link" href="https://mulsanne.com.mx/cars/?body=deportivos">
+						<div class="list-type__inner">
+							<div class="list-type__img"><img decoding="async" src="https://mulsanne.com.mx/wp-content/uploads/2023/11/DEPORTIVO-1-400x199.png" alt="Deportivos"></div>
+                            <div class="list-type__right">
+							<h4 class="list-type__name tmpl-title-font">Deportivos</h4>
+							<div class="list-type__info">30 offers starting from $42,000</div>
+                            </div>
+						</div>
+					</a>
+				</li>
+	
+				<li class="list-type__item">
+					<a class="list-type__link" href="https://mulsanne.com.mx/cars/?body=electricos">
+						<div class="list-type__inner">
+							<div class="list-type__img"><img decoding="async" src="https://mulsanne.com.mx/wp-content/uploads/2023/10/ELECTRICO-1-400x188.png" alt="Eléctrico"></div>
+                            <div class="list-type__right">
+							<h4 class="list-type__name tmpl-title-font">Eléctrico</h4>
+							<div class="list-type__info">3 offers starting from $42,000</div>
+                            </div>
+						</div>
+					</a>
+				</li>
+	
+				<li class="list-type__item">
+					<a class="list-type__link" href="https://mulsanne.com.mx/cars/?body=motocicletas">
+						<div class="list-type__inner">
+							<div class="list-type__img"><img decoding="async" src="https://mulsanne.com.mx/wp-content/uploads/2023/11/MOTO2-400x212.png" alt="Motocicletas"></div>
+                            <div class="list-type__right">
+							<h4 class="list-type__name tmpl-title-font">Motocicletas</h4>
+							<div class="list-type__info">3 offers starting from $42,000</div>
+                            </div>
+						</div>
+					</a>
+				</li>
+	
+				<li class="list-type__item">
+					<a class="list-type__link" href="https://mulsanne.com.mx/cars/?body=suvs">
+						<div class="list-type__inner">
+							<div class="list-type__img"><img decoding="async" src="https://mulsanne.com.mx/wp-content/uploads/2023/11/SUB-2-400x211.png" alt="SUV&#039;s"></div>
+                            <div class="list-type__right">
+							<h4 class="list-type__name tmpl-title-font">SUV's</h4>
+							<div class="list-type__info">48 offers starting from $42,000</div>
+                            </div>
+						</div>
+					</a>
+				</li>
+	            
+			</ul>
+	</div></div></div></div><div class="kswr-column-settings" data-minheight="0px" data-isminheight="off" data-theclasses="kswr_pnone kswr_mnone kswr_bnone"></div></div></div></div></div><div class="vc_row-full-width vc_clearfix"></div><div class="kswr-row-element-back kswr-vc-ctn-element" data-classes="kswr_pnone kswr_mnone kswr_bnone" ></div><div data-vc-full-width="true" data-vc-full-width-init="false" class="vc_row wpb_row vc_row-fluid pix-vc_row-no-padding pix-row-overlay pix-row-decor vc_custom_1686278511883 vc_row-has-fill"><div class="wpb_column vc_column_container vc_col-sm-12"><div class="vc_column-inner " ><div class="wpb_wrapper"><div class="kswr-heading-container kswr-theelement" style="text-align:center;">
+				
+				<div class="kswr-heading-content kswr-shortcode-element" data-fontsettings="font-size:48px;" style="font-size:48px; font-family:Inherit;font-weight:600; margin-top:0px;margin-bottom:0px;color:#222222;"><span style="color: #888888;">NUESTRAS MARCAS</span></div>				
+			</div><div class="vc_separator wpb_content_element vc_separator_align_center vc_sep_width_30 vc_sep_border_width_5 vc_sep_pos_align_center vc_custom_1686893731929 wpb_content_element vc_separator-has-text" ><span class="vc_sep_holder vc_sep_holder_l"><span style="border-color:#ecba00;" class="vc_sep_line"></span></span><h4>Tenemos las mejores marcas para ti</h4><span class="vc_sep_holder vc_sep_holder_r"><span style="border-color:#ecba00;" class="vc_sep_line"></span></span>
+</div><div class="vc_separator wpb_content_element vc_separator_align_center vc_sep_width_30 vc_sep_pos_align_center vc_custom_1686277818039 wpb_content_element" ><span class="vc_sep_holder vc_sep_holder_l"><span style="border-color:#ecba00;" class="vc_sep_line"></span></span><span class="vc_sep_holder vc_sep_holder_r"><span style="border-color:#ecba00;" class="vc_sep_line"></span></span>
+</div><div class="vc_row wpb_row vc_inner vc_row-fluid"><div class="wpb_column vc_column_container vc_col-sm-12"><div class="vc_column-inner"><div class="wpb_wrapper"><div class="km-line-sep-container" style="height:2px; margin-top:0px;margin-bottom:4px;margin-left:0px;margin-right:0px; text-align:center;" data-style="from-left">
+				<div class="km-line-sep-insider" style="    float: left;margin-left: 50%;transform: translateX(-50%);width:50px; height:2px; text-align:center;">
+					<div class="km-line-sep-fill" style="background-color:#666666;"></div>
+				</div>
+			</div><div class="km-line-sep-container" style="height:2px; margin-top:0px;margin-bottom:4px;margin-left:10px;margin-right:0px; text-align:center;" data-style="from-left">
+				<div class="km-line-sep-insider" style="    float: left;margin-left: 50%;transform: translateX(-50%);width:50px; height:2px; text-align:center;">
+					<div class="km-line-sep-fill" style="background-color:#666666;"></div>
+				</div>
+			</div><div class="km-line-sep-container" style="height:2px; margin-top:0px;margin-bottom:4px;margin-left:20px;margin-right:0px; text-align:center;" data-style="from-left">
+				<div class="km-line-sep-insider" style="    float: left;margin-left: 50%;transform: translateX(-50%);width:50px; height:2px; text-align:center;">
+					<div class="km-line-sep-fill" style="background-color:#666666;"></div>
+				</div>
+			</div><div class="kswr-responsive-spacer" data-desk="60px" data-tablet="60px" data-tablet-sm="60px" data-phone="60px" data-phone-sm="60px" style="--spc-desk:60px;--spc-tablet:60px;--spc-tablet-sm:60px;--spc-phone:60px;--spc-phone-sm:60px;"></div><div class="kswr-slickslider-container" style="margin-top:0px;margin-bottom:0px; --opacity-value:0.5;  --zoom-value:.9;  --dots-area-margintop:15px; --dots-margins:10px; --dots-clr:#999; --dots-active-clr:#00aef0; --arrow-bgsize:35px; --arrow-clr:#fff; --arrow-back-clr:#222; --arrow-radius:0px; --slides-margin:10px;"  data-zoom-enabled="no"  data-opacity-enabled="no" data-speed="200" data-infinite="true" data-autoplay="true" data-autoplayspeed="1000" data-adaptiveheight="true" data-centermode="true" data-centerpadding="50px" data-centerpaddingtablet="25px" data-centerpaddingmobile="15px" data-slidestoshow-desk="8" data-slidestoshow-tablet="1" data-slidestoshow-mobile="1" data-dots="false" data-arrows="false" data-tabletbreakpoint="995" data-phonebreakpoint="550" data-dots-align="center" data-dots-style="style1" data-arrows-style="style1" data-arrows-position="middle" data-vertical="false"data-slidestoscroll-desk="8" data-slidestoscroll-tablet="1" data-slidestoscroll-mobile="1" >
+	<div  class="wpb_single_image wpb_content_element vc_align_center wpb_content_element">
+		
+		<figure class="wpb_wrapper vc_figure">
+			<div class="vc_single_image-wrapper   vc_box_border_grey"><img loading="lazy" decoding="async" width="150" height="150" src="https://mulsanne.com.mx/wp-content/uploads/2023/06/logo_porsche-150x150.png" class="vc_single_image-img attachment-thumbnail" alt="" title="logo_porsche" srcset="https://mulsanne.com.mx/wp-content/uploads/2023/06/logo_porsche-150x150.png 150w, https://mulsanne.com.mx/wp-content/uploads/2023/06/logo_porsche-300x300.png 300w, https://mulsanne.com.mx/wp-content/uploads/2023/06/logo_porsche-100x100.png 100w, https://mulsanne.com.mx/wp-content/uploads/2023/06/logo_porsche-66x66.png 66w, https://mulsanne.com.mx/wp-content/uploads/2023/06/logo_porsche-260x260.png 260w, https://mulsanne.com.mx/wp-content/uploads/2023/06/logo_porsche-280x280.png 280w, https://mulsanne.com.mx/wp-content/uploads/2023/06/logo_porsche-65x65.png 65w, https://mulsanne.com.mx/wp-content/uploads/2023/06/logo_porsche.png 400w" sizes="auto, (max-width: 150px) 100vw, 150px" /></div>
+		</figure>
+	</div>
+
+	<div  class="wpb_single_image wpb_content_element vc_align_center wpb_content_element">
+		
+		<figure class="wpb_wrapper vc_figure">
+			<div class="vc_single_image-wrapper   vc_box_border_grey"><img loading="lazy" decoding="async" width="150" height="150" src="https://mulsanne.com.mx/wp-content/uploads/2023/06/logo_mercedes-150x150.png" class="vc_single_image-img attachment-thumbnail" alt="" title="logo_mercedes" srcset="https://mulsanne.com.mx/wp-content/uploads/2023/06/logo_mercedes-150x150.png 150w, https://mulsanne.com.mx/wp-content/uploads/2023/06/logo_mercedes-300x300.png 300w, https://mulsanne.com.mx/wp-content/uploads/2023/06/logo_mercedes-100x100.png 100w, https://mulsanne.com.mx/wp-content/uploads/2023/06/logo_mercedes-66x66.png 66w, https://mulsanne.com.mx/wp-content/uploads/2023/06/logo_mercedes-260x260.png 260w, https://mulsanne.com.mx/wp-content/uploads/2023/06/logo_mercedes-280x280.png 280w, https://mulsanne.com.mx/wp-content/uploads/2023/06/logo_mercedes-65x65.png 65w, https://mulsanne.com.mx/wp-content/uploads/2023/06/logo_mercedes.png 400w" sizes="auto, (max-width: 150px) 100vw, 150px" /></div>
+		</figure>
+	</div>
+
+	<div  class="wpb_single_image wpb_content_element vc_align_center wpb_content_element">
+		
+		<figure class="wpb_wrapper vc_figure">
+			<div class="vc_single_image-wrapper   vc_box_border_grey"><img loading="lazy" decoding="async" width="150" height="150" src="https://mulsanne.com.mx/wp-content/uploads/2023/06/logo_lambo-150x150.png" class="vc_single_image-img attachment-thumbnail" alt="" title="logo_lambo" srcset="https://mulsanne.com.mx/wp-content/uploads/2023/06/logo_lambo-150x150.png 150w, https://mulsanne.com.mx/wp-content/uploads/2023/06/logo_lambo-300x300.png 300w, https://mulsanne.com.mx/wp-content/uploads/2023/06/logo_lambo-100x100.png 100w, https://mulsanne.com.mx/wp-content/uploads/2023/06/logo_lambo-66x66.png 66w, https://mulsanne.com.mx/wp-content/uploads/2023/06/logo_lambo-260x260.png 260w, https://mulsanne.com.mx/wp-content/uploads/2023/06/logo_lambo-280x280.png 280w, https://mulsanne.com.mx/wp-content/uploads/2023/06/logo_lambo-65x65.png 65w, https://mulsanne.com.mx/wp-content/uploads/2023/06/logo_lambo.png 400w" sizes="auto, (max-width: 150px) 100vw, 150px" /></div>
+		</figure>
+	</div>
+
+	<div  class="wpb_single_image wpb_content_element vc_align_center wpb_content_element">
+		
+		<figure class="wpb_wrapper vc_figure">
+			<div class="vc_single_image-wrapper   vc_box_border_grey"><img loading="lazy" decoding="async" width="150" height="150" src="https://mulsanne.com.mx/wp-content/uploads/2023/06/logo_jaguar-150x150.png" class="vc_single_image-img attachment-thumbnail" alt="" title="logo_jaguar" srcset="https://mulsanne.com.mx/wp-content/uploads/2023/06/logo_jaguar-150x150.png 150w, https://mulsanne.com.mx/wp-content/uploads/2023/06/logo_jaguar-300x300.png 300w, https://mulsanne.com.mx/wp-content/uploads/2023/06/logo_jaguar-100x100.png 100w, https://mulsanne.com.mx/wp-content/uploads/2023/06/logo_jaguar-66x66.png 66w, https://mulsanne.com.mx/wp-content/uploads/2023/06/logo_jaguar-260x260.png 260w, https://mulsanne.com.mx/wp-content/uploads/2023/06/logo_jaguar-280x280.png 280w, https://mulsanne.com.mx/wp-content/uploads/2023/06/logo_jaguar-65x65.png 65w, https://mulsanne.com.mx/wp-content/uploads/2023/06/logo_jaguar.png 400w" sizes="auto, (max-width: 150px) 100vw, 150px" /></div>
+		</figure>
+	</div>
+
+	<div  class="wpb_single_image wpb_content_element vc_align_center wpb_content_element">
+		
+		<figure class="wpb_wrapper vc_figure">
+			<div class="vc_single_image-wrapper   vc_box_border_grey"><img loading="lazy" decoding="async" width="150" height="150" src="https://mulsanne.com.mx/wp-content/uploads/2023/06/logo_ferrari-150x150.png" class="vc_single_image-img attachment-thumbnail" alt="" title="logo_ferrari" srcset="https://mulsanne.com.mx/wp-content/uploads/2023/06/logo_ferrari-150x150.png 150w, https://mulsanne.com.mx/wp-content/uploads/2023/06/logo_ferrari-300x300.png 300w, https://mulsanne.com.mx/wp-content/uploads/2023/06/logo_ferrari-100x100.png 100w, https://mulsanne.com.mx/wp-content/uploads/2023/06/logo_ferrari-66x66.png 66w, https://mulsanne.com.mx/wp-content/uploads/2023/06/logo_ferrari-260x260.png 260w, https://mulsanne.com.mx/wp-content/uploads/2023/06/logo_ferrari-280x280.png 280w, https://mulsanne.com.mx/wp-content/uploads/2023/06/logo_ferrari-65x65.png 65w, https://mulsanne.com.mx/wp-content/uploads/2023/06/logo_ferrari.png 400w" sizes="auto, (max-width: 150px) 100vw, 150px" /></div>
+		</figure>
+	</div>
+
+	<div  class="wpb_single_image wpb_content_element vc_align_center wpb_content_element">
+		
+		<figure class="wpb_wrapper vc_figure">
+			<div class="vc_single_image-wrapper   vc_box_border_grey"><img loading="lazy" decoding="async" width="150" height="150" src="https://mulsanne.com.mx/wp-content/uploads/2023/06/logo_bmw-150x150.png" class="vc_single_image-img attachment-thumbnail" alt="" title="logo_bmw" srcset="https://mulsanne.com.mx/wp-content/uploads/2023/06/logo_bmw-150x150.png 150w, https://mulsanne.com.mx/wp-content/uploads/2023/06/logo_bmw-300x300.png 300w, https://mulsanne.com.mx/wp-content/uploads/2023/06/logo_bmw-100x100.png 100w, https://mulsanne.com.mx/wp-content/uploads/2023/06/logo_bmw-66x66.png 66w, https://mulsanne.com.mx/wp-content/uploads/2023/06/logo_bmw-260x260.png 260w, https://mulsanne.com.mx/wp-content/uploads/2023/06/logo_bmw-280x280.png 280w, https://mulsanne.com.mx/wp-content/uploads/2023/06/logo_bmw-65x65.png 65w, https://mulsanne.com.mx/wp-content/uploads/2023/06/logo_bmw.png 400w" sizes="auto, (max-width: 150px) 100vw, 150px" /></div>
+		</figure>
+	</div>
+
+	<div  class="wpb_single_image wpb_content_element vc_align_center wpb_content_element">
+		
+		<figure class="wpb_wrapper vc_figure">
+			<div class="vc_single_image-wrapper   vc_box_border_grey"><img loading="lazy" decoding="async" width="150" height="150" src="https://mulsanne.com.mx/wp-content/uploads/2023/06/logo_audi-150x150.png" class="vc_single_image-img attachment-thumbnail" alt="" title="logo_audi" srcset="https://mulsanne.com.mx/wp-content/uploads/2023/06/logo_audi-150x150.png 150w, https://mulsanne.com.mx/wp-content/uploads/2023/06/logo_audi-300x300.png 300w, https://mulsanne.com.mx/wp-content/uploads/2023/06/logo_audi-100x100.png 100w, https://mulsanne.com.mx/wp-content/uploads/2023/06/logo_audi-66x66.png 66w, https://mulsanne.com.mx/wp-content/uploads/2023/06/logo_audi-260x260.png 260w, https://mulsanne.com.mx/wp-content/uploads/2023/06/logo_audi-280x280.png 280w, https://mulsanne.com.mx/wp-content/uploads/2023/06/logo_audi-65x65.png 65w, https://mulsanne.com.mx/wp-content/uploads/2023/06/logo_audi.png 400w" sizes="auto, (max-width: 150px) 100vw, 150px" /></div>
+		</figure>
+	</div>
+
+	<div  class="wpb_single_image wpb_content_element vc_align_center wpb_content_element">
+		
+		<figure class="wpb_wrapper vc_figure">
+			<div class="vc_single_image-wrapper   vc_box_border_grey"><img loading="lazy" decoding="async" width="150" height="150" src="https://mulsanne.com.mx/wp-content/uploads/2023/06/logo_21-150x150.png" class="vc_single_image-img attachment-thumbnail" alt="" title="logo_21" srcset="https://mulsanne.com.mx/wp-content/uploads/2023/06/logo_21-150x150.png 150w, https://mulsanne.com.mx/wp-content/uploads/2023/06/logo_21-300x300.png 300w, https://mulsanne.com.mx/wp-content/uploads/2023/06/logo_21-100x100.png 100w, https://mulsanne.com.mx/wp-content/uploads/2023/06/logo_21-66x66.png 66w, https://mulsanne.com.mx/wp-content/uploads/2023/06/logo_21-260x260.png 260w, https://mulsanne.com.mx/wp-content/uploads/2023/06/logo_21-280x280.png 280w, https://mulsanne.com.mx/wp-content/uploads/2023/06/logo_21-65x65.png 65w, https://mulsanne.com.mx/wp-content/uploads/2023/06/logo_21.png 400w" sizes="auto, (max-width: 150px) 100vw, 150px" /></div>
+		</figure>
+	</div>
+
+	<div  class="wpb_single_image wpb_content_element vc_align_center wpb_content_element">
+		
+		<figure class="wpb_wrapper vc_figure">
+			<div class="vc_single_image-wrapper   vc_box_border_grey"><img loading="lazy" decoding="async" width="150" height="150" src="https://mulsanne.com.mx/wp-content/uploads/2023/06/logo_20-150x150.png" class="vc_single_image-img attachment-thumbnail" alt="" title="logo_20" srcset="https://mulsanne.com.mx/wp-content/uploads/2023/06/logo_20-150x150.png 150w, https://mulsanne.com.mx/wp-content/uploads/2023/06/logo_20-300x300.png 300w, https://mulsanne.com.mx/wp-content/uploads/2023/06/logo_20-100x100.png 100w, https://mulsanne.com.mx/wp-content/uploads/2023/06/logo_20-66x66.png 66w, https://mulsanne.com.mx/wp-content/uploads/2023/06/logo_20-260x260.png 260w, https://mulsanne.com.mx/wp-content/uploads/2023/06/logo_20-280x280.png 280w, https://mulsanne.com.mx/wp-content/uploads/2023/06/logo_20-65x65.png 65w, https://mulsanne.com.mx/wp-content/uploads/2023/06/logo_20.png 400w" sizes="auto, (max-width: 150px) 100vw, 150px" /></div>
+		</figure>
+	</div>
+
+	<div  class="wpb_single_image wpb_content_element vc_align_center wpb_content_element">
+		
+		<figure class="wpb_wrapper vc_figure">
+			<div class="vc_single_image-wrapper   vc_box_border_grey"><img loading="lazy" decoding="async" width="150" height="150" src="https://mulsanne.com.mx/wp-content/uploads/2023/06/logo_19-150x150.png" class="vc_single_image-img attachment-thumbnail" alt="" title="logo_19" srcset="https://mulsanne.com.mx/wp-content/uploads/2023/06/logo_19-150x150.png 150w, https://mulsanne.com.mx/wp-content/uploads/2023/06/logo_19-300x300.png 300w, https://mulsanne.com.mx/wp-content/uploads/2023/06/logo_19-100x100.png 100w, https://mulsanne.com.mx/wp-content/uploads/2023/06/logo_19-66x66.png 66w, https://mulsanne.com.mx/wp-content/uploads/2023/06/logo_19-260x260.png 260w, https://mulsanne.com.mx/wp-content/uploads/2023/06/logo_19-280x280.png 280w, https://mulsanne.com.mx/wp-content/uploads/2023/06/logo_19-65x65.png 65w, https://mulsanne.com.mx/wp-content/uploads/2023/06/logo_19.png 400w" sizes="auto, (max-width: 150px) 100vw, 150px" /></div>
+		</figure>
+	</div>
+
+	<div  class="wpb_single_image wpb_content_element vc_align_center wpb_content_element">
+		
+		<figure class="wpb_wrapper vc_figure">
+			<div class="vc_single_image-wrapper   vc_box_border_grey"><img loading="lazy" decoding="async" width="150" height="150" src="https://mulsanne.com.mx/wp-content/uploads/2023/06/logo_18-150x150.png" class="vc_single_image-img attachment-thumbnail" alt="" title="logo_18" srcset="https://mulsanne.com.mx/wp-content/uploads/2023/06/logo_18-150x150.png 150w, https://mulsanne.com.mx/wp-content/uploads/2023/06/logo_18-300x300.png 300w, https://mulsanne.com.mx/wp-content/uploads/2023/06/logo_18-100x100.png 100w, https://mulsanne.com.mx/wp-content/uploads/2023/06/logo_18-66x66.png 66w, https://mulsanne.com.mx/wp-content/uploads/2023/06/logo_18-260x260.png 260w, https://mulsanne.com.mx/wp-content/uploads/2023/06/logo_18-280x280.png 280w, https://mulsanne.com.mx/wp-content/uploads/2023/06/logo_18-65x65.png 65w, https://mulsanne.com.mx/wp-content/uploads/2023/06/logo_18.png 400w" sizes="auto, (max-width: 150px) 100vw, 150px" /></div>
+		</figure>
+	</div>
+
+	<div  class="wpb_single_image wpb_content_element vc_align_center wpb_content_element">
+		
+		<figure class="wpb_wrapper vc_figure">
+			<div class="vc_single_image-wrapper   vc_box_border_grey"><img loading="lazy" decoding="async" width="150" height="150" src="https://mulsanne.com.mx/wp-content/uploads/2023/06/logo_17-150x150.png" class="vc_single_image-img attachment-thumbnail" alt="" title="logo_17" srcset="https://mulsanne.com.mx/wp-content/uploads/2023/06/logo_17-150x150.png 150w, https://mulsanne.com.mx/wp-content/uploads/2023/06/logo_17-300x300.png 300w, https://mulsanne.com.mx/wp-content/uploads/2023/06/logo_17-100x100.png 100w, https://mulsanne.com.mx/wp-content/uploads/2023/06/logo_17-66x66.png 66w, https://mulsanne.com.mx/wp-content/uploads/2023/06/logo_17-260x260.png 260w, https://mulsanne.com.mx/wp-content/uploads/2023/06/logo_17-280x280.png 280w, https://mulsanne.com.mx/wp-content/uploads/2023/06/logo_17-65x65.png 65w, https://mulsanne.com.mx/wp-content/uploads/2023/06/logo_17.png 400w" sizes="auto, (max-width: 150px) 100vw, 150px" /></div>
+		</figure>
+	</div>
+
+	<div  class="wpb_single_image wpb_content_element vc_align_center wpb_content_element">
+		
+		<figure class="wpb_wrapper vc_figure">
+			<div class="vc_single_image-wrapper   vc_box_border_grey"><img loading="lazy" decoding="async" width="150" height="150" src="https://mulsanne.com.mx/wp-content/uploads/2023/06/logo_16-150x150.png" class="vc_single_image-img attachment-thumbnail" alt="" title="logo_16" srcset="https://mulsanne.com.mx/wp-content/uploads/2023/06/logo_16-150x150.png 150w, https://mulsanne.com.mx/wp-content/uploads/2023/06/logo_16-300x300.png 300w, https://mulsanne.com.mx/wp-content/uploads/2023/06/logo_16-100x100.png 100w, https://mulsanne.com.mx/wp-content/uploads/2023/06/logo_16-66x66.png 66w, https://mulsanne.com.mx/wp-content/uploads/2023/06/logo_16-260x260.png 260w, https://mulsanne.com.mx/wp-content/uploads/2023/06/logo_16-280x280.png 280w, https://mulsanne.com.mx/wp-content/uploads/2023/06/logo_16-65x65.png 65w, https://mulsanne.com.mx/wp-content/uploads/2023/06/logo_16.png 400w" sizes="auto, (max-width: 150px) 100vw, 150px" /></div>
+		</figure>
+	</div>
+
+	<div  class="wpb_single_image wpb_content_element vc_align_center wpb_content_element">
+		
+		<figure class="wpb_wrapper vc_figure">
+			<div class="vc_single_image-wrapper   vc_box_border_grey"><img loading="lazy" decoding="async" width="150" height="150" src="https://mulsanne.com.mx/wp-content/uploads/2023/06/logo_15-150x150.png" class="vc_single_image-img attachment-thumbnail" alt="" title="logo_15" srcset="https://mulsanne.com.mx/wp-content/uploads/2023/06/logo_15-150x150.png 150w, https://mulsanne.com.mx/wp-content/uploads/2023/06/logo_15-300x300.png 300w, https://mulsanne.com.mx/wp-content/uploads/2023/06/logo_15-100x100.png 100w, https://mulsanne.com.mx/wp-content/uploads/2023/06/logo_15-66x66.png 66w, https://mulsanne.com.mx/wp-content/uploads/2023/06/logo_15-260x260.png 260w, https://mulsanne.com.mx/wp-content/uploads/2023/06/logo_15-280x280.png 280w, https://mulsanne.com.mx/wp-content/uploads/2023/06/logo_15-65x65.png 65w, https://mulsanne.com.mx/wp-content/uploads/2023/06/logo_15.png 400w" sizes="auto, (max-width: 150px) 100vw, 150px" /></div>
+		</figure>
+	</div>
+
+	<div  class="wpb_single_image wpb_content_element vc_align_center wpb_content_element">
+		
+		<figure class="wpb_wrapper vc_figure">
+			<div class="vc_single_image-wrapper   vc_box_border_grey"><img loading="lazy" decoding="async" width="150" height="150" src="https://mulsanne.com.mx/wp-content/uploads/2023/06/logo_14-150x150.png" class="vc_single_image-img attachment-thumbnail" alt="" title="logo_14" srcset="https://mulsanne.com.mx/wp-content/uploads/2023/06/logo_14-150x150.png 150w, https://mulsanne.com.mx/wp-content/uploads/2023/06/logo_14-300x300.png 300w, https://mulsanne.com.mx/wp-content/uploads/2023/06/logo_14-100x100.png 100w, https://mulsanne.com.mx/wp-content/uploads/2023/06/logo_14-66x66.png 66w, https://mulsanne.com.mx/wp-content/uploads/2023/06/logo_14-260x260.png 260w, https://mulsanne.com.mx/wp-content/uploads/2023/06/logo_14-280x280.png 280w, https://mulsanne.com.mx/wp-content/uploads/2023/06/logo_14-65x65.png 65w, https://mulsanne.com.mx/wp-content/uploads/2023/06/logo_14.png 400w" sizes="auto, (max-width: 150px) 100vw, 150px" /></div>
+		</figure>
+	</div>
+
+	<div  class="wpb_single_image wpb_content_element vc_align_center wpb_content_element">
+		
+		<figure class="wpb_wrapper vc_figure">
+			<div class="vc_single_image-wrapper   vc_box_border_grey"><img loading="lazy" decoding="async" width="150" height="150" src="https://mulsanne.com.mx/wp-content/uploads/2023/06/logo_13-150x150.png" class="vc_single_image-img attachment-thumbnail" alt="" title="logo_13" srcset="https://mulsanne.com.mx/wp-content/uploads/2023/06/logo_13-150x150.png 150w, https://mulsanne.com.mx/wp-content/uploads/2023/06/logo_13-300x300.png 300w, https://mulsanne.com.mx/wp-content/uploads/2023/06/logo_13-100x100.png 100w, https://mulsanne.com.mx/wp-content/uploads/2023/06/logo_13-66x66.png 66w, https://mulsanne.com.mx/wp-content/uploads/2023/06/logo_13-260x260.png 260w, https://mulsanne.com.mx/wp-content/uploads/2023/06/logo_13-280x280.png 280w, https://mulsanne.com.mx/wp-content/uploads/2023/06/logo_13-65x65.png 65w, https://mulsanne.com.mx/wp-content/uploads/2023/06/logo_13.png 400w" sizes="auto, (max-width: 150px) 100vw, 150px" /></div>
+		</figure>
+	</div>
+
+	<div  class="wpb_single_image wpb_content_element vc_align_center wpb_content_element">
+		
+		<figure class="wpb_wrapper vc_figure">
+			<div class="vc_single_image-wrapper   vc_box_border_grey"><img loading="lazy" decoding="async" width="150" height="150" src="https://mulsanne.com.mx/wp-content/uploads/2023/06/logo_12-150x150.png" class="vc_single_image-img attachment-thumbnail" alt="" title="logo_12" srcset="https://mulsanne.com.mx/wp-content/uploads/2023/06/logo_12-150x150.png 150w, https://mulsanne.com.mx/wp-content/uploads/2023/06/logo_12-300x300.png 300w, https://mulsanne.com.mx/wp-content/uploads/2023/06/logo_12-100x100.png 100w, https://mulsanne.com.mx/wp-content/uploads/2023/06/logo_12-66x66.png 66w, https://mulsanne.com.mx/wp-content/uploads/2023/06/logo_12-260x260.png 260w, https://mulsanne.com.mx/wp-content/uploads/2023/06/logo_12-280x280.png 280w, https://mulsanne.com.mx/wp-content/uploads/2023/06/logo_12-65x65.png 65w, https://mulsanne.com.mx/wp-content/uploads/2023/06/logo_12.png 400w" sizes="auto, (max-width: 150px) 100vw, 150px" /></div>
+		</figure>
+	</div>
+
+	<div  class="wpb_single_image wpb_content_element vc_align_center wpb_content_element">
+		
+		<figure class="wpb_wrapper vc_figure">
+			<div class="vc_single_image-wrapper   vc_box_border_grey"><img loading="lazy" decoding="async" width="150" height="150" src="https://mulsanne.com.mx/wp-content/uploads/2023/06/logo_11-150x150.png" class="vc_single_image-img attachment-thumbnail" alt="" title="logo_11" srcset="https://mulsanne.com.mx/wp-content/uploads/2023/06/logo_11-150x150.png 150w, https://mulsanne.com.mx/wp-content/uploads/2023/06/logo_11-300x300.png 300w, https://mulsanne.com.mx/wp-content/uploads/2023/06/logo_11-100x100.png 100w, https://mulsanne.com.mx/wp-content/uploads/2023/06/logo_11-66x66.png 66w, https://mulsanne.com.mx/wp-content/uploads/2023/06/logo_11-260x260.png 260w, https://mulsanne.com.mx/wp-content/uploads/2023/06/logo_11-280x280.png 280w, https://mulsanne.com.mx/wp-content/uploads/2023/06/logo_11-65x65.png 65w, https://mulsanne.com.mx/wp-content/uploads/2023/06/logo_11.png 400w" sizes="auto, (max-width: 150px) 100vw, 150px" /></div>
+		</figure>
+	</div>
+
+	<div  class="wpb_single_image wpb_content_element vc_align_center wpb_content_element">
+		
+		<figure class="wpb_wrapper vc_figure">
+			<div class="vc_single_image-wrapper   vc_box_border_grey"><img loading="lazy" decoding="async" width="150" height="150" src="https://mulsanne.com.mx/wp-content/uploads/2023/06/logo_10-150x150.png" class="vc_single_image-img attachment-thumbnail" alt="" title="logo_10" srcset="https://mulsanne.com.mx/wp-content/uploads/2023/06/logo_10-150x150.png 150w, https://mulsanne.com.mx/wp-content/uploads/2023/06/logo_10-300x300.png 300w, https://mulsanne.com.mx/wp-content/uploads/2023/06/logo_10-100x100.png 100w, https://mulsanne.com.mx/wp-content/uploads/2023/06/logo_10-66x66.png 66w, https://mulsanne.com.mx/wp-content/uploads/2023/06/logo_10-260x260.png 260w, https://mulsanne.com.mx/wp-content/uploads/2023/06/logo_10-280x280.png 280w, https://mulsanne.com.mx/wp-content/uploads/2023/06/logo_10-65x65.png 65w, https://mulsanne.com.mx/wp-content/uploads/2023/06/logo_10.png 400w" sizes="auto, (max-width: 150px) 100vw, 150px" /></div>
+		</figure>
+	</div>
+
+	<div  class="wpb_single_image wpb_content_element vc_align_center wpb_content_element">
+		
+		<figure class="wpb_wrapper vc_figure">
+			<div class="vc_single_image-wrapper   vc_box_border_grey"><img loading="lazy" decoding="async" width="150" height="150" src="https://mulsanne.com.mx/wp-content/uploads/2023/06/logo_09-150x150.png" class="vc_single_image-img attachment-thumbnail" alt="" title="logo_09" srcset="https://mulsanne.com.mx/wp-content/uploads/2023/06/logo_09-150x150.png 150w, https://mulsanne.com.mx/wp-content/uploads/2023/06/logo_09-300x300.png 300w, https://mulsanne.com.mx/wp-content/uploads/2023/06/logo_09-100x100.png 100w, https://mulsanne.com.mx/wp-content/uploads/2023/06/logo_09-66x66.png 66w, https://mulsanne.com.mx/wp-content/uploads/2023/06/logo_09-260x260.png 260w, https://mulsanne.com.mx/wp-content/uploads/2023/06/logo_09-280x280.png 280w, https://mulsanne.com.mx/wp-content/uploads/2023/06/logo_09-65x65.png 65w, https://mulsanne.com.mx/wp-content/uploads/2023/06/logo_09.png 400w" sizes="auto, (max-width: 150px) 100vw, 150px" /></div>
+		</figure>
+	</div>
+
+	<div  class="wpb_single_image wpb_content_element vc_align_center wpb_content_element">
+		
+		<figure class="wpb_wrapper vc_figure">
+			<div class="vc_single_image-wrapper   vc_box_border_grey"><img loading="lazy" decoding="async" width="150" height="150" src="https://mulsanne.com.mx/wp-content/uploads/2023/06/logo_08-150x150.png" class="vc_single_image-img attachment-thumbnail" alt="" title="logo_08" srcset="https://mulsanne.com.mx/wp-content/uploads/2023/06/logo_08-150x150.png 150w, https://mulsanne.com.mx/wp-content/uploads/2023/06/logo_08-300x300.png 300w, https://mulsanne.com.mx/wp-content/uploads/2023/06/logo_08-100x100.png 100w, https://mulsanne.com.mx/wp-content/uploads/2023/06/logo_08-66x66.png 66w, https://mulsanne.com.mx/wp-content/uploads/2023/06/logo_08-260x260.png 260w, https://mulsanne.com.mx/wp-content/uploads/2023/06/logo_08-280x280.png 280w, https://mulsanne.com.mx/wp-content/uploads/2023/06/logo_08-65x65.png 65w, https://mulsanne.com.mx/wp-content/uploads/2023/06/logo_08.png 400w" sizes="auto, (max-width: 150px) 100vw, 150px" /></div>
+		</figure>
+	</div>
+
+	<div  class="wpb_single_image wpb_content_element vc_align_center wpb_content_element">
+		
+		<figure class="wpb_wrapper vc_figure">
+			<div class="vc_single_image-wrapper   vc_box_border_grey"><img loading="lazy" decoding="async" width="150" height="150" src="https://mulsanne.com.mx/wp-content/uploads/2023/06/logo_07-150x150.png" class="vc_single_image-img attachment-thumbnail" alt="" title="logo_07" srcset="https://mulsanne.com.mx/wp-content/uploads/2023/06/logo_07-150x150.png 150w, https://mulsanne.com.mx/wp-content/uploads/2023/06/logo_07-300x300.png 300w, https://mulsanne.com.mx/wp-content/uploads/2023/06/logo_07-100x100.png 100w, https://mulsanne.com.mx/wp-content/uploads/2023/06/logo_07-66x66.png 66w, https://mulsanne.com.mx/wp-content/uploads/2023/06/logo_07-260x260.png 260w, https://mulsanne.com.mx/wp-content/uploads/2023/06/logo_07-280x280.png 280w, https://mulsanne.com.mx/wp-content/uploads/2023/06/logo_07-65x65.png 65w, https://mulsanne.com.mx/wp-content/uploads/2023/06/logo_07.png 400w" sizes="auto, (max-width: 150px) 100vw, 150px" /></div>
+		</figure>
+	</div>
+
+	<div  class="wpb_single_image wpb_content_element vc_align_center wpb_content_element">
+		
+		<figure class="wpb_wrapper vc_figure">
+			<div class="vc_single_image-wrapper   vc_box_border_grey"><img loading="lazy" decoding="async" width="150" height="150" src="https://mulsanne.com.mx/wp-content/uploads/2023/06/logo_06-150x150.png" class="vc_single_image-img attachment-thumbnail" alt="" title="logo_06" srcset="https://mulsanne.com.mx/wp-content/uploads/2023/06/logo_06-150x150.png 150w, https://mulsanne.com.mx/wp-content/uploads/2023/06/logo_06-300x300.png 300w, https://mulsanne.com.mx/wp-content/uploads/2023/06/logo_06-100x100.png 100w, https://mulsanne.com.mx/wp-content/uploads/2023/06/logo_06-66x66.png 66w, https://mulsanne.com.mx/wp-content/uploads/2023/06/logo_06-260x260.png 260w, https://mulsanne.com.mx/wp-content/uploads/2023/06/logo_06-280x280.png 280w, https://mulsanne.com.mx/wp-content/uploads/2023/06/logo_06-65x65.png 65w, https://mulsanne.com.mx/wp-content/uploads/2023/06/logo_06.png 400w" sizes="auto, (max-width: 150px) 100vw, 150px" /></div>
+		</figure>
+	</div>
+
+	<div  class="wpb_single_image wpb_content_element vc_align_center wpb_content_element">
+		
+		<figure class="wpb_wrapper vc_figure">
+			<div class="vc_single_image-wrapper   vc_box_border_grey"><img loading="lazy" decoding="async" width="150" height="150" src="https://mulsanne.com.mx/wp-content/uploads/2023/06/logo_05-150x150.png" class="vc_single_image-img attachment-thumbnail" alt="" title="logo_05" srcset="https://mulsanne.com.mx/wp-content/uploads/2023/06/logo_05-150x150.png 150w, https://mulsanne.com.mx/wp-content/uploads/2023/06/logo_05-300x300.png 300w, https://mulsanne.com.mx/wp-content/uploads/2023/06/logo_05-100x100.png 100w, https://mulsanne.com.mx/wp-content/uploads/2023/06/logo_05-66x66.png 66w, https://mulsanne.com.mx/wp-content/uploads/2023/06/logo_05-260x260.png 260w, https://mulsanne.com.mx/wp-content/uploads/2023/06/logo_05-280x280.png 280w, https://mulsanne.com.mx/wp-content/uploads/2023/06/logo_05-65x65.png 65w, https://mulsanne.com.mx/wp-content/uploads/2023/06/logo_05.png 400w" sizes="auto, (max-width: 150px) 100vw, 150px" /></div>
+		</figure>
+	</div>
+
+	<div  class="wpb_single_image wpb_content_element vc_align_center wpb_content_element">
+		
+		<figure class="wpb_wrapper vc_figure">
+			<div class="vc_single_image-wrapper   vc_box_border_grey"><img loading="lazy" decoding="async" width="150" height="150" src="https://mulsanne.com.mx/wp-content/uploads/2023/06/logo_04-150x150.png" class="vc_single_image-img attachment-thumbnail" alt="" title="logo_04" srcset="https://mulsanne.com.mx/wp-content/uploads/2023/06/logo_04-150x150.png 150w, https://mulsanne.com.mx/wp-content/uploads/2023/06/logo_04-300x300.png 300w, https://mulsanne.com.mx/wp-content/uploads/2023/06/logo_04-100x100.png 100w, https://mulsanne.com.mx/wp-content/uploads/2023/06/logo_04-66x66.png 66w, https://mulsanne.com.mx/wp-content/uploads/2023/06/logo_04-260x260.png 260w, https://mulsanne.com.mx/wp-content/uploads/2023/06/logo_04-280x280.png 280w, https://mulsanne.com.mx/wp-content/uploads/2023/06/logo_04-65x65.png 65w, https://mulsanne.com.mx/wp-content/uploads/2023/06/logo_04.png 400w" sizes="auto, (max-width: 150px) 100vw, 150px" /></div>
+		</figure>
+	</div>
+
+	<div  class="wpb_single_image wpb_content_element vc_align_center wpb_content_element">
+		
+		<figure class="wpb_wrapper vc_figure">
+			<div class="vc_single_image-wrapper   vc_box_border_grey"><img loading="lazy" decoding="async" width="150" height="150" src="https://mulsanne.com.mx/wp-content/uploads/2023/06/logo_03-150x150.png" class="vc_single_image-img attachment-thumbnail" alt="" title="logo_03" srcset="https://mulsanne.com.mx/wp-content/uploads/2023/06/logo_03-150x150.png 150w, https://mulsanne.com.mx/wp-content/uploads/2023/06/logo_03-300x300.png 300w, https://mulsanne.com.mx/wp-content/uploads/2023/06/logo_03-100x100.png 100w, https://mulsanne.com.mx/wp-content/uploads/2023/06/logo_03-66x66.png 66w, https://mulsanne.com.mx/wp-content/uploads/2023/06/logo_03-260x260.png 260w, https://mulsanne.com.mx/wp-content/uploads/2023/06/logo_03-280x280.png 280w, https://mulsanne.com.mx/wp-content/uploads/2023/06/logo_03-65x65.png 65w, https://mulsanne.com.mx/wp-content/uploads/2023/06/logo_03.png 400w" sizes="auto, (max-width: 150px) 100vw, 150px" /></div>
+		</figure>
+	</div>
+
+	<div  class="wpb_single_image wpb_content_element vc_align_center wpb_content_element">
+		
+		<figure class="wpb_wrapper vc_figure">
+			<div class="vc_single_image-wrapper   vc_box_border_grey"><img loading="lazy" decoding="async" width="150" height="150" src="https://mulsanne.com.mx/wp-content/uploads/2023/06/logo_02-150x150.png" class="vc_single_image-img attachment-thumbnail" alt="" title="logo_02" srcset="https://mulsanne.com.mx/wp-content/uploads/2023/06/logo_02-150x150.png 150w, https://mulsanne.com.mx/wp-content/uploads/2023/06/logo_02-300x300.png 300w, https://mulsanne.com.mx/wp-content/uploads/2023/06/logo_02-100x100.png 100w, https://mulsanne.com.mx/wp-content/uploads/2023/06/logo_02-66x66.png 66w, https://mulsanne.com.mx/wp-content/uploads/2023/06/logo_02-260x260.png 260w, https://mulsanne.com.mx/wp-content/uploads/2023/06/logo_02-280x280.png 280w, https://mulsanne.com.mx/wp-content/uploads/2023/06/logo_02-65x65.png 65w, https://mulsanne.com.mx/wp-content/uploads/2023/06/logo_02.png 400w" sizes="auto, (max-width: 150px) 100vw, 150px" /></div>
+		</figure>
+	</div>
+
+	<div  class="wpb_single_image wpb_content_element vc_align_center wpb_content_element">
+		
+		<figure class="wpb_wrapper vc_figure">
+			<div class="vc_single_image-wrapper   vc_box_border_grey"><img loading="lazy" decoding="async" width="150" height="150" src="https://mulsanne.com.mx/wp-content/uploads/2023/06/logo_01-150x150.png" class="vc_single_image-img attachment-thumbnail" alt="" title="logo_01" srcset="https://mulsanne.com.mx/wp-content/uploads/2023/06/logo_01-150x150.png 150w, https://mulsanne.com.mx/wp-content/uploads/2023/06/logo_01-300x300.png 300w, https://mulsanne.com.mx/wp-content/uploads/2023/06/logo_01-100x100.png 100w, https://mulsanne.com.mx/wp-content/uploads/2023/06/logo_01-66x66.png 66w, https://mulsanne.com.mx/wp-content/uploads/2023/06/logo_01-260x260.png 260w, https://mulsanne.com.mx/wp-content/uploads/2023/06/logo_01-280x280.png 280w, https://mulsanne.com.mx/wp-content/uploads/2023/06/logo_01-65x65.png 65w, https://mulsanne.com.mx/wp-content/uploads/2023/06/logo_01.png 400w" sizes="auto, (max-width: 150px) 100vw, 150px" /></div>
+		</figure>
+	</div>
+</div></div></div></div><div class="kswr-column-settings" data-minheight="0px" data-isminheight="off" data-theclasses="kswr_pnone kswr_mnone kswr_bnone"></div></div><div class="kswr-row-element-back kswr-vc-ctn-element" data-classes="kswr_pnone kswr_mnone kswr_bnone" ></div></div></div></div><div class="kswr-column-settings" data-minheight="0px" data-isminheight="off" data-theclasses="kswr_pnone kswr_mnone kswr_bnone"></div>
+		<div class="section-decor-wrap top" data-top="130" data-height="130" style="top: -129px; height:130px">
+			<svg width="100%" data-height="130" height="130px">
+				<defs>
+					<pattern id="pix-decor-shape-1966752973" preserveAspectRatio="none" patternUnits="userSpaceOnUse" x="0" y="0" width="100%" data-height="130" height="1300px" viewBox="0 0 100 1000"><polygon fill="#ffffff" points="0,100 0,100 10,100 15,40 85,40 90,100 100,100  100,100 "></polygon>
+					</pattern>
+				</defs>
+				<rect x="0" y="0" width="100%" data-height="130" height="130px" fill="url(#pix-decor-shape-1966752973)"></rect>
+			</svg>
+		</div>
+	</div><div class="vc_row-full-width vc_clearfix"></div><div class="kswr-row-element-back kswr-vc-ctn-element" data-classes="kswr_pnone kswr_mnone kswr_bnone" ></div><div data-vc-full-width="true" data-vc-full-width-init="false" data-vc-stretch-content="true" class="vc_row wpb_row vc_row-fluid pix-vc_row-no-padding pix-row-overlay vc_custom_1687842011491 vc_row-has-fill"><div class="wpb_column vc_column_container vc_col-sm-12"><div class="vc_column-inner " ><div class="wpb_wrapper"><div class="kswr-heading-container kswr-theelement" style="text-align:center;">
+				
+				<div class="kswr-heading-content kswr-shortcode-element" data-fontsettings="font-size:48px;" style="font-size:48px; font-family:Inherit;font-weight:600; margin-top:0px;margin-bottom:0px;color:#222222;"><span style="color: #888888;">CONTACTO</span></div>				
+			</div></div></div></div><div class="kswr-column-settings" data-minheight="0px" data-isminheight="off" data-theclasses="kswr_pnone kswr_mnone kswr_bnone"></div></div><div class="vc_row-full-width vc_clearfix"></div><div class="kswr-row-element-back kswr-vc-ctn-element" data-classes="kswr_pnone kswr_mnone kswr_bnone" ></div><div data-vc-full-width="true" data-vc-full-width-init="false" data-vc-stretch-content="true" class="vc_row wpb_row vc_row-fluid pix-vc_row-no-padding pix-row-overlay vc_custom_1687842050337 vc_row-has-fill"><div class="wpb_column vc_column_container vc_col-sm-1/5"><div class="vc_column-inner " ><div class="wpb_wrapper"></div></div></div><div class="kswr-column-settings" data-minheight="0px" data-isminheight="off" data-theclasses="kswr_pnone kswr_mnone kswr_bnone"></div><div class="wpb_column vc_column_container vc_col-sm-3"><div class="vc_column-inner " ><div class="wpb_wrapper">
+	<div class="wpb_text_column wpb_content_element" >
+		<div class="wpb_wrapper">
+			<h2 style="text-align: center;"><span style="color: #888888;">TITANIUM</span></h2>
+
+		</div>
+	</div>
+<div class="kswr-ibi-container kswr-icon-thatc kswr-theelement"  data-layout="iconleft" data-icolayout="center" data-hover="none" ><div class="kswr-ibi-icon-ct" style="margin-top:4px;margin-left:0px;margin-right:10px;margin-bottom:0px;"><div class="kswr-icon-container kswr-icon-thatc kswr-icon-thatc-PHBvlwRp" data-hover-boxshadow="no" data-rotation="false" data-hover="none" style="--box-shadow-hover:unset;width:25px; height: 25px; line-height:25px;  border-radius: 0px; --hover-bg:transparent; ">
+				<div class="kswr-icon-ic kswr-icon-ic-r kswr-icon-r"><div class="kswr-icon-ic-svg" style="width:25px; height:25px;"></div></div>
+				<div class="kswr-icon-ic kswr-icon-ic-h kswr-icon-h"><div class="kswr-icon-ic-svg" style="width:25px; height:25px;"></div></div>
+				<div class="kswr-icon-bg kswr-icon-bg-r kswr-icon-r" style="background:transparent;border:0px none transparent;--border-style-realbwidth:0px;"></div>
+				<div class="kswr-icon-bg kswr-icon-bg-h kswr-icon-h" style="background:transparent;border:0px none transparent;--border-style-realbwidth:0px;"></div>
+				
+			</div></div><div class="kswr-ibi-ct-leftright"><div class="kswr-ibi-title-ct"><div class="kswr-ibi-title kswr-shortcode-element" data-fontsettings="font-size:16px;" style="font-size:16px; font-family:Inherit;font-weight:inherit; color:#ffffff;margin-top:0px;margin-left:0px;margin-right:0px;margin-bottom:0px;"></div><div class="kswr-ibi-subtitle kswr-shortcode-element" data-fontsettings="font-size:16px;" style="font-size:16px; font-family:Inherit;font-weight:inherit; color:#888888;margin-top:0px;margin-left:0px;margin-right:0px;margin-bottom:0px;"></div></div><div class="kswr-ibi-bottom"><div class="kswr-ibi-content kswr-shortcode-element" data-fontsettings="font-size:16px;" style="font-size:16px; font-family:Inherit;font-weight:inherit; color:#888888;margin-top:0px;margin-left:0px;margin-right:0px;margin-bottom:0px;"><span style="color: #808080;"><a style="color: #808080;" href="/cdn-cgi/l/email-protection#5130253f323d38343f253422113c243d22303f3f347f323e3c7f3c29"><span class="__cf_email__" data-cfemail="39584d575a55505c574d5c4a79544c554a5857575c175a5654175441">[email&#160;protected]</span></a></span></div></div></div></div><div class="kswr-ibi-container kswr-icon-thatc kswr-theelement"  data-layout="iconleft" data-icolayout="center" data-hover="none" ><div class="kswr-ibi-icon-ct" style="margin-top:4px;margin-left:0px;margin-right:10px;margin-bottom:0px;"><div class="kswr-icon-container kswr-icon-thatc kswr-icon-thatc-yaQYw0kT" data-hover-boxshadow="no" data-rotation="false" data-hover="none" style="--box-shadow-hover:unset;width:25px; height: 25px; line-height:25px;  border-radius: 0px; --hover-bg:transparent; ">
+				<div class="kswr-icon-ic kswr-icon-ic-r kswr-icon-r"><div class="kswr-icon-ic-svg" style="width:25px; height:25px;"></div></div>
+				<div class="kswr-icon-ic kswr-icon-ic-h kswr-icon-h"><div class="kswr-icon-ic-svg" style="width:25px; height:25px;"></div></div>
+				<div class="kswr-icon-bg kswr-icon-bg-r kswr-icon-r" style="background:transparent;border:0px none transparent;--border-style-realbwidth:0px;"></div>
+				<div class="kswr-icon-bg kswr-icon-bg-h kswr-icon-h" style="background:transparent;border:0px none transparent;--border-style-realbwidth:0px;"></div>
+				
+			</div></div><div class="kswr-ibi-ct-leftright"><div class="kswr-ibi-title-ct"><div class="kswr-ibi-title kswr-shortcode-element" data-fontsettings="font-size:16px;" style="font-size:16px; font-family:Inherit;font-weight:inherit; color:#333333;margin-top:0px;margin-left:0px;margin-right:0px;margin-bottom:0px;"></div><div class="kswr-ibi-subtitle kswr-shortcode-element" data-fontsettings="font-size:16px;" style="font-size:16px; font-family:Inherit;font-weight:inherit; color:#888888;margin-top:0px;margin-left:0px;margin-right:0px;margin-bottom:0px;"></div></div><div class="kswr-ibi-bottom"><div class="kswr-ibi-content kswr-shortcode-element" data-fontsettings="font-size:16px;" style="font-size:16px; font-family:Inherit;font-weight:inherit; color:#555555;margin-top:0px;margin-left:0px;margin-right:0px;margin-bottom:0px;"><span style="color: #808080;">(55) 5292 7613 / (55) 5292 4757</span></div></div></div></div><div class="kswr-ibi-container kswr-icon-thatc kswr-theelement"  data-layout="iconleft" data-icolayout="center" data-hover="none" ><div class="kswr-ibi-icon-ct" style="margin-top:4px;margin-left:0px;margin-right:10px;margin-bottom:0px;"><div class="kswr-icon-container kswr-icon-thatc kswr-icon-thatc-9flWRFzV" data-hover-boxshadow="no" data-rotation="false" data-hover="none" style="--box-shadow-hover:unset;width:25px; height: 25px; line-height:25px;  border-radius: 0px; --hover-bg:transparent; ">
+				<div class="kswr-icon-ic kswr-icon-ic-r kswr-icon-r"><div class="kswr-icon-ic-svg" style="width:25px; height:25px;"><svg  viewBox="0 0 27 32" fill="888888" style="color:888888;"><path d="M17.589 17.679q0.232 0 1.741 0.786t1.598 0.946q0.036 0.089 0.036 0.268 0 0.589-0.304 1.357-0.286 0.696-1.268 1.17t-1.821 0.473q-1.018 0-3.393-1.107-1.75-0.804-3.036-2.107t-2.643-3.304q-1.286-1.911-1.268-3.464v-0.143q0.054-1.625 1.321-2.821 0.429-0.393 0.929-0.393 0.107 0 0.321 0.027t0.339 0.027q0.339 0 0.473 0.116t0.277 0.491q0.143 0.357 0.589 1.571t0.446 1.339q0 0.375-0.616 1.027t-0.616 0.83q0 0.125 0.089 0.268 0.607 1.304 1.821 2.446 1 0.946 2.696 1.804 0.214 0.125 0.393 0.125 0.268 0 0.964-0.866t0.929-0.866zM13.964 27.143q2.268 0 4.348-0.893t3.58-2.393 2.393-3.58 0.893-4.348-0.893-4.348-2.393-3.58-3.58-2.393-4.348-0.893-4.348 0.893-3.58 2.393-2.393 3.58-0.893 4.348q0 3.625 2.143 6.571l-1.411 4.161 4.321-1.375q2.821 1.857 6.161 1.857zM13.964 2.464q2.732 0 5.223 1.071t4.295 2.875 2.875 4.295 1.071 5.223-1.071 5.223-2.875 4.295-4.295 2.875-5.223 1.071q-3.482 0-6.518-1.679l-7.446 2.393 2.429-7.232q-1.929-3.179-1.929-6.946 0-2.732 1.071-5.223t2.875-4.295 4.295-2.875 5.223-1.071z"></path></svg></div></div>
+				<div class="kswr-icon-ic kswr-icon-ic-h kswr-icon-h"><div class="kswr-icon-ic-svg" style="width:25px; height:25px;"><svg  viewBox="0 0 27 32" fill="#333" style="color:#333;"><path d="M17.589 17.679q0.232 0 1.741 0.786t1.598 0.946q0.036 0.089 0.036 0.268 0 0.589-0.304 1.357-0.286 0.696-1.268 1.17t-1.821 0.473q-1.018 0-3.393-1.107-1.75-0.804-3.036-2.107t-2.643-3.304q-1.286-1.911-1.268-3.464v-0.143q0.054-1.625 1.321-2.821 0.429-0.393 0.929-0.393 0.107 0 0.321 0.027t0.339 0.027q0.339 0 0.473 0.116t0.277 0.491q0.143 0.357 0.589 1.571t0.446 1.339q0 0.375-0.616 1.027t-0.616 0.83q0 0.125 0.089 0.268 0.607 1.304 1.821 2.446 1 0.946 2.696 1.804 0.214 0.125 0.393 0.125 0.268 0 0.964-0.866t0.929-0.866zM13.964 27.143q2.268 0 4.348-0.893t3.58-2.393 2.393-3.58 0.893-4.348-0.893-4.348-2.393-3.58-3.58-2.393-4.348-0.893-4.348 0.893-3.58 2.393-2.393 3.58-0.893 4.348q0 3.625 2.143 6.571l-1.411 4.161 4.321-1.375q2.821 1.857 6.161 1.857zM13.964 2.464q2.732 0 5.223 1.071t4.295 2.875 2.875 4.295 1.071 5.223-1.071 5.223-2.875 4.295-4.295 2.875-5.223 1.071q-3.482 0-6.518-1.679l-7.446 2.393 2.429-7.232q-1.929-3.179-1.929-6.946 0-2.732 1.071-5.223t2.875-4.295 4.295-2.875 5.223-1.071z"></path></svg></div></div>
+				<div class="kswr-icon-bg kswr-icon-bg-r kswr-icon-r" style="background:transparent;border:0px none transparent;--border-style-realbwidth:0px;"></div>
+				<div class="kswr-icon-bg kswr-icon-bg-h kswr-icon-h" style="background:transparent;border:0px none transparent;--border-style-realbwidth:0px;"></div>
+				
+			</div></div><div class="kswr-ibi-ct-leftright"><div class="kswr-ibi-title-ct"><div class="kswr-ibi-title kswr-shortcode-element" data-fontsettings="font-size:16px;" style="font-size:16px; font-family:Inherit;font-weight:inherit; color:#333333;margin-top:0px;margin-left:0px;margin-right:0px;margin-bottom:0px;"></div><div class="kswr-ibi-subtitle kswr-shortcode-element" data-fontsettings="font-size:16px;" style="font-size:16px; font-family:Inherit;font-weight:inherit; color:#888888;margin-top:0px;margin-left:0px;margin-right:0px;margin-bottom:0px;"></div></div><div class="kswr-ibi-bottom"><div class="kswr-ibi-content kswr-shortcode-element" data-fontsettings="font-size:16px;" style="font-size:16px; font-family:Inherit;font-weight:inherit; color:#555555;margin-top:0px;margin-left:0px;margin-right:0px;margin-bottom:0px;"><span style="color: #808080;"><a style="color: #808080;" href="https://wa.me/525535403953">(55) 3540 3953</a></span></div></div></div></div><div class="kswr-iconbundle-container kswr-theelement" data-layout="line" data-align="center" style="text-align:center;"><div class="kswr-singleicon-iconbundle kswr-theelement" style="margin-top:0px;margin-right:0px;margin-bottom:0px;margin-left:0px;;"><div class="kswr-icon-container kswr-icon-thatc kswr-icon-thatc-76L9OANs" data-hover-boxshadow="no" data-rotation="false" data-hover="none" style="--box-shadow-hover:unset;width:35px; height: 35px; line-height:35px;  border-radius: 0px; --hover-bg:transparent; ">
+				<div class="kswr-icon-ic kswr-icon-ic-r kswr-icon-r"><div class="kswr-icon-ic-svg" style="width:18px; height:18px;"></div></div>
+				<div class="kswr-icon-ic kswr-icon-ic-h kswr-icon-h"><div class="kswr-icon-ic-svg" style="width:18px; height:18px;"></div></div>
+				<div class="kswr-icon-bg kswr-icon-bg-r kswr-icon-r" style="background:transparent;border:0px none transparent;--border-style-realbwidth:0px;"></div>
+				<div class="kswr-icon-bg kswr-icon-bg-h kswr-icon-h" style="background:transparent;border:0px none transparent;--border-style-realbwidth:0px;"></div>
+				<a href="https://www.facebook.com/Mulsanne-175091789823192/?modal=admin_todo_tour" target="_self"></a>
+			</div></div><div class="kswr-singleicon-iconbundle kswr-theelement" style="margin-top:0px;margin-right:20px;margin-bottom:0px;margin-left:20px;;"><div class="kswr-icon-container kswr-icon-thatc kswr-icon-thatc-6hBkCsHZ" data-hover-boxshadow="no" data-rotation="false" data-hover="none" style="--box-shadow-hover:unset;width:35px; height: 35px; line-height:35px;  border-radius: 0px; --hover-bg:transparent; ">
+				<div class="kswr-icon-ic kswr-icon-ic-r kswr-icon-r"><div class="kswr-icon-ic-svg" style="width:18px; height:18px;"><svg  viewBox="0 0 27 32" fill="#333" style="color:#333;"><path d="M18.286 16.286q0-1.893-1.339-3.232t-3.232-1.339-3.232 1.339-1.339 3.232 1.339 3.232 3.232 1.339 3.232-1.339 1.339-3.232zM20.75 16.286q0 2.929-2.054 4.982t-4.982 2.054-4.982-2.054-2.054-4.982 2.054-4.982 4.982-2.054 4.982 2.054 2.054 4.982zM22.679 8.964q0 0.679-0.482 1.161t-1.161 0.482-1.161-0.482-0.482-1.161 0.482-1.161 1.161-0.482 1.161 0.482 0.482 1.161zM13.714 5.036q-0.125 0-1.366-0.009t-1.884 0-1.723 0.054-1.839 0.179-1.277 0.33q-0.893 0.357-1.571 1.036t-1.036 1.571q-0.196 0.518-0.33 1.277t-0.179 1.839-0.054 1.723 0 1.884 0.009 1.366-0.009 1.366 0 1.884 0.054 1.723 0.179 1.839 0.33 1.277q0.357 0.893 1.036 1.571t1.571 1.036q0.518 0.196 1.277 0.33t1.839 0.179 1.723 0.054 1.884 0 1.366-0.009 1.366 0.009 1.884 0 1.723-0.054 1.839-0.179 1.277-0.33q0.893-0.357 1.571-1.036t1.036-1.571q0.196-0.518 0.33-1.277t0.179-1.839 0.054-1.723 0-1.884-0.009-1.366 0.009-1.366 0-1.884-0.054-1.723-0.179-1.839-0.33-1.277q-0.357-0.893-1.036-1.571t-1.571-1.036q-0.518-0.196-1.277-0.33t-1.839-0.179-1.723-0.054-1.884 0-1.366 0.009zM27.429 16.286q0 4.089-0.089 5.661-0.179 3.714-2.214 5.75t-5.75 2.214q-1.571 0.089-5.661 0.089t-5.661-0.089q-3.714-0.179-5.75-2.214t-2.214-5.75q-0.089-1.571-0.089-5.661t0.089-5.661q0.179-3.714 2.214-5.75t5.75-2.214q1.571-0.089 5.661-0.089t5.661 0.089q3.714 0.179 5.75 2.214t2.214 5.75q0.089 1.571 0.089 5.661z"></path></svg></div></div>
+				<div class="kswr-icon-ic kswr-icon-ic-h kswr-icon-h"><div class="kswr-icon-ic-svg" style="width:18px; height:18px;"><svg  viewBox="0 0 27 32" fill="#333" style="color:#333;"><path d="M18.286 16.286q0-1.893-1.339-3.232t-3.232-1.339-3.232 1.339-1.339 3.232 1.339 3.232 3.232 1.339 3.232-1.339 1.339-3.232zM20.75 16.286q0 2.929-2.054 4.982t-4.982 2.054-4.982-2.054-2.054-4.982 2.054-4.982 4.982-2.054 4.982 2.054 2.054 4.982zM22.679 8.964q0 0.679-0.482 1.161t-1.161 0.482-1.161-0.482-0.482-1.161 0.482-1.161 1.161-0.482 1.161 0.482 0.482 1.161zM13.714 5.036q-0.125 0-1.366-0.009t-1.884 0-1.723 0.054-1.839 0.179-1.277 0.33q-0.893 0.357-1.571 1.036t-1.036 1.571q-0.196 0.518-0.33 1.277t-0.179 1.839-0.054 1.723 0 1.884 0.009 1.366-0.009 1.366 0 1.884 0.054 1.723 0.179 1.839 0.33 1.277q0.357 0.893 1.036 1.571t1.571 1.036q0.518 0.196 1.277 0.33t1.839 0.179 1.723 0.054 1.884 0 1.366-0.009 1.366 0.009 1.884 0 1.723-0.054 1.839-0.179 1.277-0.33q0.893-0.357 1.571-1.036t1.036-1.571q0.196-0.518 0.33-1.277t0.179-1.839 0.054-1.723 0-1.884-0.009-1.366 0.009-1.366 0-1.884-0.054-1.723-0.179-1.839-0.33-1.277q-0.357-0.893-1.036-1.571t-1.571-1.036q-0.518-0.196-1.277-0.33t-1.839-0.179-1.723-0.054-1.884 0-1.366 0.009zM27.429 16.286q0 4.089-0.089 5.661-0.179 3.714-2.214 5.75t-5.75 2.214q-1.571 0.089-5.661 0.089t-5.661-0.089q-3.714-0.179-5.75-2.214t-2.214-5.75q-0.089-1.571-0.089-5.661t0.089-5.661q0.179-3.714 2.214-5.75t5.75-2.214q1.571-0.089 5.661-0.089t5.661 0.089q3.714 0.179 5.75 2.214t2.214 5.75q0.089 1.571 0.089 5.661z"></path></svg></div></div>
+				<div class="kswr-icon-bg kswr-icon-bg-r kswr-icon-r" style="background:transparent;border:0px none transparent;--border-style-realbwidth:0px;"></div>
+				<div class="kswr-icon-bg kswr-icon-bg-h kswr-icon-h" style="background:transparent;border:0px none transparent;--border-style-realbwidth:0px;"></div>
+				<a href="https://www.instagram.com/mulsannesantafe/?hl=es-la" target="_self"></a>
+			</div></div></div><div class="vc_empty_space"   style="height: 32px"><span class="vc_empty_space_inner"></span></div></div></div></div><div class="kswr-column-settings" data-minheight="0px" data-isminheight="off" data-theclasses="kswr_pnone kswr_mnone kswr_bnone"></div><div class="wpb_column vc_column_container vc_col-sm-1"><div class="vc_column-inner " ><div class="wpb_wrapper"><div class="vc_empty_space"   style="height: 60px"><span class="vc_empty_space_inner"></span></div></div></div></div><div class="kswr-column-settings" data-minheight="0px" data-isminheight="off" data-theclasses="kswr_pnone kswr_mnone kswr_bnone"></div><div class="wpb_column vc_column_container vc_col-sm-3"><div class="vc_column-inner " ><div class="wpb_wrapper">
+	<div class="wpb_text_column wpb_content_element" >
+		<div class="wpb_wrapper">
+			<h2 style="text-align: center;"><span style="color: #888888;">ALTAVISTA</span></h2>
+
+		</div>
+	</div>
+<div class="kswr-ibi-container kswr-icon-thatc kswr-theelement"  data-layout="iconleft" data-icolayout="center" data-hover="none" ><div class="kswr-ibi-icon-ct" style="margin-top:4px;margin-left:0px;margin-right:10px;margin-bottom:0px;"><div class="kswr-icon-container kswr-icon-thatc kswr-icon-thatc-xDPudikG" data-hover-boxshadow="no" data-rotation="false" data-hover="none" style="--box-shadow-hover:unset;width:25px; height: 25px; line-height:25px;  border-radius: 0px; --hover-bg:transparent; ">
+				<div class="kswr-icon-ic kswr-icon-ic-r kswr-icon-r"><div class="kswr-icon-ic-svg" style="width:25px; height:25px;"></div></div>
+				<div class="kswr-icon-ic kswr-icon-ic-h kswr-icon-h"><div class="kswr-icon-ic-svg" style="width:25px; height:25px;"></div></div>
+				<div class="kswr-icon-bg kswr-icon-bg-r kswr-icon-r" style="background:transparent;border:0px none transparent;--border-style-realbwidth:0px;"></div>
+				<div class="kswr-icon-bg kswr-icon-bg-h kswr-icon-h" style="background:transparent;border:0px none transparent;--border-style-realbwidth:0px;"></div>
+				
+			</div></div><div class="kswr-ibi-ct-leftright"><div class="kswr-ibi-title-ct"><div class="kswr-ibi-title kswr-shortcode-element" data-fontsettings="font-size:16px;" style="font-size:16px; font-family:Inherit;font-weight:inherit; color:#333333;margin-top:0px;margin-left:0px;margin-right:0px;margin-bottom:0px;"></div><div class="kswr-ibi-subtitle kswr-shortcode-element" data-fontsettings="font-size:16px;" style="font-size:16px; font-family:Inherit;font-weight:inherit; color:#888888;margin-top:0px;margin-left:0px;margin-right:0px;margin-bottom:0px;"></div></div><div class="kswr-ibi-bottom"><div class="kswr-ibi-content kswr-shortcode-element" data-fontsettings="font-size:16px;" style="font-size:16px; font-family:Inherit;font-weight:inherit; color:#555555;margin-top:0px;margin-left:0px;margin-right:0px;margin-bottom:0px;"><span style="color: #808080;"><a style="color: #808080;" href="/cdn-cgi/l/email-protection#6100150f020d08040f150412210c140d12000f0f044c000d150017081215004f020e0c4f0c19"><span class="__cf_email__" data-cfemail="d4b5a0bab7b8bdb1baa0b1a794b9a1b8a7b5babab1f9b5b8a0b5a2bda7a0b5fab7bbb9fab9ac">[email&#160;protected]</span></a></span></div></div></div></div><div class="kswr-ibi-container kswr-icon-thatc kswr-theelement"  data-layout="iconleft" data-icolayout="center" data-hover="none" ><div class="kswr-ibi-icon-ct" style="margin-top:4px;margin-left:0px;margin-right:10px;margin-bottom:0px;"><div class="kswr-icon-container kswr-icon-thatc kswr-icon-thatc-eq9kfSHW" data-hover-boxshadow="no" data-rotation="false" data-hover="none" style="--box-shadow-hover:unset;width:25px; height: 25px; line-height:25px;  border-radius: 0px; --hover-bg:transparent; ">
+				<div class="kswr-icon-ic kswr-icon-ic-r kswr-icon-r"><div class="kswr-icon-ic-svg" style="width:25px; height:25px;"></div></div>
+				<div class="kswr-icon-ic kswr-icon-ic-h kswr-icon-h"><div class="kswr-icon-ic-svg" style="width:25px; height:25px;"></div></div>
+				<div class="kswr-icon-bg kswr-icon-bg-r kswr-icon-r" style="background:transparent;border:0px none transparent;--border-style-realbwidth:0px;"></div>
+				<div class="kswr-icon-bg kswr-icon-bg-h kswr-icon-h" style="background:transparent;border:0px none transparent;--border-style-realbwidth:0px;"></div>
+				
+			</div></div><div class="kswr-ibi-ct-leftright"><div class="kswr-ibi-title-ct"><div class="kswr-ibi-title kswr-shortcode-element" data-fontsettings="font-size:16px;" style="font-size:16px; font-family:Inherit;font-weight:inherit; color:#333333;margin-top:0px;margin-left:0px;margin-right:0px;margin-bottom:0px;"></div><div class="kswr-ibi-subtitle kswr-shortcode-element" data-fontsettings="font-size:16px;" style="font-size:16px; font-family:Inherit;font-weight:inherit; color:#888888;margin-top:0px;margin-left:0px;margin-right:0px;margin-bottom:0px;"></div></div><div class="kswr-ibi-bottom"><div class="kswr-ibi-content kswr-shortcode-element" data-fontsettings="font-size:16px;" style="font-size:16px; font-family:Inherit;font-weight:inherit; color:#555555;margin-top:0px;margin-left:0px;margin-right:0px;margin-bottom:0px;"><span style="color: #808080;">(55) 5616 6176 (55) 5616 6205(55) 9099 6635</span></div></div></div></div><div class="kswr-ibi-container kswr-icon-thatc kswr-theelement"  data-layout="iconleft" data-icolayout="center" data-hover="none" ><div class="kswr-ibi-icon-ct" style="margin-top:4px;margin-left:0px;margin-right:10px;margin-bottom:0px;"><div class="kswr-icon-container kswr-icon-thatc kswr-icon-thatc-UtS9WICd" data-hover-boxshadow="no" data-rotation="false" data-hover="none" style="--box-shadow-hover:unset;width:25px; height: 25px; line-height:25px;  border-radius: 0px; --hover-bg:transparent; ">
+				<div class="kswr-icon-ic kswr-icon-ic-r kswr-icon-r"><div class="kswr-icon-ic-svg" style="width:25px; height:25px;"><svg  viewBox="0 0 27 32" fill="888888" style="color:888888;"><path d="M17.589 17.679q0.232 0 1.741 0.786t1.598 0.946q0.036 0.089 0.036 0.268 0 0.589-0.304 1.357-0.286 0.696-1.268 1.17t-1.821 0.473q-1.018 0-3.393-1.107-1.75-0.804-3.036-2.107t-2.643-3.304q-1.286-1.911-1.268-3.464v-0.143q0.054-1.625 1.321-2.821 0.429-0.393 0.929-0.393 0.107 0 0.321 0.027t0.339 0.027q0.339 0 0.473 0.116t0.277 0.491q0.143 0.357 0.589 1.571t0.446 1.339q0 0.375-0.616 1.027t-0.616 0.83q0 0.125 0.089 0.268 0.607 1.304 1.821 2.446 1 0.946 2.696 1.804 0.214 0.125 0.393 0.125 0.268 0 0.964-0.866t0.929-0.866zM13.964 27.143q2.268 0 4.348-0.893t3.58-2.393 2.393-3.58 0.893-4.348-0.893-4.348-2.393-3.58-3.58-2.393-4.348-0.893-4.348 0.893-3.58 2.393-2.393 3.58-0.893 4.348q0 3.625 2.143 6.571l-1.411 4.161 4.321-1.375q2.821 1.857 6.161 1.857zM13.964 2.464q2.732 0 5.223 1.071t4.295 2.875 2.875 4.295 1.071 5.223-1.071 5.223-2.875 4.295-4.295 2.875-5.223 1.071q-3.482 0-6.518-1.679l-7.446 2.393 2.429-7.232q-1.929-3.179-1.929-6.946 0-2.732 1.071-5.223t2.875-4.295 4.295-2.875 5.223-1.071z"></path></svg></div></div>
+				<div class="kswr-icon-ic kswr-icon-ic-h kswr-icon-h"><div class="kswr-icon-ic-svg" style="width:25px; height:25px;"><svg  viewBox="0 0 27 32" fill="#333" style="color:#333;"><path d="M17.589 17.679q0.232 0 1.741 0.786t1.598 0.946q0.036 0.089 0.036 0.268 0 0.589-0.304 1.357-0.286 0.696-1.268 1.17t-1.821 0.473q-1.018 0-3.393-1.107-1.75-0.804-3.036-2.107t-2.643-3.304q-1.286-1.911-1.268-3.464v-0.143q0.054-1.625 1.321-2.821 0.429-0.393 0.929-0.393 0.107 0 0.321 0.027t0.339 0.027q0.339 0 0.473 0.116t0.277 0.491q0.143 0.357 0.589 1.571t0.446 1.339q0 0.375-0.616 1.027t-0.616 0.83q0 0.125 0.089 0.268 0.607 1.304 1.821 2.446 1 0.946 2.696 1.804 0.214 0.125 0.393 0.125 0.268 0 0.964-0.866t0.929-0.866zM13.964 27.143q2.268 0 4.348-0.893t3.58-2.393 2.393-3.58 0.893-4.348-0.893-4.348-2.393-3.58-3.58-2.393-4.348-0.893-4.348 0.893-3.58 2.393-2.393 3.58-0.893 4.348q0 3.625 2.143 6.571l-1.411 4.161 4.321-1.375q2.821 1.857 6.161 1.857zM13.964 2.464q2.732 0 5.223 1.071t4.295 2.875 2.875 4.295 1.071 5.223-1.071 5.223-2.875 4.295-4.295 2.875-5.223 1.071q-3.482 0-6.518-1.679l-7.446 2.393 2.429-7.232q-1.929-3.179-1.929-6.946 0-2.732 1.071-5.223t2.875-4.295 4.295-2.875 5.223-1.071z"></path></svg></div></div>
+				<div class="kswr-icon-bg kswr-icon-bg-r kswr-icon-r" style="background:transparent;border:0px none transparent;--border-style-realbwidth:0px;"></div>
+				<div class="kswr-icon-bg kswr-icon-bg-h kswr-icon-h" style="background:transparent;border:0px none transparent;--border-style-realbwidth:0px;"></div>
+				
+			</div></div><div class="kswr-ibi-ct-leftright"><div class="kswr-ibi-title-ct"><div class="kswr-ibi-title kswr-shortcode-element" data-fontsettings="font-size:20px;" style="font-size:20px; font-family:Inherit;font-weight:inherit; color:#888888;margin-top:0px;margin-left:0px;margin-right:0px;margin-bottom:0px;"></div><div class="kswr-ibi-subtitle kswr-shortcode-element" data-fontsettings="font-size:16px;" style="font-size:16px; font-family:Inherit;font-weight:inherit; color:#888888;margin-top:0px;margin-left:0px;margin-right:0px;margin-bottom:0px;"></div></div><div class="kswr-ibi-bottom"><div class="kswr-ibi-content kswr-shortcode-element" data-fontsettings="font-size:16px;" style="font-size:16px; font-family:Inherit;font-weight:inherit; color:#555555;margin-top:0px;margin-left:0px;margin-right:0px;margin-bottom:0px;"><span style="color: #808080;"><a style="color: #808080;" href="https://wa.me/525552481870">(55) 5248 1870</a></span></div></div></div></div><div class="kswr-iconbundle-container kswr-theelement" data-layout="line" data-align="center" style="text-align:center;"><div class="kswr-singleicon-iconbundle kswr-theelement" style="margin-top:0px;margin-right:0px;margin-bottom:0px;margin-left:0px;;"><div class="kswr-icon-container kswr-icon-thatc kswr-icon-thatc-Xme7SiYv" data-hover-boxshadow="no" data-rotation="false" data-hover="none" style="--box-shadow-hover:unset;width:35px; height: 35px; line-height:35px;  border-radius: 0px; --hover-bg:transparent; ">
+				<div class="kswr-icon-ic kswr-icon-ic-r kswr-icon-r"><div class="kswr-icon-ic-svg" style="width:18px; height:18px;"></div></div>
+				<div class="kswr-icon-ic kswr-icon-ic-h kswr-icon-h"><div class="kswr-icon-ic-svg" style="width:18px; height:18px;"></div></div>
+				<div class="kswr-icon-bg kswr-icon-bg-r kswr-icon-r" style="background:transparent;border:0px none transparent;--border-style-realbwidth:0px;"></div>
+				<div class="kswr-icon-bg kswr-icon-bg-h kswr-icon-h" style="background:transparent;border:0px none transparent;--border-style-realbwidth:0px;"></div>
+				<a href="https://www.facebook.com/MulsanneAltavistaSanAngel/" target="_self"></a>
+			</div></div><div class="kswr-singleicon-iconbundle kswr-theelement" style="margin-top:0px;margin-right:20px;margin-bottom:0px;margin-left:20px;;"><div class="kswr-icon-container kswr-icon-thatc kswr-icon-thatc-OdSolN2s" data-hover-boxshadow="no" data-rotation="false" data-hover="none" style="--box-shadow-hover:unset;width:35px; height: 35px; line-height:35px;  border-radius: 0px; --hover-bg:transparent; ">
+				<div class="kswr-icon-ic kswr-icon-ic-r kswr-icon-r"><div class="kswr-icon-ic-svg" style="width:18px; height:18px;"><svg  viewBox="0 0 27 32" fill="#333" style="color:#333;"><path d="M18.286 16.286q0-1.893-1.339-3.232t-3.232-1.339-3.232 1.339-1.339 3.232 1.339 3.232 3.232 1.339 3.232-1.339 1.339-3.232zM20.75 16.286q0 2.929-2.054 4.982t-4.982 2.054-4.982-2.054-2.054-4.982 2.054-4.982 4.982-2.054 4.982 2.054 2.054 4.982zM22.679 8.964q0 0.679-0.482 1.161t-1.161 0.482-1.161-0.482-0.482-1.161 0.482-1.161 1.161-0.482 1.161 0.482 0.482 1.161zM13.714 5.036q-0.125 0-1.366-0.009t-1.884 0-1.723 0.054-1.839 0.179-1.277 0.33q-0.893 0.357-1.571 1.036t-1.036 1.571q-0.196 0.518-0.33 1.277t-0.179 1.839-0.054 1.723 0 1.884 0.009 1.366-0.009 1.366 0 1.884 0.054 1.723 0.179 1.839 0.33 1.277q0.357 0.893 1.036 1.571t1.571 1.036q0.518 0.196 1.277 0.33t1.839 0.179 1.723 0.054 1.884 0 1.366-0.009 1.366 0.009 1.884 0 1.723-0.054 1.839-0.179 1.277-0.33q0.893-0.357 1.571-1.036t1.036-1.571q0.196-0.518 0.33-1.277t0.179-1.839 0.054-1.723 0-1.884-0.009-1.366 0.009-1.366 0-1.884-0.054-1.723-0.179-1.839-0.33-1.277q-0.357-0.893-1.036-1.571t-1.571-1.036q-0.518-0.196-1.277-0.33t-1.839-0.179-1.723-0.054-1.884 0-1.366 0.009zM27.429 16.286q0 4.089-0.089 5.661-0.179 3.714-2.214 5.75t-5.75 2.214q-1.571 0.089-5.661 0.089t-5.661-0.089q-3.714-0.179-5.75-2.214t-2.214-5.75q-0.089-1.571-0.089-5.661t0.089-5.661q0.179-3.714 2.214-5.75t5.75-2.214q1.571-0.089 5.661-0.089t5.661 0.089q3.714 0.179 5.75 2.214t2.214 5.75q0.089 1.571 0.089 5.661z"></path></svg></div></div>
+				<div class="kswr-icon-ic kswr-icon-ic-h kswr-icon-h"><div class="kswr-icon-ic-svg" style="width:18px; height:18px;"><svg  viewBox="0 0 27 32" fill="#333" style="color:#333;"><path d="M18.286 16.286q0-1.893-1.339-3.232t-3.232-1.339-3.232 1.339-1.339 3.232 1.339 3.232 3.232 1.339 3.232-1.339 1.339-3.232zM20.75 16.286q0 2.929-2.054 4.982t-4.982 2.054-4.982-2.054-2.054-4.982 2.054-4.982 4.982-2.054 4.982 2.054 2.054 4.982zM22.679 8.964q0 0.679-0.482 1.161t-1.161 0.482-1.161-0.482-0.482-1.161 0.482-1.161 1.161-0.482 1.161 0.482 0.482 1.161zM13.714 5.036q-0.125 0-1.366-0.009t-1.884 0-1.723 0.054-1.839 0.179-1.277 0.33q-0.893 0.357-1.571 1.036t-1.036 1.571q-0.196 0.518-0.33 1.277t-0.179 1.839-0.054 1.723 0 1.884 0.009 1.366-0.009 1.366 0 1.884 0.054 1.723 0.179 1.839 0.33 1.277q0.357 0.893 1.036 1.571t1.571 1.036q0.518 0.196 1.277 0.33t1.839 0.179 1.723 0.054 1.884 0 1.366-0.009 1.366 0.009 1.884 0 1.723-0.054 1.839-0.179 1.277-0.33q0.893-0.357 1.571-1.036t1.036-1.571q0.196-0.518 0.33-1.277t0.179-1.839 0.054-1.723 0-1.884-0.009-1.366 0.009-1.366 0-1.884-0.054-1.723-0.179-1.839-0.33-1.277q-0.357-0.893-1.036-1.571t-1.571-1.036q-0.518-0.196-1.277-0.33t-1.839-0.179-1.723-0.054-1.884 0-1.366 0.009zM27.429 16.286q0 4.089-0.089 5.661-0.179 3.714-2.214 5.75t-5.75 2.214q-1.571 0.089-5.661 0.089t-5.661-0.089q-3.714-0.179-5.75-2.214t-2.214-5.75q-0.089-1.571-0.089-5.661t0.089-5.661q0.179-3.714 2.214-5.75t5.75-2.214q1.571-0.089 5.661-0.089t5.661 0.089q3.714 0.179 5.75 2.214t2.214 5.75q0.089 1.571 0.089 5.661z"></path></svg></div></div>
+				<div class="kswr-icon-bg kswr-icon-bg-r kswr-icon-r" style="background:transparent;border:0px none transparent;--border-style-realbwidth:0px;"></div>
+				<div class="kswr-icon-bg kswr-icon-bg-h kswr-icon-h" style="background:transparent;border:0px none transparent;--border-style-realbwidth:0px;"></div>
+				<a href="https://www.instagram.com/mulsannealtavista/" target="_self"></a>
+			</div></div></div><div class="kswr-iconbundle-container kswr-theelement" data-layout="line" data-align="center" style="text-align:center;"></div><div class="kswr-iconbundle-container kswr-theelement" data-layout="line" data-align="center" style="text-align:center;"></div><div class="kswr-iconbundle-container kswr-theelement" data-layout="line" data-align="center" style="text-align:center;"></div></div></div></div><div class="kswr-column-settings" data-minheight="0px" data-isminheight="off" data-theclasses="kswr_pnone kswr_mnone kswr_bnone"></div><div class="wpb_column vc_column_container vc_col-sm-1/5"><div class="vc_column-inner " ><div class="wpb_wrapper"></div></div></div><div class="kswr-column-settings" data-minheight="0px" data-isminheight="off" data-theclasses="kswr_pnone kswr_mnone kswr_bnone"></div></div><div class="vc_row-full-width vc_clearfix"></div><div class="kswr-row-element-back kswr-vc-ctn-element" data-classes="kswr_pnone kswr_mnone kswr_bnone" ></div>
+</div>    	</div>
+    </div>
+      
+	
+
+
+<footer class="footer">
+    
+    
+
+            <div class="container">
+                
+                
+                
+         
+
+                
+                
+					<script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script>
+						jQuery(function($){
+						    $("head").append("<style>.vc_custom_1686895132959{padding-top: 30px !important;padding-bottom: 60px !important;background-color: #777777 !important;}.vc_custom_1686805702929{margin-bottom: 0px !important;padding-bottom: 0px !important;}.vc_custom_1686805677823{padding-left: 20% !important;}.vc_custom_1686805688705{padding-left: 10% !important;}</style>");
+						});
+					</script><div class="wpb-content-wrapper"><div data-vc-full-width="true" data-vc-full-width-init="false" class="vc_row wpb_row vc_row-fluid pix-vc_row-no-padding pix-row-overlay text-white-color text-shadow vc_custom_1686895132959 vc_row-has-fill"><div class="wpb_column vc_column_container vc_col-sm-4"><div class="vc_column-inner vc_custom_1686805702929" ><div class="wpb_wrapper"><div class="kswr-responsive-spacer" data-desk="0px" data-tablet="0px" data-tablet-sm="0px" data-phone="25px" data-phone-sm="25px" style="--spc-desk:0px;--spc-tablet:0px;--spc-tablet-sm:0px;--spc-phone:25px;--spc-phone-sm:25px;"></div>
+	<div class="wpb_text_column wpb_content_element" >
+		<div class="wpb_wrapper">
+			<h3><span style="color: #ffffff;">Mulsanne Titanium</span></h3>
+<p><span style="color: #ffffff;">Juan Salvador Agraz No. 97 Torre Paragon</span><br />
+<span style="color: #ffffff;">Col. Santa Fe</span><br />
+<span style="color: #ffffff;">Delegación Cuajimalpa</span><br />
+<span style="color: #ffffff;">Telefonos: (55) 52924757 / (55) 52927613</span><br />
+<span style="color: #ffffff;">Email:<a href="/cdn-cgi/l/email-protection" class="__cf_email__" data-cfemail="b0d1c4ded3dcd9d5dec4d5c3f0ddc5dcc3d1deded59ed3dfdd9eddc8">[email&#160;protected]</a></span></p>
+
+		</div>
+	</div>
+</div></div></div><div class="kswr-column-settings" data-minheight="0px" data-isminheight="off" data-theclasses="kswr_pnone kswr_mnone kswr_bnone"></div><div class="wpb_column vc_column_container vc_col-sm-4"><div class="vc_column-inner " ><div class="wpb_wrapper"><div class="kswr-responsive-spacer" data-desk="0px" data-tablet="0px" data-tablet-sm="0px" data-phone="25px" data-phone-sm="25px" style="--spc-desk:0px;--spc-tablet:0px;--spc-tablet-sm:0px;--spc-phone:25px;--spc-phone-sm:25px;"></div>
+	<div class="wpb_text_column wpb_content_element" >
+		<div class="wpb_wrapper">
+			<h3><span style="color: #ffffff;">Mulsanne Altavista</span></h3>
+<p><span style="color: #ffffff;">AltaVista #77 San Angel Inn</span><br />
+<span style="color: #ffffff;">C.P. 01000</span><br />
+<span style="color: #ffffff;">México Distrito Federal</span><br />
+<span style="color: #ffffff;">Telefonos: (55) 56166205</span><br />
+<span style="color: #ffffff;">Email:<a href="/cdn-cgi/l/email-protection" class="__cf_email__" data-cfemail="9ffeebf1fcf3f6faf1ebfaecdff2eaf3ecfef1f1fab2fef3ebfee9f6ecebfeb1fcf0f2b1f2e7">[email&#160;protected]</a></span></p>
+
+		</div>
+	</div>
+</div></div></div><div class="kswr-column-settings" data-minheight="0px" data-isminheight="off" data-theclasses="kswr_pnone kswr_mnone kswr_bnone"></div><div class="wpb_column vc_column_container vc_col-sm-2"><div class="vc_column-inner vc_custom_1686805677823" ><div class="wpb_wrapper"><div class="kswr-responsive-spacer" data-desk="0px" data-tablet="0px" data-tablet-sm="0px" data-phone="25px" data-phone-sm="25px" style="--spc-desk:0px;--spc-tablet:0px;--spc-tablet-sm:0px;--spc-phone:25px;--spc-phone-sm:25px;"></div>
+	<div class="wpb_text_column wpb_content_element" >
+		<div class="wpb_wrapper">
+			<h4><a href="https://mulsanne.com.mx/aviso_legal/"><strong>Aviso Legal</strong></a></h4>
+
+		</div>
+	</div>
+</div></div></div><div class="kswr-column-settings" data-minheight="0px" data-isminheight="off" data-theclasses="kswr_pnone kswr_mnone kswr_bnone"></div><div class="wpb_column vc_column_container vc_col-sm-2"><div class="vc_column-inner vc_custom_1686805688705" ><div class="wpb_wrapper"><div class="kswr-responsive-spacer" data-desk="0px" data-tablet="0px" data-tablet-sm="0px" data-phone="25px" data-phone-sm="25px" style="--spc-desk:0px;--spc-tablet:0px;--spc-tablet-sm:0px;--spc-phone:25px;--spc-phone-sm:25px;"></div></div></div></div><div class="kswr-column-settings" data-minheight="0px" data-isminheight="off" data-theclasses="kswr_pnone kswr_mnone kswr_bnone"></div></div><div class="vc_row-full-width vc_clearfix"></div><div class="kswr-row-element-back kswr-vc-ctn-element" data-classes="kswr_pnone kswr_mnone kswr_bnone" ></div>
+</div>
+                
+            </div>
+            <!-- end container -->
+    
+    
+    <div class="section-decor-footer bottom" data-top="70" data-height="70" >
+			<svg width="100%" data-height="70" height="70px" style="height: 70px;">
+				<defs>
+					<pattern id="pix-decor-shape-3048601" preserveAspectRatio="none" patternUnits="userSpaceOnUse" x="0" y="0" width="100%" data-height="70" height="700" viewBox="0 0 100 1000">
+								<linearGradient id="linear-gradient-3048601" x1="0" y1="0" x2="0" y2="100%">
+									<stop offset="0%" stop-color="#f6f6f6" stop-opacity="1"></stop>
+									<stop offset="100%" stop-color="#f6f6f6" stop-opacity="1"></stop>
+								</linearGradient>
+						<polygon fill="url(#linear-gradient-3048601)" points="0,100 0,100 10,100 15,40 85,40 90,100 100,100  100,100 "></polygon>
+					</pattern>
+				</defs>
+				<rect x="0" y="0" width="100%" data-height="70" height="70" fill="url(#pix-decor-shape-3048601)"></rect>
+			</svg>
+		</div>
+    
+    <div class="absolute-footer">Copyright Mulsanne 2023</div>
+       
+
+</footer>
+
+</div></div>
+
+
+
+
+		<script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script>
+			window.RS_MODULES = window.RS_MODULES || {};
+			window.RS_MODULES.modules = window.RS_MODULES.modules || {};
+			window.RS_MODULES.waiting = window.RS_MODULES.waiting || [];
+			window.RS_MODULES.defered = true;
+			window.RS_MODULES.moduleWaiting = window.RS_MODULES.moduleWaiting || {};
+			window.RS_MODULES.type = 'compiled';
+		</script>
+		<script type="text/html" id="wpb-modifications"> window.wpbCustomElement = 1; </script><link href="//fonts.googleapis.com/css?family=Roboto:400&display=swap" rel="stylesheet" property="stylesheet" media="all" type="text/css" >
+
+	<script type='text/javascript'>
+		(function () {
+			var c = document.body.className;
+			c = c.replace(/woocommerce-no-js/, 'woocommerce-js');
+			document.body.className = c;
+		})();
+	</script>
+	<script>
+		if(typeof revslider_showDoubleJqueryError === "undefined") {function revslider_showDoubleJqueryError(sliderID) {console.log("You have some jquery.js library include that comes after the Slider Revolution files js inclusion.");console.log("To fix this, you can:");console.log("1. Set 'Module General Options' -> 'Advanced' -> 'jQuery & OutPut Filters' -> 'Put JS to Body' to on");console.log("2. Find the double jQuery.js inclusion and remove it");return "Double Included jQuery Library";}}
+</script>
+			<link rel="preload" as="font" id="rs-icon-set-revicon-woff" href="//mulsanne.com.mx/wp-content/plugins/revslider/sr6/assets/fonts/revicons/revicons.woff?5510888" type="font/woff" crossorigin="anonymous" media="all" />
+<link rel='stylesheet' id='wc-blocks-style-css' href='https://mulsanne.com.mx/wp-content/plugins/woocommerce/assets/client/blocks/wc-blocks.css?ver=wc-9.7.0' type='text/css' media='all' />
+<link rel='stylesheet' id='rs-plugin-settings-css' href='//mulsanne.com.mx/wp-content/plugins/revslider/sr6/assets/css/rs6.css?ver=6.7.18' type='text/css' media='all' />
+<style id='rs-plugin-settings-inline-css' type='text/css'>
+		#rev_slider_6_1_wrapper .zeus.tparrows{cursor:pointer; min-width:70px; min-height:70px; position:absolute; display:block; z-index:1000; border-radius:50%;   overflow:hidden; background:rgba(0,0,0,0.1)}#rev_slider_6_1_wrapper .zeus.tparrows:before{font-family:'revicons'; font-size:20px; color:#ffffff; display:block; line-height:70px; text-align:center;   z-index:2; position:relative}#rev_slider_6_1_wrapper .zeus.tparrows.tp-leftarrow:before{content:'\e824'}#rev_slider_6_1_wrapper .zeus.tparrows.tp-rightarrow:before{content:'\e825'}#rev_slider_6_1_wrapper .zeus .tp-title-wrap{background:rgba(0,0,0,0.5); width:100%; height:100%; top:0px; left:0px; position:absolute; opacity:0; transform:scale(0); -webkit-transform:scale(0);  transition:all 0.3s; -webkit-transition:all 0.3s; -moz-transition:all 0.3s;  border-radius:50%}#rev_slider_6_1_wrapper .zeus .tp-arr-imgholder{width:100%; height:100%; position:absolute; top:0px; left:0px; background-position:center center; background-size:cover; border-radius:50%; transform:translatex(-100%); -webkit-transform:translatex(-100%);  transition:all 0.3s; -webkit-transition:all 0.3s; -moz-transition:all 0.3s}#rev_slider_6_1_wrapper .zeus.tp-rightarrow .tp-arr-imgholder{transform:translatex(100%); -webkit-transform:translatex(100%)}#rev_slider_6_1_wrapper .zeus.tparrows.rs-touchhover .tp-arr-imgholder{transform:translatex(0); -webkit-transform:translatex(0); opacity:1}#rev_slider_6_1_wrapper .zeus.tparrows.rs-touchhover .tp-title-wrap{transform:scale(1); -webkit-transform:scale(1); opacity:1}
+</style>
+<script type="text/javascript" src="https://mulsanne.com.mx/wp-includes/js/dist/hooks.min.js?ver=4d63a3d491d11ffd8ac6" id="wp-hooks-js"></script>
+<script type="text/javascript" src="https://mulsanne.com.mx/wp-includes/js/dist/i18n.min.js?ver=5e580eb46a90c2b997e6" id="wp-i18n-js"></script>
+<script type="text/javascript" id="wp-i18n-js-after">
+/* <![CDATA[ */
+wp.i18n.setLocaleData( { 'text direction\u0004ltr': [ 'ltr' ] } );
+/* ]]> */
+</script>
+<script type="text/javascript" src="https://mulsanne.com.mx/wp-content/plugins/contact-form-7/includes/swv/js/index.js?ver=6.0.4" id="swv-js"></script>
+<script type="text/javascript" id="contact-form-7-js-before">
+/* <![CDATA[ */
+var wpcf7 = {
+    "api": {
+        "root": "https:\/\/mulsanne.com.mx\/wp-json\/",
+        "namespace": "contact-form-7\/v1"
+    }
+};
+/* ]]> */
+</script>
+<script type="text/javascript" src="https://mulsanne.com.mx/wp-content/plugins/contact-form-7/includes/js/index.js?ver=6.0.4" id="contact-form-7-js"></script>
+<script type="text/javascript" src="https://mulsanne.com.mx/wp-content/plugins/kaswara/front/assets/js/externals.js?ver=1" id="kswr-front-externals-js"></script>
+<script type="text/javascript" src="https://mulsanne.com.mx/wp-content/plugins/kaswara/front/assets/js/script.js?ver=1" id="kswr-front-script-js"></script>
+<script type="text/javascript" src="https://mulsanne.com.mx/wp-content/plugins/pix-auto-deal/assets/js/bootstrap.min.js?ver=3.3.0" id="bootstrap-js"></script>
+<script type="text/javascript" src="https://mulsanne.com.mx/wp-content/plugins/pix-auto-deal/assets/js/jquery.magnific-popup.min.js?ver=1.0.0" id="magnific-popup-js"></script>
+<script type="text/javascript" src="//mulsanne.com.mx/wp-content/plugins/revslider/sr6/assets/js/rbtools.min.js?ver=6.7.18" defer async id="tp-tools-js"></script>
+<script type="text/javascript" src="//mulsanne.com.mx/wp-content/plugins/revslider/sr6/assets/js/rs6.min.js?ver=6.7.18" defer async id="revmin-js"></script>
+<script type="text/javascript" id="theme-my-login-js-extra">
+/* <![CDATA[ */
+var themeMyLogin = {"action":"","errors":[]};
+/* ]]> */
+</script>
+<script type="text/javascript" src="https://mulsanne.com.mx/wp-content/plugins/theme-my-login/assets/scripts/theme-my-login.min.js?ver=7.1.10" id="theme-my-login-js"></script>
+<script type="text/javascript" src="https://mulsanne.com.mx/wp-includes/js/comment-reply.min.js?ver=6.7.2" id="comment-reply-js" async="async" data-wp-strategy="async"></script>
+<script type="text/javascript" src="https://mulsanne.com.mx/wp-content/plugins/js_composer/assets/lib/vendor/node_modules/isotope-layout/dist/isotope.pkgd.min.js?ver=8.2" id="isotope-js"></script>
+<script type="text/javascript" src="https://mulsanne.com.mx/wp-includes/js/imagesloaded.min.js?ver=5.0.0" id="imagesloaded-js"></script>
+<script type="text/javascript" src="https://mulsanne.com.mx/wp-includes/js/masonry.min.js?ver=4.2.2" id="masonry-js"></script>
+<script type="text/javascript" src="https://mulsanne.com.mx/wp-content/themes/autodealer/js/jquery.easypiechart.min.js?ver=3.3" id="easypiechart-js"></script>
+<script type="text/javascript" src="https://mulsanne.com.mx/wp-content/themes/autodealer/assets/nouislider/nouislider.min.js?ver=3.3" id="nouislider_js-js"></script>
+<script type="text/javascript" src="https://mulsanne.com.mx/wp-content/themes/autodealer/assets/nouislider/wNumb.min.js?ver=3.3" id="wNumb-js"></script>
+<script type="text/javascript" src="https://mulsanne.com.mx/wp-content/themes/autodealer/assets/owl-carousel/owl.carousel.min.js?ver=3.3" id="owl-carousel-js"></script>
+<script type="text/javascript" src="https://mulsanne.com.mx/wp-content/themes/autodealer/assets/jelect/jquery.jelect.js?ver=3.3" id="jelect-js"></script>
+<script type="text/javascript" src="https://mulsanne.com.mx/wp-content/plugins/woocommerce/assets/js/flexslider/jquery.flexslider.min.js?ver=2.7.2-wc.9.7.0" id="flexslider-js" defer="defer" data-wp-strategy="defer"></script>
+<script type="text/javascript" src="https://mulsanne.com.mx/wp-content/themes/autodealer/assets/header/slidebar.js?ver=1.1" id="slidebar-js"></script>
+<script type="text/javascript" src="https://mulsanne.com.mx/wp-content/themes/autodealer/assets/header/header.js?ver=1.1" id="autodealer-header-js"></script>
+<script type="text/javascript" src="https://mulsanne.com.mx/wp-content/themes/autodealer/assets/header/slidebars.js?ver=1.1" id="slidebars-js"></script>
+<script type="text/javascript" src="https://mulsanne.com.mx/wp-content/themes/autodealer/assets/header/doubletap.js?ver=1.1" id="doubletap-js"></script>
+<script type="text/javascript" src="https://mulsanne.com.mx/wp-content/themes/autodealer/assets/sticky-kit/sticky-kit.js?ver=1.1" id="sticky-kit-js"></script>
+<script type="text/javascript" src="https://mulsanne.com.mx/wp-content/plugins/js_composer/assets/lib/vendor/prettyphoto/js/jquery.prettyPhoto.min.js?ver=8.2" id="prettyphoto-js"></script>
+<script type="text/javascript" src="https://mulsanne.com.mx/wp-content/themes/autodealer/assets/fancybox/jquery.fancybox.min.js?ver=1.1.6" id="fancybox-js"></script>
+<script type="text/javascript" src="https://mulsanne.com.mx/wp-content/themes/autodealer/assets/easydropdown/js/jquery.easydropdown.min.js?ver=3.1.6" id="easydropdown-js"></script>
+<script type="text/javascript" src="https://mulsanne.com.mx/wp-content/themes/autodealer/assets/swipebox/js/jquery.swipebox.min.js?ver=1.1.1" id="swipebox-js"></script>
+<script type="text/javascript" src="https://mulsanne.com.mx/wp-content/themes/autodealer/js/custom.js?ver=1.1" id="autodealer-custom-js"></script>
+<script type="text/javascript" id="autodealer-custom-js-after">
+/* <![CDATA[ */
+jQuery(function($){
+    $("head").append("<style> .vc_custom_1560977261681 .section-heading.white-heading .sep-element:after{ background: #f6f6f6;}</style>");
+});
+
+jQuery(function($){
+    $("head").append("<style> .vc_custom_1509965121567 .section-heading.white-heading .sep-element:after{ background: #ffffff;}</style>");
+});
+
+jQuery(function($){
+    $("head").append("<style> .vc_custom_1509965175183 .section-heading.white-heading .sep-element:after{ background: #ffffff;}</style>");
+});
+
+jQuery(function($){
+    $("head").append("<style> .vc_custom_1686892283428 .section-heading.white-heading .sep-element:after{ background: #707070;}</style>");
+});
+
+jQuery(function($){
+    $("head").append("<style> .vc_custom_1686278511883 .section-heading.white-heading .sep-element:after{ background: #ffffff;}</style>");
+});
+
+jQuery(function($){
+    $("head").append("<style> .vc_custom_1687842011491 .section-heading.white-heading .sep-element:after{ background: #d8d8d8;}</style>");
+});
+
+jQuery(function($){
+    $("head").append("<style> .vc_custom_1687842050337 .section-heading.white-heading .sep-element:after{ background: #d8d8d8;}</style>");
+});
+
+jQuery(function($){
+    $("head").append("<style> .vc_custom_1686895132959 .section-heading.white-heading .sep-element:after{ background: #777777;}</style>");
+});
+/* ]]> */
+</script>
+<script type="text/javascript" src="https://mulsanne.com.mx/wp-content/themes/autodealer/js/calculator.js?ver=1.0" id="autodealer-calculator-js"></script>
+<script type="text/javascript" src="https://mulsanne.com.mx/wp-content/plugins/woocommerce/assets/js/sourcebuster/sourcebuster.min.js?ver=9.7.0" id="sourcebuster-js-js"></script>
+<script type="text/javascript" id="wc-order-attribution-js-extra">
+/* <![CDATA[ */
+var wc_order_attribution = {"params":{"lifetime":1.0000000000000000818030539140313095458623138256371021270751953125e-5,"session":30,"base64":false,"ajaxurl":"https:\/\/mulsanne.com.mx\/wp-admin\/admin-ajax.php","prefix":"wc_order_attribution_","allowTracking":true},"fields":{"source_type":"current.typ","referrer":"current_add.rf","utm_campaign":"current.cmp","utm_source":"current.src","utm_medium":"current.mdm","utm_content":"current.cnt","utm_id":"current.id","utm_term":"current.trm","utm_source_platform":"current.plt","utm_creative_format":"current.fmt","utm_marketing_tactic":"current.tct","session_entry":"current_add.ep","session_start_time":"current_add.fd","session_pages":"session.pgs","session_count":"udata.vst","user_agent":"udata.uag"}};
+/* ]]> */
+</script>
+<script type="text/javascript" src="https://mulsanne.com.mx/wp-content/plugins/woocommerce/assets/js/frontend/order-attribution.min.js?ver=9.7.0" id="wc-order-attribution-js"></script>
+<script type="text/javascript" src="https://mulsanne.com.mx/wp-content/plugins/js_composer/assets/js/dist/js_composer_front.min.js?ver=8.2" id="wpb_composer_front_js-js"></script>
+<script type="text/javascript" src="https://mulsanne.com.mx/wp-content/themes/autodealer/assets/jarallax/jarallax.js?ver=3.3" id="jarallax-js"></script>
+<script></script><script id="rs-initialisation-scripts">
+		var	tpj = jQuery;
+
+		var	revapi6;
+
+		if(window.RS_MODULES === undefined) window.RS_MODULES = {};
+		if(RS_MODULES.modules === undefined) RS_MODULES.modules = {};
+		RS_MODULES.modules["revslider61"] = {once: RS_MODULES.modules["revslider61"]!==undefined ? RS_MODULES.modules["revslider61"].once : undefined, init:function() {
+			window.revapi6 = window.revapi6===undefined || window.revapi6===null || window.revapi6.length===0  ? document.getElementById("rev_slider_6_1") : window.revapi6;
+			if(window.revapi6 === null || window.revapi6 === undefined || window.revapi6.length==0) { window.revapi6initTry = window.revapi6initTry ===undefined ? 0 : window.revapi6initTry+1; if (window.revapi6initTry<20) requestAnimationFrame(function() {RS_MODULES.modules["revslider61"].init()}); return;}
+			window.revapi6 = jQuery(window.revapi6);
+			if(window.revapi6.revolution==undefined){ revslider_showDoubleJqueryError("rev_slider_6_1"); return;}
+			revapi6.revolutionInit({
+					revapi:"revapi6",
+					DPR:"dpr",
+					sliderLayout:"fullwidth",
+					visibilityLevels:"1240,1024,778,480",
+					gridwidth:"1240,1024,778,480",
+					gridheight:"650,600,550,450",
+					lazyType:"smart",
+					perspective:600,
+					perspectiveType:"local",
+					editorheight:"650,600,550,450",
+					responsiveLevels:"1240,1024,778,480",
+					progressBar:{disableProgressBar:true},
+					navigation: {
+						mouseScrollNavigation:false,
+						wheelCallDelay:1000,
+						onHoverStop:false,
+						touch: {
+							touchenabled:true
+						},
+						arrows: {
+							enable:true,
+							tmp:"<div class=\"tp-title-wrap\">  	<div class=\"tp-arr-imgholder\"></div> </div>",
+							style:"zeus",
+							hide_onleave:true,
+							left: {
+								h_offset:0
+							},
+							right: {
+								h_offset:0
+							}
+						}
+					},
+					parallax: {
+						levels:[5,10,15,20,25,30,35,40,45,46,47,48,49,50,51,55],
+						type:"scroll",
+						disable_onmobile:true
+					},
+					fanim: {
+						in:{"o":0},
+						out:{"a":false},
+						speed:800
+					},
+					viewPort: {
+						global:true,
+						globalDist:"-200px",
+						enable:false,
+						visible_area:"20%"
+					},
+					fallbacks: {
+						allowHTML5AutoPlayOnAndroid:true
+					},
+			});
+			
+		}} // End of RevInitScript
+
+		if (window.RS_MODULES.checkMinimal!==undefined) { window.RS_MODULES.checkMinimal();};
+	</script>
+
+<script>
+	jQuery( document ).ready(function() {
+var text = jQuery('.mlabel-1').text();
+jQuery(".mlabel-1").text(text.replace('model', 'modelo'));
+		    console.log( "ready!" );
+
+});
+</script>
+</body></html>
 
