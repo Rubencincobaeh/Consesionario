@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Concesionario de Vehículos Deportivos</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f0f0f0;
+            color: #333;
+            margin: 0;
+            padding: 0;
+        }
+        header {
+            background-color: #8B0000; /* Rojo Torino */
+            color: #fff;
+            padding: 20px 0;
+            text-align: center;
+        }
+        nav {
+            background-color: #8B0000; /* Rojo Torino */
+            padding: 10px;
+            text-align: center;
+        }
+        nav a {
+            color: #fff;
+            margin: 0 15px;
+            text-decoration: none;
+            font-weight: bold;
+        }
+        nav a:hover {
+            color: #ff6347;
+        }
+        .container {
+            width: 90%;
+            margin: 20px auto;
+            background-color: #fff;
+            padding: 20px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        table {
+            width: 100%;
+            margin: 20px 0;
+            border-collapse: collapse;
+        }
+        th, td {
+            padding: 15px;
+            text-align: left;
+            border-bottom: 1px solid #ddd;
+        }
+        th {
+            background-color: #8B0000; /* Rojo Torino */
+            color: #fff;
+        }
+        img {
+            width: 100%;
+            max-width: 400px;
+            height: auto;
+            border-radius: 5px;
+        }
+        .vehicle-info {
+            margin-top: 20px;
+        }
+        .vehicle-info h3 {
+            color: #8B0000; /* Rojo Torino */
+        }
+        .vehicle-info p {
+            font-size: 1.1em;
+            line-height: 1.6;
+        }
+        footer {
+            background-color: #8B0000; /* Rojo Torino */
+            color: #fff;
+            text-align: center;
+            padding: 10px 0;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Concesionario de Vehículos Deportivos</h1>
+    </header>
+    <nav>
+        <a href="#home">Inicio</a>
+        <a href="#about">Sobre Nosotros</a>
+        <a href="#vehicles">Vehículos</a>
+        <a href="#contact">Contacto</a>
+    </nav>
+    <div class="container">
+        <section id="home">
+            <h2>Bienvenidos a nuestro Concesionario</h2>
+            <p>Encuentra los mejores vehículos deportivos a los mejores precios.</p>
+        </section>
+        <section id="about">
+            <h2>Sobre Nosotros</h2>
+            <p>Somos un concesionario especializado en vehículos deportivos. Nuestra misión es ofrecer a nuestros clientes una experiencia de compra inigualable.</p>
+        </section>
+        <section id="vehicles">
+            <h2>Nuestros Vehículos</h2>
+            <table>
+                <tr>
+                    <th>Modelo</th>
+                    <th>Marca</th>
+                    <th>Imagen</th>
+                    <th>Descripción</th>
+                </tr>
+                <tr>
+                    <td>911 Carrera</td>
+                    <td>Porsche</td>
+                    <td><img src="https://acnews.blob.core.windows.net/imgnews/medium/NAZ_3352d04638584dcc8c5699f12d13aad0.webp"></td>
+                    <td>El Porsche 911 Carrera es un ícono de los autos deportivos, conocido por su rendimiento excepcional y diseño atemporal.</td>
+                </tr>
+                <tr>
+                    <td>Huracán EVO</td>
+                    <td>Lamborghini</td>
+                    <td><img src="https://cdn.prod.website-files.com/5b4a3b3971d099f78f362505/66e4634bf62c9ea4230cd6fa_65cd2c597d11cc480702049b_2021-Lamborghini-Huracan-EVO-RWD-Coupe-Arancio-Xanto-ZHWUF5ZF3MLA16289_012.webp" alt="Lamborghini Huracán"></td>
+                    <td>El Lamborghini Huracán EVO combina un diseño agresivo con una potencia impresionante, ofreciendo una experiencia de conducción inigualable.</td>
+                </tr>
+                <tr>
+                    <td>488 Pista</td>
+                    <td>Ferrari</td>
+                    <td><img src="https://cdn.ferrari.com/cms/network/media/img/resize/5d371735c3f9ec0af647572d-ferrari_488pista_intro_socialshare?width=1080" alt="Ferrari 488"></td>
+                    <td>El Ferrari 488 Pista es un superdeportivo de alto rendimiento, diseñado para ofrecer una experiencia de conducción emocionante y precisa.</td>
+                </tr>
+                <tr>
+                    <td>NSX</td>
+                    <td>Acura</td>
+                    <td><img src="https://cdn.autobild.es/sites/navi.axelspringer.es/public/bdc/dc/fotos/Honda-NSX-2017-C01.jpg?tf=1200x" alt="Acura NSX"></td>
+                    <td>El Acura NSX es un híbrido deportivo que combina tecnología avanzada con un diseño elegante y un rendimiento excepcional.</td>
+                </tr>
+                <tr>
+                    <td>GT-R</td>
+                    <td>Nissan</td>
+                    <td><img src="https://acnews.blob.core.windows.net/imgnews/large/NAZ_7387335f56554b7c9b9891cf2688a25f.jpg" alt="Nissan GT-R"></td>
+                    <td>El Nissan GT-R es conocido como "Godzilla" por su impresionante potencia y capacidad de rendimiento en la pista.</td>
+                </tr>
+                <tr>
+                    <td>Vantage</td>
+                    <td>Aston Martin</td>
+                    <td><img src="https://www.ceerta.com/boutique/296-large_default/aston-martin-vantage-f1-edition.jpg" alt="Aston Martin Vantage"></td>
+                    <td>El Aston Martin Vantage es un deportivo británico que combina lujo y rendimiento en un paquete elegante y sofisticado.</td>
+                </tr>
+                <tr>
+                    <td>Supra</td>
+                    <td>Toyota</td>
+                    <td><img src="https://mma.prnewswire.com/media/2188962/2024_GRSupra_45thAnniversaryEd_MikanBlast_H.jpg?p=facebook" alt="Toyota Supra"></td>
+                    <td>El Toyota Supra es un deportivo legendario, conocido por su rendimiento y su herencia en el mundo de los autos modificados.</td>
+                </tr>
+                <tr>
+                    <td>Chiron</td>
+                    <td>Bugatti</td>
+                    <td><img src="https://cdn.motor1.com/images/mgl/VzMq0z/s1/bugatti-chiron-1500.webp" alt="Bugatti Chiron"></td>
+                    <td>El Bugatti Chiron es uno de los autos más rápidos y lujosos del mundo, con un diseño impresionante y una potencia increíble.</td>
+                </tr>
+            </table>
+        </section>
+        <section class="vehicle-info">
+            <h3>Porsche 911 Carrera</h3>
+            <p>El Porsche 911 Carrera es un ícono de los autos deportivos, conocido por su rendimiento excepcional y diseño atemporal. Equipado con un motor bóxer turboalimentado, el 911 Carrera ofrece una aceleración impresionante y una conducción dinámica.</p>
+            <h3>Lamborghini Huracán EVO</h3>
+            <p>El Lamborghini Huracán EVO combina un diseño agresivo con una potencia impresionante, ofreciendo una experiencia de conducción inigualable. Su motor V10 produce una potencia impresionante, y su tracción total garantiza un manejo excepcional en todas las condiciones.</p>
+            <h3>Ferrari 488 Pista</h3>
+            <p>El Ferrari 488 Pista es un superdeportivo de alto rendimiento, diseñado para ofrecer una experiencia de conducción emocionante y precisa. Con un motor V8 turboalimentado, el 488 Pista proporciona una aceleración increíble y un manejo ágil.</p>
+            <!-- Agrega más detalles e información sobre los vehículos -->
+        </section>
+        <section id="contact">
+            <h2>Contacto</h2>
+            <p>Puedes visitarnos en nuestra dirección o contactarnos a través de nuestro correo electrónico.</p>
+            <p><strong>Dirección:</strong> Calle de los Coches, San Agustín Tlaxiaca, Hidalgo, México</p>
+            <p><strong>Email:</strong> contacto@concesionariodeportivos.com</p>
+        </section>
+    </div>
+    <footer>
+        <p>&copy; 2025 Concesionario de Vehículos Deportivos. Todos los derechos reservados.</p>
+    </footer>
+</body>
+</html>
+
